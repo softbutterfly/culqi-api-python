@@ -1,9 +1,14 @@
 ![Community project](./resources/softbutterfly-open-source-community-project.png)
 
-[![Build Status](https://travis-ci.org/culqi/culqi-python.svg?branch=master)](https://travis-ci.org/culqi/culqi-python)
-![Supported versions](https://img.shields.io/pypi/pyversions/Culqi)
-![MIT License](https://img.shields.io/pypi/l/culqi)
-![Package version](https://img.shields.io/pypi/v/culqi)
+![PyPI - Supported versions](https://img.shields.io/pypi/pyversions/culqi-api-python)
+![PyPI - Package version](https://img.shields.io/pypi/v/culqi-api-python)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/culqi-api-python)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8ac045251e9745eea3b89c2896b1f777)](https://www.codacy.com/gh/softbutterfly/culqi-api-python/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=softbutterfly/culqi-api-python&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8ac045251e9745eea3b89c2896b1f777)](https://www.codacy.com/gh/softbutterfly/culqi-api-python/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=softbutterfly/culqi-api-python&amp;utm_campaign=Badge_Grade)
+
+[![Build Status](https://www.travis-ci.org/softbutterfly/culqi-api-python.svg?branch=develop)](https://www.travis-ci.org/softbutterfly/culqi-api-python)
+![PyPI - MIT License](https://img.shields.io/pypi/l/culqi-api-python)
 
 # Culqi API Python
 
