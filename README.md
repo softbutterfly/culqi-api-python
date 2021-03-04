@@ -1,25 +1,23 @@
-<img src="resources/logo.png" style="float: right;" />
-
-# Culqi Python
+![Community project](./resources/softbutterfly-open-source-community-project.png)
 
 [![Build Status](https://travis-ci.org/culqi/culqi-python.svg?branch=master)](https://travis-ci.org/culqi/culqi-python)
 ![](https://img.shields.io/pypi/pyversions/Culqi)
 ![](https://img.shields.io/pypi/l/culqi)
 ![](https://img.shields.io/pypi/v/culqi)
 
-<br/><br/>
+# Culqi API Python
 
-Biblioteca de CULQI para el lenguaje Python, pagos simples en tu sitio web. 
+Biblioteca de CULQI para el lenguaje Python, pagos simples en tu sitio web.
 
 ## Requisitos
 
-- Python 2.7, 3.5, 3.6, 3.7, 3.8-dev
+- Python 2.7, 3.5, 3.6, 3.7, 3.8, 3.9
 - Credenciales de comercio en [Culqi](https://culqi.com).
 
 ## Instalación
 
 ```bash
-pip install culqi 
+pip install culqi
 ```
 
 ![](/resources/carbon.png)
@@ -43,8 +41,6 @@ realiza al API de Culqi, y `data` contiene el cuerpo de la respuesta obtenida.
 - [Referencia de API](https://www.culqi.com/api/)
 - [Ejemplos](https://github.com/culqi/culqi-python/wiki)
 - [Wiki](https://github.com/culqi/culqi-python/wiki)
-
-
 
 ## Changelog
 
