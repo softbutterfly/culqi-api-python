@@ -5,6 +5,7 @@
 !.pre-commit-config.yaml
 !.pylintrc
 !.travis.yml
+!.env.template
 *.py[cod]
 *.ipynb*
 *.egg*
