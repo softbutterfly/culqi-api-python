@@ -1,19 +1,17 @@
-![Culqi](resources/logo.png)
-
-# Culqi Python
+![Community project](./resources/softbutterfly-open-source-community-project.png)
 
 [![Build Status](https://travis-ci.org/culqi/culqi-python.svg?branch=master)](https://travis-ci.org/culqi/culqi-python)
 ![Supported versions](https://img.shields.io/pypi/pyversions/Culqi)
 ![MIT License](https://img.shields.io/pypi/l/culqi)
 ![Package version](https://img.shields.io/pypi/v/culqi)
 
-<br/><br/>
+# Culqi API Python
 
 Biblioteca de CULQI para el lenguaje Python, pagos simples en tu sitio web.
 
 ## Requisitos
 
-- Python 2.7, 3.5, 3.6, 3.7, 3.8
+- Python 2.7, 3.5, 3.6, 3.7, 3.8, 3.9
 - Credenciales de comercio en [Culqi](https://culqi.com).
 
 ## Instalación

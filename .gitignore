@@ -7,6 +7,7 @@
 !.pylintrc
 !.pylintrc.local
 !.travis.yml
+!.env.template
 *.py[cod]
 *.ipynb*
 *.egg*
