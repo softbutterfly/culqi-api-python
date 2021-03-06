@@ -9,9 +9,4 @@ install:
 script:
   - tox
   - if [ "$TRAVIS_PYTHON_VERSION" = "3.8" ]; then tox -e black; fi
-  - if [ "$TRAVIS_PYTHON_VERSION" = "3.9" ]; then tox -e coverage; tox -e flake8; tox -e pydocstyle; then tox -e mypy; fi
-matrix:
-  allow_failures:
-    - python: "3.7"
-    - python: "3.8"
-    - python: "3.9"
+  - if [ "$TRAVIS_PYTHON_VERSION" = "3.9" ]; then tox -e coverage; tox -e black; tox -e flake8; tox -e pydocstyle; tox -e mypy; fi
