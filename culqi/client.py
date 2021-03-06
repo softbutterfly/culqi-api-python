@@ -10,7 +10,6 @@ from .version import VERSION
 
 RESOURCE_PREFIX = "_resource_"
 RESOURCE_CLASSES = {}
-SCHEMAS = {}
 
 for name, module in resources.__dict__.items():
     capitalized_name = capitalize_camel_case(name)

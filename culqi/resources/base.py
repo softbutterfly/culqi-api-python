@@ -1,5 +1,7 @@
+from typing import Union
+
 from jsonschema import validate
-from requests.compat import urljoin
+from requests.compat import urljoin  # type: ignore
 
 from ..utils.urls import URL
 
@@ -7,8 +9,8 @@ __all__ = ["Resource"]
 
 
 class Resource(object):
-    endpoint = None
-    schema = None
+    endpoint: Union[str, None] = None
+    schema: Union[dict, None] = None
 
     def __init__(self, client=None):
         self.client = client
