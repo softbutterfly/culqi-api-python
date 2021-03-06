@@ -106,4 +106,4 @@ class Culqi(object):
             # name
             return getattr(self, RESOURCE_PREFIX + name)
 
-        return super(Culqi, self).__getattribute__(name)
+        return super().__getattribute__(name)

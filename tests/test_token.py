@@ -16,7 +16,7 @@ from .data import Data
 class TokenTest(unittest.TestCase):
     # pylint: disable = too-many-public-methods
     def __init__(self, *args, **kwargs):
-        super(TokenTest, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         load_dotenv()
         self.version = __version__
         self.public_key = os.environ.get("API_PUBLIC_KEY")

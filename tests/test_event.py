@@ -12,7 +12,7 @@ from culqi.utils.errors import ErrorMessage, NotAllowedError
 
 class EventTest(unittest.TestCase):
     def __init__(self, *args, **kwargs):
-        super(EventTest, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         load_dotenv()
         self.version = __version__
         self.public_key = os.environ.get("API_PUBLIC_KEY")

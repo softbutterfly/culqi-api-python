@@ -19,7 +19,15 @@ except IOError:
 
 setup(
     name=package_name,
-    packages=find_packages(exclude=[".*", "docs", "scripts", "tests*", "legacy",]),
+    packages=find_packages(
+        exclude=[
+            ".*",
+            "docs",
+            "scripts",
+            "tests*",
+            "legacy",
+        ]
+    ),
     include_package_data=True,
     version=__import__("culqi").__version__,
     description="""Biblioteca de Culqi en Python""",
@@ -27,7 +35,13 @@ setup(
     long_description_content_type="text/markdown",
     author="Willy Aguirre, Joel Ibaceta, Martin Josemaría",
     zip_safe=False,
-    keywords=["Api Client", "Payment Integration", "Culqi", "Python 3", "Python 2",],
+    keywords=[
+        "Api Client",
+        "Payment Integration",
+        "Culqi",
+        "Python 3",
+        "Python 2",
+    ],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
