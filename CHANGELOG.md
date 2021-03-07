@@ -1,4 +1,28 @@
-### 1.0.4 In progress
+### 1.0.0 Again!
+
+Separation from Culqi official repository and add a bunch of fixes to be relased under a new package name but fully compatible with Culqi official repository.
+
+- Add Support for python 3.8.x
+- Add Support for python 3.9.x
+- Drop support for python 2.7.x
+- Drop support for python 3.5.x
+- Update dependecies
+- Fix conflict with pylint E1101 (no-member) error message
+- Add tests for distinct cards
+- Add tests for error responses
+- Fix faling tests due to bad culqi responses
+- Add documentation
+- Add pylint for code quality tests before commit
+- Add bandit for code quality tests before commit
+- Add mypy for code quality tests before commit
+- Add integration with Travis CI for automated run testing and coverage
+- Add integration with Codacy for automated code quality
+- Add integration with Codecov for coverage
+- Add integration with Requires for requirements monitoring
+
+### 1.0.4 Abandoned :(
+
+This changes where never released at Culqi
 
 - Support for python 3.8.x
 - Updated dependecies

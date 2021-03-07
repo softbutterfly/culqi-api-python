@@ -2,7 +2,38 @@
 name = "culqi"
 version = "1.0.0"
 description = 'Biblioteca de Culqi en Python'
-authors = ["zodiacfireworks <martin.vuelta@gmail.com>"]
+authors = [
+  "SoftButterfly Development Team <dev@softbutterfly.io>",
+  "zodiacfireworks <martin.vuelta@gmail.com>"
+]
+license = "MIT License"
+readme = "README.md"
+homepage = "https://github.com/softbutterfly/culqi-api-python"
+repository = "https://github.com/softbutterfly/culqi-api-python"
+documentation = "https://github.com/softbutterfly/culqi-api-python/wiki"
+keywords = ["Softbutterfly", "Culqi", "Culqi API"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [
+    { include = "culqi" }
+]
+include = [
+  "LICENSE.txt",
+  "CHANGELOG.md",
+]
+
+[tool.poetry.urls]
+"Download" = "https://github.com/softbutterfly/culqi-api-python/archive/1.0.0.tar.gz"
+"Bug Tracker" = "https://github.com/softbutterfly/culqi-api-python/issues"
 
 [tool.poetry.dependencies]
 python = "^3.9"
