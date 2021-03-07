@@ -71,7 +71,11 @@ class ChargeTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_charge_list(self):
-        retrieved_charge_list = self.charge.list()
+        retrieved_charge_list = self.charge.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_charge_list["data"]
 
     @pytest.mark.vcr()
@@ -79,9 +83,9 @@ class ChargeTest(unittest.TestCase):
         charge_data = self.get_charge_data("successful", "visa")
         created_charge = self.charge.create(data=charge_data)
 
-        metadatada = {"metadata": self.metadata}
+        metadata = {"metadata": self.metadata}
         updated_charge = self.charge.update(
-            id_=created_charge["data"]["id"], data=metadatada
+            id_=created_charge["data"]["id"], data=metadata
         )
 
         assert updated_charge["data"]["id"] == created_charge["data"]["id"]

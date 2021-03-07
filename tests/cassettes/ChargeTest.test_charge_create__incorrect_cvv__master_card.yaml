@@ -76,12 +76,11 @@ interactions:
     uri: https://api.culqi.com/v2/charges
   response:
     body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_m3kfEaK4h8WNGL8V\"\
-        ,\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\"\
-        :\"CVV incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta\
-        \ es incorrecto.\",\"user_message\":\"El c\xF3digo de seguridad (CVV) es incorrecto.\
-        \ Verifica tu tarjeta e ingresa los d\xEDgitos correctamente. Si es denegada\
-        \ nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta. \"}"
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_m3kfEaK4h8WNGL8V\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
     headers:
       Connection:
       - keep-alive
@@ -113,6 +112,982 @@ interactions:
       - '7213314'
       x-culqi-version:
       - 2.0.0
+    status:
+      code: 402
+      message: Payment Required
+- request:
+    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: '{"object":"token","id":"tkn_test_cvQNibIeWMzJgBAK","type":"card","creation_date":1615072126000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:08:46 GMT
+      Via:
+      - 1.1 26f91e7f8d889236c7aca45d5961081e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - J0JrVm9gUXagYIBtG0jlDTdogK5cEQgOsDhc5htUQfMfZOtt6VC47A==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440b7e-748201627a1fd070109d1f82;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - bya7tF_HoAMFqLA=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 254eeb75-07da-4623-b17c-362febc1e932
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+      "tkn_test_cvQNibIeWMzJgBAK"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '187'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/charges
+  response:
+    body:
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_c7PAQlp4p91g6ovs\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:08:49 GMT
+      Set-Cookie:
+      - JSESSIONID=2F1E33BD29FD66C195BA330917A6C38A; Path=/api; HttpOnly
+      Via:
+      - 1.1 1a362649b081f20cd62ffd514913be08.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - j11FBJSt8qt8-yPaiBzYqdk44lxBnfNRzQVjHtW2LL-tbYoDF_MvPw==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440b7f-4e69441b072c41ce17db4e61;Sampled=0
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10137636'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - bya77F2xIAMF5zQ=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Date:
+      - Sat, 06 Mar 2021 23:08:49 GMT
+      x-amzn-Remapped-Server:
+      - nginx
+      x-amzn-RequestId:
+      - 79186f06-5a16-47d0-b954-e2ec11923239
+    status:
+      code: 402
+      message: Payment Required
+- request:
+    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: '{"object":"token","id":"tkn_test_dptoUGy3gdsEzaWq","type":"card","creation_date":1615072481000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:14:41 GMT
+      Via:
+      - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Yd9Emm2aca91xjkceRNRGwG__KJwRjxbZHmLOzBF7yCTPnyCf_iL6w==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440ce1-4d4029d14667f5870315dda9;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - bybzMHc7oAMFwhA=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - fcb83dc3-b16a-470e-957d-08b2bd2ef24e
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+      "tkn_test_dptoUGy3gdsEzaWq"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '187'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/charges
+  response:
+    body:
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_mOdMCizg4fROOFVJ\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:14:44 GMT
+      Set-Cookie:
+      - JSESSIONID=068D211D58C14FCCC4EC9B6E695E9EAD; Path=/api; HttpOnly
+      Via:
+      - 1.1 a26c307f1caab99490ddcc62da38effc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - kooVN0Fo6QgPQt2htRoXBFXFWfF64t_te6dzoyYvmDXdqNZU_1oEcQ==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440ce2-4c5daba93968f74077507ffc;Sampled=0
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10137861'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - bybzaFq8oAMFcPQ=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Date:
+      - Sat, 06 Mar 2021 23:14:44 GMT
+      x-amzn-Remapped-Server:
+      - nginx
+      x-amzn-RequestId:
+      - 1eed8e8d-4a62-4491-917d-fb3fa934ee66
+    status:
+      code: 402
+      message: Payment Required
+- request:
+    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: '{"object":"token","id":"tkn_test_ezV7mVV1MhOf0y94","type":"card","creation_date":1615072804000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:20:04 GMT
+      Via:
+      - 1.1 295436c328732642848d67dafd07b971.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - zzu3IvGzxW90pjDkOOmRrtZsdRBsXOhXGMHRBArTnCBOTenjNLh8Jg==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440e23-7d4b88233176cfc04f4a1b43;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - bycloG90oAMFiGw=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 04a94a4b-d45e-4629-90c5-79633d5d9699
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+      "tkn_test_ezV7mVV1MhOf0y94"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '187'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/charges
+  response:
+    body:
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_f3T5k1ut9tDlsQ5z\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:20:07 GMT
+      Set-Cookie:
+      - JSESSIONID=94496D577933DB581C9745859ECE5FB5; Path=/api; HttpOnly
+      Via:
+      - 1.1 f4501d5df124eb2fa5d33f712e78d418.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - jsUHSOEXyIkETvDVoO0_K1bl_0_mmB62UPwRlpNbKVgUzI-1lQQ-Pg==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440e25-5a6adc6b03adb2e22b8809d0;Sampled=0
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10138113'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - bycl3HvuIAMFydw=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Date:
+      - Sat, 06 Mar 2021 23:20:07 GMT
+      x-amzn-Remapped-Server:
+      - nginx
+      x-amzn-RequestId:
+      - a09da7f9-d620-4082-8ad4-66792656c564
+    status:
+      code: 402
+      message: Payment Required
+- request:
+    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: '{"object":"token","id":"tkn_test_W1U7OrNhWaDnOVFg","type":"card","creation_date":1615073169000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:26:09 GMT
+      Via:
+      - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 6CfGAHeI8ZLH0aDWh4hD6D88SpEkE-9_7RR8Z5-UOu--q3umrsE_mg==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440f90-4ba9330f447e29b31828b6af;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - bydeoG6-oAMFbbQ=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 2db65769-8b9d-44b0-9a1f-f5606fde97a3
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+      "tkn_test_W1U7OrNhWaDnOVFg"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '187'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/charges
+  response:
+    body:
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_r5e7Iy03vLIPsvT4\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:26:12 GMT
+      Set-Cookie:
+      - JSESSIONID=208D19581D4B257976B67ABE4E104104; Path=/api; HttpOnly
+      Via:
+      - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - NRwunVnskpMCWiyKcCPI_A-gcFwLBOsPtV-oE6LQ2JKiro5k-d7WGQ==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440f92-527684f65fb6726f4aee84e2;Sampled=0
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10138337'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - byde5EZ-oAMFQrg=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Date:
+      - Sat, 06 Mar 2021 23:26:12 GMT
+      x-amzn-Remapped-Server:
+      - nginx
+      x-amzn-RequestId:
+      - 8f543b35-2bd8-426d-887a-a1c9a0cc194b
+    status:
+      code: 402
+      message: Payment Required
+- request:
+    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: '{"object":"token","id":"tkn_test_45teIiek6SAztIYV","type":"card","creation_date":1615121581000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 12:53:02 GMT
+      Via:
+      - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - rsoh9baJsIH1eYu_y3lCFF4-t1EDOLCwpMvWmROwBzdPweVoiROLFw==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044ccad-21a1bc512d606f494fd1fc69;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0TrHEVDIAMFfJQ=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 61cb2cf1-6f7a-4d38-b6dc-babe350d25b0
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+      "tkn_test_45teIiek6SAztIYV"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '187'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/charges
+  response:
+    body:
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_rrOrhZz9RT2RmUwg\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 12:53:05 GMT
+      Set-Cookie:
+      - JSESSIONID=5B42B62ECE6BC6486B145DCF0A386CCC; Path=/api; HttpOnly
+      Via:
+      - 1.1 a63e706ec0cc4cfd2d2032bf4b7c2ce6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - kUJY9bnrd-JDUYRIiSK2qmYlHzi_1yTyGYahu4DmXB-n4vxbF10FsA==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044ccae-7305b48c736679336aec2444;Sampled=0
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10140970'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - b0TrUFXjoAMFRqQ=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Date:
+      - Sun, 07 Mar 2021 12:53:05 GMT
+      x-amzn-Remapped-Server:
+      - nginx
+      x-amzn-RequestId:
+      - b3d269ee-dab2-4260-870b-6149c4e4c798
+    status:
+      code: 402
+      message: Payment Required
+- request:
+    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: '{"object":"token","id":"tkn_test_Iph6jgIXX2V12QpU","type":"card","creation_date":1615123551000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 13:25:51 GMT
+      Via:
+      - 1.1 295436c328732642848d67dafd07b971.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 0vUqMt3O9AJ4tjuk4IGwDa8s6b95iC4Tgv-Mi_8OSL34asG-RwGINw==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044d45f-3e23cd7e207588f130aa7d51;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0Ye4HP0oAMF_iw=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 404e61bb-14e2-4ffe-b61d-357c6a61bcad
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+      "tkn_test_Iph6jgIXX2V12QpU"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '187'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/charges
+  response:
+    body:
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_6euXTnuVN0NoyMdE\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 13:25:54 GMT
+      Set-Cookie:
+      - JSESSIONID=0719F68AFA9B2F5993B96C3A5E5E3E3B; Path=/api; HttpOnly
+      Via:
+      - 1.1 04b2cb6b035c01f2b6ab3f2237a50885.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - nQoVfHPawHffz_MHCeJf7yYJhXjDTafl_4pdn7I8DJ998WYKp5JjxQ==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044d460-4cf5454125f3c0ba2812bc28;Sampled=0
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10141289'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - b0YfEF5eIAMFfXw=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Date:
+      - Sun, 07 Mar 2021 13:25:54 GMT
+      x-amzn-Remapped-Server:
+      - nginx
+      x-amzn-RequestId:
+      - 51530395-6f37-4445-b2d5-87a106581f65
+    status:
+      code: 402
+      message: Payment Required
+- request:
+    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: '{"object":"token","id":"tkn_test_7fbOkiHSXxY1Mb2F","type":"card","creation_date":1615129561000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:06:02 GMT
+      Via:
+      - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - _1MlII73tuDJb3oBK_wC5HZwFb9BnHlhFUWJMEoDYrcQv7rKpAq-mg==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044ebd9-7127f29751fabcf961b93b9e;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0nJ_G1toAMFm_A=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 09c9c1d0-1b35-43e6-9051-8797cdadc4ae
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+      "tkn_test_7fbOkiHSXxY1Mb2F"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '187'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/charges
+  response:
+    body:
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_V9fQyeRYv6H375Ju\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:06:05 GMT
+      Set-Cookie:
+      - JSESSIONID=C0C77989BDC2E161960EE20CE23EA0A2; Path=/api; HttpOnly
+      Via:
+      - 1.1 72f61d7588953b12c687a6cea57ac5c5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Bn15ugSE8fDwYkfaFIwu0RuYwzoQCgSF2gFsFJoeU2_Zsi4aWUYycg==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044ebda-7d162090604724f36f7dba33;Sampled=0
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10141932'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - b0nKNGM6oAMFmHA=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Date:
+      - Sun, 07 Mar 2021 15:06:05 GMT
+      x-amzn-Remapped-Server:
+      - nginx
+      x-amzn-RequestId:
+      - 870da942-eddf-4d65-9508-fe16194a99f2
+    status:
+      code: 402
+      message: Payment Required
+- request:
+    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: '{"object":"token","id":"tkn_test_rFaw3Rh2lqZhRE0n","type":"card","creation_date":1615131668000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:41:08 GMT
+      Via:
+      - 1.1 c07bfe3e13ab3d2465e47a18f1dbb562.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - SfNU58iI00sVxh8HsM5hWjo3xv7jnep_LlLcqtleA1BRSvGq4xL8Ow==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044f414-1d9d0f5c58e2354e17d1d0b2;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0sTJGcyIAMF0kA=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - c4b6f738-88c3-46ff-bb6e-dcee6298caf9
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+      "tkn_test_rFaw3Rh2lqZhRE0n"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '187'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/charges
+  response:
+    body:
+      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_pJ2EUMKFAmNdZ2Kv\",\"code\":\"card_declined\",\"decline_code\":\"incorrect_cvv\",\"merchant_message\":\"CVV
+        incorrecto. El c\xF3digo de seguridad (CVV2, CVC2, CID) de la tarjeta es incorrecto.\",\"user_message\":\"El
+        c\xF3digo de seguridad (CVV) es incorrecto. Verifica tu tarjeta e ingresa
+        los d\xEDgitos correctamente. Si es denegada nuevamente, cont\xE1ctate con
+        el banco emisor de tu tarjeta. \"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:41:12 GMT
+      Set-Cookie:
+      - JSESSIONID=72D20C4F9897FD244CBE8A01F1E84BCB; Path=/api; HttpOnly
+      Via:
+      - 1.1 76c5d392ef84c77d3b4f4a4ef8f367b3.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - DB2Cc7QWX4SRY11vZI6K5x0c_pYtLniMgIPX8CAnX2MM22U_yupUnQ==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044f415-2035797d619c33d0573c63bd;Sampled=0
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10142287'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - b0sTVHvaIAMF0Xg=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Date:
+      - Sun, 07 Mar 2021 15:41:11 GMT
+      x-amzn-Remapped-Server:
+      - nginx
+      x-amzn-RequestId:
+      - d3d5c2cf-1eb4-41ec-b975-a3d73134ce8f
     status:
       code: 402
       message: Payment Required

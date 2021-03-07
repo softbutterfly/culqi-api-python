@@ -1,0 +1,242 @@
+interactions:
+- request:
+    body: '{"amount": 1000, "currency_code": "PEN", "description": "Venta de prueba",
+      "order_number": "order-a39b", "client_details": {"first_name": "Richard", "last_name":
+      "Piedpiper", "email": "richard@piedpiper.com", "phone_number": "+51998989789"},
+      "expiration_date": 1893474000, "confirm": false}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '290'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/orders
+  response:
+    body:
+      string: '{"object":"order","id":"ord_test_mpgi4pJYVcpPljv6","amount":1000,"payment_code":null,"currency_code":"PEN","description":"Venta
+        de prueba","order_number":"order-a39b","state":"created","total_fee":null,"net_amount":null,"fee_details":null,"creation_date":1615131475,"expiration_date":1893474000,"updated_at":1615131475,"paid_at":null,"available_on":null,"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '368'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:37:55 GMT
+      Set-Cookie:
+      - JSESSIONID=0E2B98BFD118CF991EC3B25B7B4D0F6C; Path=/api/; HttpOnly
+      Via:
+      - 1.1 1dc9ec3cd7c2ae5d76a5d787825f0165.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - stZXi5hk4sOPJ8qg_OuQiGUUg4zvzGiYwkJ9CQMx4PyZnIckFE4A7Q==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10142124'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0r0-H3qIAMF5yA=
+      x-amzn-Remapped-Date:
+      - Sun, 07 Mar 2021 15:37:55 GMT
+      x-amzn-Remapped-Server:
+      - Apache-Coyote/1.1
+      x-amzn-RequestId:
+      - edc9177b-db85-4644-9aa4-d13be4888cf8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: 'null'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: DELETE
+    uri: https://api.culqi.com/v2/orders/ord_test_mpgi4pJYVcpPljv6
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:37:55 GMT
+      Set-Cookie:
+      - JSESSIONID=49770F8D2FC5ECEDE4613AC538A18945; Path=/api/; HttpOnly
+      Via:
+      - 1.1 1dc9ec3cd7c2ae5d76a5d787825f0165.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - pMCBtYQijvt3LRrDOHAENcwBhNpKCD2h2sd5a7JNVHbJvZx1kbJC-Q==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10142125'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0r1FFbmIAMFoPw=
+      x-amzn-Remapped-Date:
+      - Sun, 07 Mar 2021 15:37:55 GMT
+      x-amzn-Remapped-Server:
+      - Apache-Coyote/1.1
+      x-amzn-RequestId:
+      - 7551ef6c-bd34-44c4-a340-b33c95c3cfe1
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: '{"amount": 1000, "currency_code": "PEN", "description": "Venta de prueba",
+      "order_number": "order-230f", "client_details": {"first_name": "Richard", "last_name":
+      "Piedpiper", "email": "richard@piedpiper.com", "phone_number": "+51998989789"},
+      "expiration_date": 1893474000, "confirm": false}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '290'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://api.culqi.com/v2/orders
+  response:
+    body:
+      string: '{"object":"order","id":"ord_test_dp36tlWvKVR8yfqj","amount":1000,"payment_code":null,"currency_code":"PEN","description":"Venta
+        de prueba","order_number":"order-230f","state":"created","total_fee":null,"net_amount":null,"fee_details":null,"creation_date":1615131763,"expiration_date":1893474000,"updated_at":1615131763,"paid_at":null,"available_on":null,"metadata":{}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '368'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:42:43 GMT
+      Set-Cookie:
+      - JSESSIONID=46DD02DD2296E06F34A360E4946A9485; Path=/api/; HttpOnly
+      Via:
+      - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - jB396w3aSD1UckbYEHpugkTP_zrf76gLhFnqmVSkZG2SU1AMm7V8Ow==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10142333'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0siBE3oIAMFgiw=
+      x-amzn-Remapped-Date:
+      - Sun, 07 Mar 2021 15:42:42 GMT
+      x-amzn-Remapped-Server:
+      - Apache-Coyote/1.1
+      x-amzn-RequestId:
+      - c46e5ec8-c9e5-40cb-a10c-8f7b4850c76c
+    status:
+      code: 201
+      message: Created
+- request:
+    body: 'null'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: DELETE
+    uri: https://api.culqi.com/v2/orders/ord_test_dp36tlWvKVR8yfqj
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:42:43 GMT
+      Set-Cookie:
+      - JSESSIONID=1ED1CDA17EDEA512CA9B3353B4D4576A; Path=/api/; HttpOnly
+      Via:
+      - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - EO9bbjIgxKlQ10yB0DOOYxa8VHJ6M2Gvg92ncpilrq5KWvvko1STgg==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-CULQI-ENVIRONMENT:
+      - test
+      X-CULQI-TRACKING-ID:
+      - '10142334'
+      X-CULQI-VERSION:
+      - 2.0.0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0siGFV-oAMFvUg=
+      x-amzn-Remapped-Date:
+      - Sun, 07 Mar 2021 15:42:43 GMT
+      x-amzn-Remapped-Server:
+      - Apache-Coyote/1.1
+      x-amzn-RequestId:
+      - 8d7df469-f183-4bbd-b2c8-5eee2fc8a317
+    status:
+      code: 204
+      message: No Content
+version: 1

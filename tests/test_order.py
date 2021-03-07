@@ -67,30 +67,33 @@ class OrderTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_order_list(self):
-        retrieved_order_list = self.order.list()
+        retrieved_order_list = self.order.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_order_list["data"]
 
     @pytest.mark.vcr()
     def test_order_update(self):
         created_order = self.order.create(data=self.order_data)
 
-        metadatada = {"metadata": self.metadata}
+        metadata = {"metadata": self.metadata}
         updated_order = self.order.update(
-            id_=created_order["data"]["id"], data=metadatada
+            id_=created_order["data"]["id"], data=metadata
         )
 
         assert updated_order["data"]["id"] == created_order["data"]["id"]
         assert updated_order["data"]["metadata"] == self.metadata
 
-    # Failing test: can't delete orders
-    # @pytest.mark.vcr()
-    # def test_order_delete(self):
-    #     created_order = self.order.create(data=self.order_data)
-    #     confirmed_order = self.order.confirm(id_=created_order['data']['id'])
-    #     deleted_order = self.order.delete(id_=confirmed_order["data"]["id"])
-    #     assert deleted_order["data"]["deleted"]
-    #     assert deleted_order["data"]["id"] == created_order["data"]["id"]
-    #     assert deleted_order["status"] == 200
+    @pytest.mark.vcr()
+    def test_order_created_delete(self):
+        created_order = self.order.create(data=self.order_data)
+        # confirmed_order = self.order.confirm(id_=created_order['data']['id'])
+        deleted_order = self.order.delete(id_=created_order["data"]["id"])
+        assert deleted_order["data"] == {}
+        # assert deleted_order["data"]["id"] == created_order["data"]["id"]
+        assert deleted_order["status"] == 204
 
 
 if __name__ == "__main__":

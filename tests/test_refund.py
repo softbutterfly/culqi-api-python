@@ -63,7 +63,11 @@ class RefundTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_refund_list(self):
-        retrieved_refund_list = self.refund.list()
+        retrieved_refund_list = self.refund.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_refund_list["data"]
 
     @pytest.mark.vcr()
@@ -71,9 +75,9 @@ class RefundTest(unittest.TestCase):
         refund_data = self.get_refund_data("successful", "visa")
         created_refund = self.refund.create(data=refund_data)
 
-        metadatada = {"metadata": self.metadata}
+        metadata = {"metadata": self.metadata}
         updated_refund = self.refund.update(
-            id_=created_refund["data"]["id"], data=metadatada
+            id_=created_refund["data"]["id"], data=metadata
         )
 
         assert updated_refund["data"]["id"] == created_refund["data"]["id"]

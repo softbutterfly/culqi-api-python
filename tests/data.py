@@ -1,4 +1,4 @@
-class Data(object):
+class Data:
     CARD = {
         "successful": {
             "visa": {
@@ -120,15 +120,6 @@ class Data(object):
                 "email": "richard@piedpiper.com",
             }
         },
-    }
-
-    CARD["successful"]["visa"] = {
-        "brand": "Visa",
-        "card_number": "4111111111111111",
-        "expiration_month": "09",
-        "expiration_year": "2025",
-        "cvv": "123",
-        "email": "richard@piedpiper.com",
     }
 
     CHARGE = {

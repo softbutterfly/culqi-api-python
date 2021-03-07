@@ -69,7 +69,11 @@ class TokenTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_token_list(self):
-        retrieved_token_list = self.token.list()
+        retrieved_token_list = self.token.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_token_list["data"]
 
     @pytest.mark.vcr()
@@ -77,9 +81,9 @@ class TokenTest(unittest.TestCase):
         token_data = self.get_token_data("successful", "visa")
         created_token = self.token.create(data=token_data)
 
-        metadatada = {"metadata": self.metadata}
+        metadata = {"metadata": self.metadata}
         updated_token = self.token.update(
-            id_=created_token["data"]["id"], data=metadatada
+            id_=created_token["data"]["id"], data=metadata
         )
 
         assert created_token["data"]["id"] == created_token["data"]["id"]

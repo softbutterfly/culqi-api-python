@@ -34,7 +34,11 @@ class IinTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_iin_list(self):
-        retrieved_iin_list = self.iin.list()
+        retrieved_iin_list = self.iin.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_iin_list["data"]
 
     @pytest.mark.vcr()

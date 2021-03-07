@@ -14,6 +14,7 @@ from .data import Data
 
 
 class CardTest(unittest.TestCase):
+    # pylint: disable = too-many-public-methods
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         load_dotenv()
@@ -67,7 +68,11 @@ class CardTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_card_list(self):
-        retrieved_card_list = self.card.list()
+        retrieved_card_list = self.card.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_card_list["data"]
 
     @pytest.mark.vcr()
@@ -75,8 +80,8 @@ class CardTest(unittest.TestCase):
         card_data = self.get_card_data("successful", "visa")
         created_card = self.card.create(data=card_data)
 
-        metadatada = {"metadata": self.metadata}
-        updated_card = self.card.update(id_=created_card["data"]["id"], data=metadatada)
+        metadata = {"metadata": self.metadata}
+        updated_card = self.card.update(id_=created_card["data"]["id"], data=metadata)
 
         assert created_card["data"]["id"] == created_card["data"]["id"]
         assert updated_card["data"]["metadata"] == self.metadata
@@ -187,14 +192,13 @@ class CardTest(unittest.TestCase):
         assert card["data"]["code"] == "card_declined"
         assert card["data"]["decline_code"] == "processing_error"
 
-    # This fail due to Internal server error in Culqi
-    # @pytest.mark.vcr()
-    # def test_card_create__fraudulent__diners_club(self):
-    #     card_data = self.get_card_data(# "fraudulent", "diners_club")
-    #     card = self.card.create(data=card_data)
-    #     assert card["data"]["object"] == "error"
-    #     assert card["data"]["code"] == "card_declined"
-    #     assert card["data"]["decline_code"] == "fraudulent"
+    @pytest.mark.vcr()
+    def test_card_create__fraudulent__diners_club(self):
+        card_data = self.get_card_data("fraudulent", "diners_club")
+        card = self.card.create(data=card_data)
+        assert card["data"]["object"] == "error"
+        assert card["data"]["code"] == "card_declined"
+        assert card["data"]["decline_code"] == "fraudulent"
 
 
 if __name__ == "__main__":

@@ -60,7 +60,7 @@ class TransferTest(unittest.TestCase):
     # Failing test: Request time out
     # @pytest.mark.vcr()
     # def test_transfer_list(self):
-    #     retrieved_transfer_list = self.transfer.list()
+    #     retrieved_transfer_list = self.transfer.list(headers={"Accept-Encoding": "identity",},)
     #     assert "items" in retrieved_transfer_list["data"]
 
 

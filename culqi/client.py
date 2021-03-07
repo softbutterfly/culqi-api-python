@@ -8,6 +8,11 @@ from . import resources
 from .utils import capitalize_camel_case
 from .version import VERSION
 
+__all__ = [
+    "Culqi",
+]
+
+
 RESOURCE_PREFIX = "_resource_"
 RESOURCE_CLASSES = {}
 
@@ -19,7 +24,7 @@ for name, module in resources.__dict__.items():
         RESOURCE_CLASSES[name] = module.__dict__[capitalized_name]
 
 
-class Culqi(object):
+class Culqi:
     def __init__(self, public_key, private_key):
         self.public_key = public_key
         self.private_key = private_key
@@ -66,13 +71,14 @@ class Culqi(object):
         """Dispatch a request to the CULQUI HTTP API."""
         response = getattr(self.session, method)(url, **options)
 
-        data = response.json()
+        if int(response.headers.get("Content-Length", 0)) != 0:
+            data = response.json()
+        else:
+            data = {}
 
         if "data" in data:
             data["items"] = deepcopy(data["data"])
             del data["data"]
-
-        print(data)
 
         return {"status": response.status_code, "data": data}
 

@@ -54,15 +54,19 @@ class PlanTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_plan_list(self):
-        retrieved_plan_list = self.plan.list()
+        retrieved_plan_list = self.plan.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_plan_list["data"]
 
     @pytest.mark.vcr()
     def test_plan_update(self):
         created_plan = self.plan.create(data=self.plan_data)
 
-        metadatada = {"metadata": self.metadata}
-        updated_plan = self.plan.update(id_=created_plan["data"]["id"], data=metadatada)
+        metadata = {"metadata": self.metadata}
+        updated_plan = self.plan.update(id_=created_plan["data"]["id"], data=metadata)
 
         assert created_plan["data"]["id"] == created_plan["data"]["id"]
         assert updated_plan["data"]["metadata"] == self.metadata

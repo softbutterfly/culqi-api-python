@@ -79,16 +79,20 @@ class SubscriptionTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_subscription_list(self):
-        retrieved_subscription_list = self.subscription.list()
+        retrieved_subscription_list = self.subscription.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_subscription_list["data"]
 
     @pytest.mark.vcr()
     def test_subscription_update(self):
         created_subscription = self.subscription.create(data=self.subscription_data)
 
-        metadatada = {"metadata": self.metadata}
+        metadata = {"metadata": self.metadata}
         updated_subscription = self.subscription.update(
-            id_=created_subscription["data"]["id"], data=metadatada
+            id_=created_subscription["data"]["id"], data=metadata
         )
 
         assert created_subscription["data"]["id"] == created_subscription["data"]["id"]

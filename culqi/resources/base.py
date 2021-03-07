@@ -8,7 +8,7 @@ from ..utils.urls import URL
 __all__ = ["Resource"]
 
 
-class Resource(object):
+class Resource:
     endpoint: Union[str, None] = None
     schema: Union[dict, None] = None
 

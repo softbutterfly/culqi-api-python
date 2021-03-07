@@ -1,4 +1,4 @@
-class URL(object):
+class URL:
     BASE = "https://api.culqi.com"
     VERSION = "v2"
 

@@ -49,16 +49,20 @@ class CustomerTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_customer_list(self):
-        retrieved_customer_list = self.customer.list()
+        retrieved_customer_list = self.customer.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_customer_list["data"]
 
     @pytest.mark.vcr()
     def test_customer_update(self):
         created_customer = self.customer.create(data=self.customer_data)
 
-        metadatada = {"metadata": self.metadata}
+        metadata = {"metadata": self.metadata}
         updated_customer = self.customer.update(
-            id_=created_customer["data"]["id"], data=metadatada
+            id_=created_customer["data"]["id"], data=metadata
         )
 
         assert created_customer["data"]["id"] == created_customer["data"]["id"]

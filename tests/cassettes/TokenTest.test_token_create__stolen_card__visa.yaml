@@ -21,16 +21,8 @@ interactions:
     uri: https://secure.culqi.com/v2/tokens
   response:
     body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_yZ0tEP3Q9oXoV9Z6\",\"type\"\
-        :\"card\",\"creation_date\":1589955040000,\"email\":\"richard@piedpiper.com\"\
-        ,\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"\
-        iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\"\
-        :\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER\
-        \ VALLEY C.U.\",\"country\":\"UNITED STATES\",\"country_code\":\"US\",\"website\"\
-        :null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\"\
-        :\"190.237.22.191\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"\
-        browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"\
-        },\"metadata\":{}}"
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_yZ0tEP3Q9oXoV9Z6\",\"type\":\"card\",\"creation_date\":1589955040000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"UNITED STATES\",\"country_code\":\"US\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"190.237.22.191\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
     headers:
       Connection:
       - keep-alive
@@ -58,6 +50,438 @@ interactions:
       - '608'
       x-amzn-RequestId:
       - fef2acf8-5685-4f09-ba5e-664c370ad815
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+      "2025", "cvv": "354", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_XfFlyiEADvj7n99V\",\"type\":\"card\",\"creation_date\":1615072323000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:12:03 GMT
+      Via:
+      - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - A0kNesX9IuGlVg7t7dNQfhFU0mcsfKN5t692nw0NBQeB_biVtfzzRg==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440c42-2560dfc6727fe7815b26ddbd;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - bybaYEXroAMFxCg=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 8e65a394-83ee-4a56-89a5-8e38ad455ccd
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+      "2025", "cvv": "354", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_12qPUnJYrs8Bre3c\",\"type\":\"card\",\"creation_date\":1615072654000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:17:34 GMT
+      Via:
+      - 1.1 1dc9ec3cd7c2ae5d76a5d787825f0165.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - fDyev1LhwWV_znbfgag14gNb69lA47LICFQjbqLlpyRhMLe0rkTzGQ==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440d8e-3dfe1c8a577864bc20fe9ad4;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - bycONFi8oAMFaFg=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 288dd6ce-d290-4459-a658-edd63b093b8a
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+      "2025", "cvv": "354", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_UPJYrHMGVH4RUGks\",\"type\":\"card\",\"creation_date\":1615073018000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:23:38 GMT
+      Via:
+      - 1.1 a26c307f1caab99490ddcc62da38effc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - LslJOI7HaugU_ewj2RykjK1OzEMIijG3KY9aguJA9bVnoy5bLzhYjg==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60440efa-2179fd9c32c62fbe5ec7cc5e;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - bydHGGqUIAMF8nA=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 29078958-4615-4392-a553-c7bdfe22d21e
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+      "2025", "cvv": "354", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_11Z7WgurjtwGUNIe\",\"type\":\"card\",\"creation_date\":1615073366000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 06 Mar 2021 23:29:27 GMT
+      Via:
+      - 1.1 251d722e3d568afacb1911e219d34f4d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - FCMoYfmGfhlN4rRRqXdHVNUsdLpS2SYo9p2ytbmoCWmRItLCw8t5nw==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-60441056-253cc76854fbeb3f57a24ae7;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - byd9gG5OoAMFiGw=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 88756b5e-08e0-412b-9360-d3220ecbb775
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+      "2025", "cvv": "354", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_wUERcjPq5vkMeRrS\",\"type\":\"card\",\"creation_date\":1615121766000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 12:56:06 GMT
+      Via:
+      - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - RO6FA3KBC-XG8R8rgW5z_kzQge9QeGOOwKtC5WtXnRmYHS41N7xQEA==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044cd65-58336c312c265ad1225d92f4;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0UH6HH_IAMFjZw=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - ab63dfed-575d-4ca8-84ee-31210634577d
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+      "2025", "cvv": "354", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_XBlFIEUMBvwfstHg\",\"type\":\"card\",\"creation_date\":1615123752000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 13:29:12 GMT
+      Via:
+      - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - hidW8nM-VzxqGVf8u-cv9nL48SFVbvhnDS9UkDwqvrvs6lzSSGTyhw==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044d527-24bbceaa7ae835043b0bbd13;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0Y-OGUloAMFktQ=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - e8a6bc75-b922-48de-a06e-f25e208dbe19
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+      "2025", "cvv": "354", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_fzxLAAQTwTapKOi4\",\"type\":\"card\",\"creation_date\":1615129750000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:09:10 GMT
+      Via:
+      - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 2u1zraZ47pSL2HI10jjTUZQtDYSsKDjXZEFMo5jvBFz65uEBacT-kA==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044ec95-27fa0ee623f4c28975cbb242;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0nncEYyIAMF1lA=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - 9101bb79-93ab-4e88-b85f-b2d4069f304d
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+      "2025", "cvv": "354", "email": "richard@piedpiper.com"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer culiq_api_key
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '136'
+      Content-type:
+      - application/json
+      User-Agent:
+      - Culqi-API-Python/1.0.0
+    method: POST
+    uri: https://secure.culqi.com/v2/tokens
+  response:
+    body:
+      string: "{\"object\":\"token\",\"id\":\"tkn_test_bJ0d7ttuYG2iQWo1\",\"type\":\"card\",\"creation_date\":1615131860000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - UTF-8
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 07 Mar 2021 15:44:21 GMT
+      Via:
+      - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - KMMJ2Nk7Sw7G_qfATbToy8MJ0ytY16utvmThMV5ESboHTKQ9u7iEaQ==
+      X-Amz-Cf-Pop:
+      - SCL50-C1
+      X-Amzn-Trace-Id:
+      - Root=1-6044f4d4-47acee040f3a59733ffd7c36;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - b0sxNEtDIAMF8ww=
+      x-amzn-Remapped-Content-Length:
+      - '598'
+      x-amzn-RequestId:
+      - ba37e20e-1c2c-4dd0-8f41-ae92dfc11b75
     status:
       code: 201
       message: Created

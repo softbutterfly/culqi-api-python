@@ -36,7 +36,11 @@ class EventTest(unittest.TestCase):
 
     @pytest.mark.vcr()
     def test_event_list(self):
-        retrieved_event_list = self.event.list()
+        retrieved_event_list = self.event.list(
+            headers={
+                "Accept-Encoding": "identity",
+            },
+        )
         assert "items" in retrieved_event_list["data"]
 
     @pytest.mark.vcr()
