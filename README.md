@@ -1,4 +1,4 @@
-![Community project](./resources/softbutterfly-open-source-community-project.png)
+![Community project](https://raw.githubusercontent.com/softbutterfly/culqi-api-python/master/resources/softbutterfly-open-source-community-project.png)
 
 ![PyPI - Supported versions](https://img.shields.io/pypi/pyversions/culqi-api-python)
 ![PyPI - Package version](https://img.shields.io/pypi/v/culqi-api-python)
@@ -26,7 +26,7 @@ Biblioteca de CULQI para el lenguaje Python, pagos simples en tu sitio web.
 pip install culqi-api-python
 ```
 
-![Sample](resources/carbon.png)
+![Sample](https://raw.githubusercontent.com/softbutterfly/culqi-api-python/master/resources/carbon.png)
 
 Cada metodo retona un diccionario con la estructura
 
@@ -49,10 +49,16 @@ realiza al API de Culqi, y `data` contiene el cuerpo de la respuesta obtenida.
 ## Changelog
 
 Todos los cambios en las versiones de esta biblioteca están listados en
-[CHANGELOG.md](CHANGELOG.md).
+el [historial de cambios](CHANGELOG.md).
 
 ## Desarrollo
 
-[Revisa nuestra guia de contribución](CONTRIBUTING.md)
+Revisa nuestra [guia de contribución](CONTRIBUTING.md)
 
 ## Contribuidores
+
+Mira la lista de contribuidores [aquí](https://github.com/softbutterfly/culqi-api-python/graphs/contributors).
+
+## Historia...
+
+La libreria de Culqi para Python inicio su desarrollo en enero del 2017, d ela mano de [@william-muro-culqi](https://github.com/william-muro-culqi) y [@marti1125](https://github.com/marti1125), posteriorme [@brayancruces](https://github.com/brayancruces), [@KhanMaytok](https://github.com/KhanMaytok) y [@oskargicast](https://github.com/oskargicast) complementaron el trabajo incial y mantiuvieron la libreria estable hasta mediados de 2019. En enero del 2020 [@zodiacfireworks](https://github.com/zodiacfireworks) hace una refactorizacion completa de la libreria, estos cambios son aprobados y mejorados por [@joelibaceta](https://github.com/joelibaceta). Con estos cambios se publicaron las versiones 1.0.0, 1.0.1, 1.0.2 y 1.0.3 de la libreria. [@zodiacfireworks](https://github.com/zodiacfireworks) envió más cambios para corregir algunos errores de empaquetamiento, lamentablemente, tras mas de un año de haber sido enviados, no se publicaron a traves del canal oficial, por este motivo es que en [@SoftButterfly](https://github.com/softbutterfly) hemos tomado la iniciativa publicar esta libreria, compatible con la original, con los cambios que no llegaron a publicarse y otras mejoras que se pueden ver en el [historial de cambios](https://github.com/softbutterfly/culqi-api-python/blob/master/CHANGELOG.md). Con el fin de respetar el trabajo de quienes participaron del desarrollo de esta libreria en el repositorio focial de Culqi, el historial original de contribuciones se ha mantenido en este repositorio.
