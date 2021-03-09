@@ -1,479 +1,488 @@
 interactions:
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_SgloOKdVvVG3POKz","type":"card","creation_date":1589955039000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"NICARAGUA","country_code":"NI","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '581'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 06:10:39 GMT
-      Via:
-      - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 9NI1dyyuIQM6BHzun12GH6hi5fCpIJ988mwlVUdMCkXPV-oiNCZukQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c9df-a2acc5ad0460ef30fb3d64c7;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - M0R63F7PoAMFnsw=
-      x-amzn-Remapped-Content-Length:
-      - '581'
-      x-amzn-RequestId:
-      - 668a4db1-ea4f-449a-9501-163d00232f7a
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_1Ysn2YOJKldgjGoQ","type":"card","creation_date":1615072320000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:12:01 GMT
-      Via:
-      - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - TzgP2uUczMLDD5kEqnK0Gcj51AkeJrZupeCEo8AFKyuW1P18tLduoQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c40-622410331b837a2850965936;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybaHEbOIAMFQrg=
-      x-amzn-Remapped-Content-Length:
-      - '575'
-      x-amzn-RequestId:
-      - 07f64d3a-79c4-4296-ad18-5d5169859943
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_0HJWIGpGRGtVaGeM","type":"card","creation_date":1615072653000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:17:33 GMT
-      Via:
-      - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 1-nFWtEqjovKrQCUEwTquYPgoBlGCMp4GW8rLqSSeMT7dBqpiAkqag==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440d8c-061f31c32280e7e06b6ee5c3;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycOCEJmIAMFR7A=
-      x-amzn-Remapped-Content-Length:
-      - '575'
-      x-amzn-RequestId:
-      - 146d8864-64e5-47ab-bdae-3a7a8faf1847
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_U1mQfqgG79vhGqTa","type":"card","creation_date":1615073016000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:23:37 GMT
-      Via:
-      - 1.1 76c5d392ef84c77d3b4f4a4ef8f367b3.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - hrBYXcTrGV82HKhHfw0RFfTpz8MM2RkWyBlfEIZNg4MshtUs2oP2IQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440ef8-5a06255501d2090d100133b9;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydG3G_qoAMF-Mw=
-      x-amzn-Remapped-Content-Length:
-      - '575'
-      x-amzn-RequestId:
-      - a4ebd88e-9d79-434f-8e4b-92bf17de8e3f
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_sTbs0ZRahuGwMWSC","type":"card","creation_date":1615073365000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:29:25 GMT
-      Via:
-      - 1.1 fd261d7f0b1b36c094af45d7484bb70d.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - g1IHixUZko6BcZV1VRlvWHitn8L7lIdUB4cR5TC1ObU0A0aCK_VD0Q==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60441055-24dec5902910a5874cc91e22;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byd9UHIioAMFtRg=
-      x-amzn-Remapped-Content-Length:
-      - '575'
-      x-amzn-RequestId:
-      - b24f957e-5e9d-4257-8919-ec8e8a40d5d8
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_yfI7qJmmSaW5bG0O","type":"card","creation_date":1615121764000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:56:05 GMT
-      Via:
-      - 1.1 c07bfe3e13ab3d2465e47a18f1dbb562.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 0T7xwizdoIuEZ13zp6It9b3nIjmiBGbcfdSK7Rldo6QiH2scvyHvSA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cd64-6eed1a3428a4125678cd5bcc;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0UHsFlCIAMFecQ=
-      x-amzn-Remapped-Content-Length:
-      - '575'
-      x-amzn-RequestId:
-      - 49ab9642-2ae4-4b76-87cc-719f0ce3e6f8
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_YrH2MSzsDQKBxiIX","type":"card","creation_date":1615123750000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:29:11 GMT
-      Via:
-      - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 5qMpxTCAd0s_s-zr0_bkgoUYnC62z3WAgs9cWnB7pabx4c3r_A2wtg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d526-18f9c4d47d5bbc5f3d5d2f46;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0Y-AEBmIAMFuFA=
-      x-amzn-Remapped-Content-Length:
-      - '575'
-      x-amzn-RequestId:
-      - 10d0c5b4-f12d-4d9f-9a97-87404be41d61
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_Cu3WDfkypHY4pYkK","type":"card","creation_date":1615129743000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:09:03 GMT
-      Via:
-      - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 0FWIqZWUfBm2qcn4FKnj-crsQpRRTmDLTtZY5R7f52pqkpEdXPSRxA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044ec8f-50ee291730c495527a0a4926;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0nmZH0mIAMF4yg=
-      x-amzn-Remapped-Content-Length:
-      - '575'
-      x-amzn-RequestId:
-      - 75080899-5aff-4643-97e5-5d0fa176a64e
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
-      "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_FZJm5a5xMKKLa6zX","type":"card","creation_date":1615131859000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:44:19 GMT
-      Via:
-      - 1.1 04b2cb6b035c01f2b6ab3f2237a50885.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - EY4W1-GaYlr0Sq7k6z7WwmWqEyNmA9bi0O0lGszQuIX9jkJk2AbIHA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f4d2-3921b9870b7d2ca86b578ceb;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0sw8HanoAMFnIg=
-      x-amzn-Remapped-Content-Length:
-      - '575'
-      x-amzn-RequestId:
-      - a568b88c-fc73-4195-86fb-eb23cc130348
-    status:
-      code: 201
-      message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_SgloOKdVvVG3POKz","type":"card","creation_date":1589955039000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"NICARAGUA","country_code":"NI","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "581"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 06:10:39 GMT
+        Via:
+          - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 9NI1dyyuIQM6BHzun12GH6hi5fCpIJ988mwlVUdMCkXPV-oiNCZukQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c9df-a2acc5ad0460ef30fb3d64c7;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - M0R63F7PoAMFnsw=
+        x-amzn-Remapped-Content-Length:
+          - "581"
+        x-amzn-RequestId:
+          - 668a4db1-ea4f-449a-9501-163d00232f7a
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_1Ysn2YOJKldgjGoQ","type":"card","creation_date":1615072320000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "575"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:12:01 GMT
+        Via:
+          - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - TzgP2uUczMLDD5kEqnK0Gcj51AkeJrZupeCEo8AFKyuW1P18tLduoQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c40-622410331b837a2850965936;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybaHEbOIAMFQrg=
+        x-amzn-Remapped-Content-Length:
+          - "575"
+        x-amzn-RequestId:
+          - 07f64d3a-79c4-4296-ad18-5d5169859943
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_0HJWIGpGRGtVaGeM","type":"card","creation_date":1615072653000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "575"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:17:33 GMT
+        Via:
+          - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 1-nFWtEqjovKrQCUEwTquYPgoBlGCMp4GW8rLqSSeMT7dBqpiAkqag==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440d8c-061f31c32280e7e06b6ee5c3;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycOCEJmIAMFR7A=
+        x-amzn-Remapped-Content-Length:
+          - "575"
+        x-amzn-RequestId:
+          - 146d8864-64e5-47ab-bdae-3a7a8faf1847
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_U1mQfqgG79vhGqTa","type":"card","creation_date":1615073016000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "575"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:23:37 GMT
+        Via:
+          - 1.1 76c5d392ef84c77d3b4f4a4ef8f367b3.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - hrBYXcTrGV82HKhHfw0RFfTpz8MM2RkWyBlfEIZNg4MshtUs2oP2IQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440ef8-5a06255501d2090d100133b9;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydG3G_qoAMF-Mw=
+        x-amzn-Remapped-Content-Length:
+          - "575"
+        x-amzn-RequestId:
+          - a4ebd88e-9d79-434f-8e4b-92bf17de8e3f
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_sTbs0ZRahuGwMWSC","type":"card","creation_date":1615073365000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "575"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:29:25 GMT
+        Via:
+          - 1.1 fd261d7f0b1b36c094af45d7484bb70d.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - g1IHixUZko6BcZV1VRlvWHitn8L7lIdUB4cR5TC1ObU0A0aCK_VD0Q==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60441055-24dec5902910a5874cc91e22;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byd9UHIioAMFtRg=
+        x-amzn-Remapped-Content-Length:
+          - "575"
+        x-amzn-RequestId:
+          - b24f957e-5e9d-4257-8919-ec8e8a40d5d8
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_yfI7qJmmSaW5bG0O","type":"card","creation_date":1615121764000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "575"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:56:05 GMT
+        Via:
+          - 1.1 c07bfe3e13ab3d2465e47a18f1dbb562.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 0T7xwizdoIuEZ13zp6It9b3nIjmiBGbcfdSK7Rldo6QiH2scvyHvSA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cd64-6eed1a3428a4125678cd5bcc;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0UHsFlCIAMFecQ=
+        x-amzn-Remapped-Content-Length:
+          - "575"
+        x-amzn-RequestId:
+          - 49ab9642-2ae4-4b76-87cc-719f0ce3e6f8
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_YrH2MSzsDQKBxiIX","type":"card","creation_date":1615123750000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "575"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:29:11 GMT
+        Via:
+          - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 5qMpxTCAd0s_s-zr0_bkgoUYnC62z3WAgs9cWnB7pabx4c3r_A2wtg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d526-18f9c4d47d5bbc5f3d5d2f46;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0Y-AEBmIAMFuFA=
+        x-amzn-Remapped-Content-Length:
+          - "575"
+        x-amzn-RequestId:
+          - 10d0c5b4-f12d-4d9f-9a97-87404be41d61
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_Cu3WDfkypHY4pYkK","type":"card","creation_date":1615129743000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "575"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:09:03 GMT
+        Via:
+          - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 0FWIqZWUfBm2qcn4FKnj-crsQpRRTmDLTtZY5R7f52pqkpEdXPSRxA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044ec8f-50ee291730c495527a0a4926;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0nmZH0mIAMF4yg=
+        x-amzn-Remapped-Content-Length:
+          - "575"
+        x-amzn-RequestId:
+          - 75080899-5aff-4643-97e5-5d0fa176a64e
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36000100000007", "expiration_month": "12", "expiration_year":
+        "2025", "cvv": "820", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: '{"object":"token","id":"tkn_test_FZJm5a5xMKKLa6zX","type":"card","creation_date":1615131859000,"email":"richard@piedpiper.com","card_number":"360001****0007","last_four":"0007","active":true,"iin":{"object":"iin","bin":"360001","card_brand":"Diners","card_type":"credito","card_category":null,"issuer":{"name":"","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "575"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:44:19 GMT
+        Via:
+          - 1.1 04b2cb6b035c01f2b6ab3f2237a50885.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - EY4W1-GaYlr0Sq7k6z7WwmWqEyNmA9bi0O0lGszQuIX9jkJk2AbIHA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f4d2-3921b9870b7d2ca86b578ceb;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0sw8HanoAMFnIg=
+        x-amzn-Remapped-Content-Length:
+          - "575"
+        x-amzn-RequestId:
+          - a568b88c-fc73-4195-86fb-eb23cc130348
+      status:
+        code: 201
+        message: Created
 version: 1

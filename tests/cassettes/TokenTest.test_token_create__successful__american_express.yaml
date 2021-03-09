@@ -1,488 +1,506 @@
 interactions:
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_ZAUyPURqxtiODzE4","type":"card","creation_date":1589955041000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"UNITED STATES","country_code":"US","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '608'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 06:10:42 GMT
-      Via:
-      - 1.1 9c07f09e84d67c7e2eff177190d321f6.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 3qwKJO4BYgsTRkJppi1cijto735uh8PdAGho7fkKyggUTEPMOSNh2w==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c9e1-af6832682fc5b3a55e72f05d;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - M0R7SHitoAMF-HQ=
-      x-amzn-Remapped-Content-Length:
-      - '608'
-      x-amzn-RequestId:
-      - b2b482ca-207a-4614-9bf8-7a4c312fc816
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_YGBdTagRx8ck06Bt","type":"card","creation_date":1615072324000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:12:05 GMT
-      Via:
-      - 1.1 04b2cb6b035c01f2b6ab3f2237a50885.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - ni1n2Kh1WfmxgneFfd8lIpMAmQhQ_6qhY7GLQPSTu_Na53rp9xFpjQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c44-474b4d0d7f7b13100372d2a6;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybasHRLoAMF5bw=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - bec2ed9f-502a-49b1-aba2-646f9cba39c5
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_XEu7xS38KBM0misC","type":"card","creation_date":1615072655000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:17:36 GMT
-      Via:
-      - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - nR_5BrgQcu2NwJz9rpyfo0MduzZ-UBriGPQmkhAro-iwdOgwRyJJuw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440d8f-2597cd527307cd8a00a60d6d;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycOcGI3IAMFncQ=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 247d2b68-5aeb-4fb1-b400-1ce6624c8c16
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_3ShaXW9NyV3MkEgK","type":"card","creation_date":1615073019000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:23:39 GMT
-      Via:
-      - 1.1 04b2cb6b035c01f2b6ab3f2237a50885.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - xS9FO2wFJ8_UDAxYXSBAPG9xkRosE0fi14uEPZ1mei9xkimNIO3Uew==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440efb-518afa401ebee03d2cc65243;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydHSGVioAMF1sg=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 2b25ea04-0e56-43c4-84b8-e26ea40ef769
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_GpN7esQYBWm9r0PI","type":"card","creation_date":1615073367000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:29:28 GMT
-      Via:
-      - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - yFvfjmdW2WevG-tF5n1rbCLsrIFovE4KVUMYVmo71a3F72mCUw6iVw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60441057-207fac1c4b8e222e1a62b0a4;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byd9uFBiIAMFcdg=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 584e0823-8069-4a88-9617-70b024df8e14
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_ORGacOw6iA4vOzWm","type":"card","creation_date":1615121767000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:56:08 GMT
-      Via:
-      - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 8Qk2omvsKSCv-fLb37d1baQ7ZGOV5QPxFjcqS16eRS0gc_n2775qlw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cd67-4f62b6a832a0170c1d604bd6;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0UIJEeIoAMFRzQ=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 3e0c7804-21fd-47bd-978f-b0345266e08b
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_luMBd6tsIwFx1utQ","type":"card","creation_date":1615123753000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:29:14 GMT
-      Via:
-      - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 3u1BiVttMIIeeY8zheOHmORlIHRT1T0SVZ20s_-B1QKPZl-Zd3VYoQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d528-49fde9d14eb4e3b314d0c179;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0Y-ZHKLIAMFpHw=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 6a8cfeca-de44-4f37-9af6-71f053e6a293
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_kywS6xdAwnfAVVnH","type":"card","creation_date":1615129751000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:09:11 GMT
-      Via:
-      - 1.1 fd7441fafdf8d6a01b5f14f818907820.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - vGMXVCsb93Q3UI7gwsMzLzYQwFAby6jJotUle18iCrDjTnjQ3ANmiA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044ec97-7e84caef102f6d120ef1710a;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0nnoGCtoAMFfaA=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - e6107624-1082-45db-8753-8154740b6948
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
-      "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_eeo617IuRzLOVGCB","type":"card","creation_date":1615131862000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
-        EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:44:22 GMT
-      Via:
-      - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - YdBxc3mJT9aRjoR8f91MfeX2mzZUeKTIcG7AHcrUklLC1dV2hrGNsQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f4d5-27c738982b3fbd91762f1c2c;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0sxbFlIIAMF0HA=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 3dac3eb4-a18d-4d48-a3cf-d763c56f81ff
-    status:
-      code: 201
-      message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_ZAUyPURqxtiODzE4","type":"card","creation_date":1589955041000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"UNITED STATES","country_code":"US","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "608"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 06:10:42 GMT
+        Via:
+          - 1.1 9c07f09e84d67c7e2eff177190d321f6.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 3qwKJO4BYgsTRkJppi1cijto735uh8PdAGho7fkKyggUTEPMOSNh2w==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c9e1-af6832682fc5b3a55e72f05d;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - M0R7SHitoAMF-HQ=
+        x-amzn-Remapped-Content-Length:
+          - "608"
+        x-amzn-RequestId:
+          - b2b482ca-207a-4614-9bf8-7a4c312fc816
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_YGBdTagRx8ck06Bt","type":"card","creation_date":1615072324000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:12:05 GMT
+        Via:
+          - 1.1 04b2cb6b035c01f2b6ab3f2237a50885.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - ni1n2Kh1WfmxgneFfd8lIpMAmQhQ_6qhY7GLQPSTu_Na53rp9xFpjQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c44-474b4d0d7f7b13100372d2a6;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybasHRLoAMF5bw=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - bec2ed9f-502a-49b1-aba2-646f9cba39c5
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_XEu7xS38KBM0misC","type":"card","creation_date":1615072655000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:17:36 GMT
+        Via:
+          - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - nR_5BrgQcu2NwJz9rpyfo0MduzZ-UBriGPQmkhAro-iwdOgwRyJJuw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440d8f-2597cd527307cd8a00a60d6d;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycOcGI3IAMFncQ=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 247d2b68-5aeb-4fb1-b400-1ce6624c8c16
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_3ShaXW9NyV3MkEgK","type":"card","creation_date":1615073019000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:23:39 GMT
+        Via:
+          - 1.1 04b2cb6b035c01f2b6ab3f2237a50885.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - xS9FO2wFJ8_UDAxYXSBAPG9xkRosE0fi14uEPZ1mei9xkimNIO3Uew==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440efb-518afa401ebee03d2cc65243;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydHSGVioAMF1sg=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 2b25ea04-0e56-43c4-84b8-e26ea40ef769
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_GpN7esQYBWm9r0PI","type":"card","creation_date":1615073367000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:29:28 GMT
+        Via:
+          - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - yFvfjmdW2WevG-tF5n1rbCLsrIFovE4KVUMYVmo71a3F72mCUw6iVw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60441057-207fac1c4b8e222e1a62b0a4;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byd9uFBiIAMFcdg=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 584e0823-8069-4a88-9617-70b024df8e14
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_ORGacOw6iA4vOzWm","type":"card","creation_date":1615121767000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:56:08 GMT
+        Via:
+          - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 8Qk2omvsKSCv-fLb37d1baQ7ZGOV5QPxFjcqS16eRS0gc_n2775qlw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cd67-4f62b6a832a0170c1d604bd6;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0UIJEeIoAMFRzQ=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 3e0c7804-21fd-47bd-978f-b0345266e08b
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_luMBd6tsIwFx1utQ","type":"card","creation_date":1615123753000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:29:14 GMT
+        Via:
+          - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 3u1BiVttMIIeeY8zheOHmORlIHRT1T0SVZ20s_-B1QKPZl-Zd3VYoQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d528-49fde9d14eb4e3b314d0c179;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0Y-ZHKLIAMFpHw=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 6a8cfeca-de44-4f37-9af6-71f053e6a293
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_kywS6xdAwnfAVVnH","type":"card","creation_date":1615129751000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:09:11 GMT
+        Via:
+          - 1.1 fd7441fafdf8d6a01b5f14f818907820.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - vGMXVCsb93Q3UI7gwsMzLzYQwFAby6jJotUle18iCrDjTnjQ3ANmiA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044ec97-7e84caef102f6d120ef1710a;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0nnoGCtoAMFfaA=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - e6107624-1082-45db-8753-8154740b6948
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "371212121212122", "expiration_month": "11", "expiration_year":
+        "2025", "cvv": "2841", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_eeo617IuRzLOVGCB","type":"card","creation_date":1615131862000,"email":"richard@piedpiper.com","card_number":"371212*****2122","last_four":"2122","active":true,"iin":{"object":"iin","bin":"371212","card_brand":"Amex","card_type":"credito","card_category":null,"issuer":{"name":"AMERICAN
+          EXPRESS COMPANY","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:44:22 GMT
+        Via:
+          - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - YdBxc3mJT9aRjoR8f91MfeX2mzZUeKTIcG7AHcrUklLC1dV2hrGNsQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f4d5-27c738982b3fbd91762f1c2c;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0sxbFlIIAMF0HA=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 3dac3eb4-a18d-4d48-a3cf-d763c56f81ff
+      status:
+        code: 201
+        message: Created
 version: 1

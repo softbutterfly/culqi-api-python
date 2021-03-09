@@ -1,983 +1,992 @@
 interactions:
-- request:
-    body: '{"cvv": "123", "card_number": "4111111111111111", "expiration_year": "2025",
-      "expiration_month": "09", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_BXaKlPBLZf1u3zHq\",\"type\":\"card\",\"creation_date\":1589341169000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"190.237.22.191\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '613'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 13 May 2020 03:39:30 GMT
-      Via:
-      - 1.1 f4501d5df124eb2fa5d33f712e78d418.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - xAHPYQS9ETuVFtzicVUuRMGMvRQro4zX7rsOpSfrLV3-SN7HXkCm9g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ebb6bf1-b86d32909ccc079c14b4971c;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - Mc3NyFgxIAMF8gg=
-      x-amzn-Remapped-Content-Length:
-      - '613'
-      x-amzn-RequestId:
-      - 057d09ea-1348-4205-af3c-0cec48c01f9a
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_BXaKlPBLZf1u3zHq
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_BXaKlPBLZf1u3zHq\",\"type\":\"card\",\"creation_date\":1589341169000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"190.237.22.191\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '613'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 13 May 2020 03:39:30 GMT
-      Set-Cookie:
-      - JSESSIONID=60653099CB71E3754389EC54AE9E8B9C; Path=/api/; HttpOnly
-      Via:
-      - 1.1 2509c279ef82edf811c5e24c01e81d3b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - LsNppomIVMOYklQyNOoDH4WK1qNsnJZfHQoyDDzYbtS5hbCHMfcKww==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '6892604'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - Mc3N8E3TIAMF5LA=
-      x-amzn-Remapped-Date:
-      - Wed, 13 May 2020 03:39:30 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - 4dfb4cb7-70d7-4399-9257-b3c42fea51b1
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
-      "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_t2KhtU1dh4pLRAEE\",\"type\":\"card\",\"creation_date\":1615072342000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:12:23 GMT
-      Via:
-      - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - ebndXhO2wkMmuYoycejv7q1N53apL9if4QYiaJq7Cu1CbscfNY5TDA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c55-1808f1912477e287515298c7;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybdcGgFIAMFqYw=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - 6bf050e5-4513-4e5d-8d4a-054cc9d949f4
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_t2KhtU1dh4pLRAEE
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_t2KhtU1dh4pLRAEE\",\"type\":\"card\",\"creation_date\":1615072342000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:12:24 GMT
-      Set-Cookie:
-      - JSESSIONID=6BCBC1888CC475EDC47E5D2F01493DD8; Path=/api/; HttpOnly
-      Via:
-      - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - DeiIWp3ReHDQtwwe1BfudntJQ35RyLAzgQkSQeJofVGZrDQ19368LQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10137769'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybd0HhCIAMF8Ww=
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:12:23 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - 6a165283-9cd4-4ad0-82f4-f93e4b25b1ab
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
-      "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_J7PJmv60W1m9KEW8\",\"type\":\"card\",\"creation_date\":1615072667000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:17:47 GMT
-      Via:
-      - 1.1 b37cc7ef8dedff2c0260690fd3934220.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 0wMfMTJbirad69t6ImkoAleak5edwK1ysufmLYPJxnJ5C_1_AVT1YQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440d9a-556e87a1628b28001d6b44bc;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycQOEt1IAMFUFg=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - 392e4199-c2f7-4a75-83f5-9521f0c2a919
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_J7PJmv60W1m9KEW8
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_J7PJmv60W1m9KEW8\",\"type\":\"card\",\"creation_date\":1615072667000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:17:49 GMT
-      Set-Cookie:
-      - JSESSIONID=2A7ED92BB8E1907C6ABC4295426BFF6D; Path=/api/; HttpOnly
-      Via:
-      - 1.1 5e8f5005b2ffddfbe47e54d30a874656.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - gdiDZWLlCOymMLjomrgMivR0EDjG9N8dI0i8VmCI2QVC_26Hc4nktA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138009'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycQhHvioAMF7nA=
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:17:49 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - 351a9500-b4ed-4c43-88c8-f8ef533f2d10
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
-      "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_vA413fDuHAFXScnn\",\"type\":\"card\",\"creation_date\":1615073030000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:23:51 GMT
-      Via:
-      - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - YrzJjKn22rAe4LrbuHHiwVBdb7VAdmrXBdB-G4TNPrmtq0FryMhLyQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440f06-4d434b242d4824f301d1eca6;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydJBHCzoAMF2XQ=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - 493307bd-7872-49f4-9f26-269317d4d8a6
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_vA413fDuHAFXScnn
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_vA413fDuHAFXScnn\",\"type\":\"card\",\"creation_date\":1615073030000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:23:51 GMT
-      Set-Cookie:
-      - JSESSIONID=F4029F422FB7E8C6286F3AA4BB432508; Path=/api/; HttpOnly
-      Via:
-      - 1.1 26f91e7f8d889236c7aca45d5961081e.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - GFrp6WswIA8RD67Rd5e6NInoAa052zY3d5J9UHBt8Npiw4jELHd9SA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138243'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydJMGLwoAMFmzw=
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:23:51 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - 048ba205-daaa-413c-9bd1-3f5042e4232e
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
-      "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_lKkmHXkoJCw48h7Q\",\"type\":\"card\",\"creation_date\":1615073379000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:29:39 GMT
-      Via:
-      - 1.1 488bd882973f218b61aacda0ee63106f.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - GT764wayV8G_ChN8TxnCsV4N-KGQQBD_mQWX77Oma_Y_OwCYB22k0Q==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60441062-1cd35ae5250731986a4ca035;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byd_cHspIAMF0wg=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - 2193f13a-99c1-40fa-8e1c-0dc6c5e7f91c
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_lKkmHXkoJCw48h7Q
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_lKkmHXkoJCw48h7Q\",\"type\":\"card\",\"creation_date\":1615073379000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:29:40 GMT
-      Set-Cookie:
-      - JSESSIONID=B5AFA97D2453071BA413285A079F5785; Path=/api/; HttpOnly
-      Via:
-      - 1.1 42f50de03fc388e1ae7e52e9547df903.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Lac0I1-ZYGx7x4UtftLWSqsPXaCASsuajX6t_bWsvc0Bd19O-kn92w==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138460'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byd_sETboAMFpGg=
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:29:40 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - d21c2d77-9610-4d5b-b4b9-0d77f8d8b127
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
-      "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_d9UIDb25kXfoD3Se\",\"type\":\"card\",\"creation_date\":1615121778000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:56:18 GMT
-      Via:
-      - 1.1 72f61d7588953b12c687a6cea57ac5c5.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - N0OStIEofXaON0RBH_nsdNQ5WArgb3bXMtO5JfF7DSa0Fx6JdxdVJA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cd71-06fb990b67e3105a014109db;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0UJzFIHoAMFo2g=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - 26fee101-702d-4b9a-83fc-b437dceb505e
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_d9UIDb25kXfoD3Se
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_d9UIDb25kXfoD3Se\",\"type\":\"card\",\"creation_date\":1615121778000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:56:19 GMT
-      Set-Cookie:
-      - JSESSIONID=94D985CB0C72BAB28DA6FCBE8A5ACE7B; Path=/api/; HttpOnly
-      Via:
-      - 1.1 a6694d5ca059a1b8b902a7765e513e5c.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - zvx-auNOG9jx6B46zowIpSmCufgkUTHOULNfBpF1Hm18vGKo6Feo4A==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10141110'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0UKEHnLoAMFRJQ=
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 12:56:19 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - f2119ab9-3910-49d4-b6ae-34aa70760732
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
-      "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_APUlZ2x4K17fq1GO\",\"type\":\"card\",\"creation_date\":1615123764000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:29:24 GMT
-      Via:
-      - 1.1 fd261d7f0b1b36c094af45d7484bb70d.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - RMXV_mtVxLdQaZZwJVU5VVhLdP6nVz-9WimsDTTakAtBKzCFqr8fBQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d533-33af1e0434a65259715175aa;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0ZAGFhdIAMFwxA=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - e809dbf2-c6ce-435a-af04-617b490a79d9
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_APUlZ2x4K17fq1GO
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_APUlZ2x4K17fq1GO\",\"type\":\"card\",\"creation_date\":1615123764000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:29:25 GMT
-      Set-Cookie:
-      - JSESSIONID=ECBEBEF5AFA974E37166C30FCA9949A2; Path=/api/; HttpOnly
-      Via:
-      - 1.1 42f50de03fc388e1ae7e52e9547df903.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - RMqJYEmRAB1ffRBtezkMSEtHmIqnBDQ5F4LsHXRibUgR_Pyrv9-kWQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10141411'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0ZAREvooAMF5Tg=
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 13:29:24 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - 550aad71-b960-4dd2-b29b-33321735c4ad
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
-      "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_HSrFsWSabZPfwetA\",\"type\":\"card\",\"creation_date\":1615129762000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:09:23 GMT
-      Via:
-      - 1.1 d083f48319163c88d60fbeb2218dbf65.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - myc7DmwtlEyR2dAdX1dijISgch8K4afBEs8vA_lpGTIwWu-97SglGA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044eca2-3df6cec432023e195342ee34;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0npZFkvIAMFd0Q=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - a374e12e-e781-4b71-a25f-0eb0f174cf43
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_HSrFsWSabZPfwetA
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_HSrFsWSabZPfwetA\",\"type\":\"card\",\"creation_date\":1615129762000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:09:24 GMT
-      Set-Cookie:
-      - JSESSIONID=B15AB3200C89770B6F1782EB714FEAD3; Path=/api/; HttpOnly
-      Via:
-      - 1.1 1c66d149957c72960a1113727d42d47c.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - IGqgIN-shlgvQ7B6onhid64_vuSiBJbQKKlL-oPur4eSOtd998TW2w==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10142056'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0npoFfPIAMFxCg=
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 15:09:23 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - 1544282d-9630-4603-8252-fb8b532e3579
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
-      "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_SlPt0YtMQVeIJVFv\",\"type\":\"card\",\"creation_date\":1615131872000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:44:32 GMT
-      Via:
-      - 1.1 92ba29cedd0d1df680527e0b728cdc51.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - -W2pLC6ISTvBkDx05gNwR_XClxrmN8wx3t9cdN_CJYkwFjvRQcGJGA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f4df-01ee6d2c151b040c4b1f318d;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0sy-GHqoAMFXUw=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - 7da51c01-5555-43aa-a172-23f869b53d55
-    status:
-      code: 201
-      message: Created
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: GET
-    uri: https://api.culqi.com/v2/tokens/tkn_test_SlPt0YtMQVeIJVFv
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_SlPt0YtMQVeIJVFv\",\"type\":\"card\",\"creation_date\":1615131872000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:44:33 GMT
-      Set-Cookie:
-      - JSESSIONID=7EB0D5C1265C26E50184D1B87C12D058; Path=/api/; HttpOnly
-      Via:
-      - 1.1 92ba29cedd0d1df680527e0b728cdc51.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - o8NRhX1lWts5BwHHY8-BxZGM2BARZMVFPPVG3q_UYXt6Fwx1bWVKKw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10142414'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0szPGm_IAMF1NA=
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 15:44:33 GMT
-      x-amzn-Remapped-Server:
-      - Apache-Coyote/1.1
-      x-amzn-RequestId:
-      - 3879e8fa-8818-4a87-8bb1-825e5070647f
-    status:
-      code: 200
-      message: OK
+  - request:
+      body:
+        '{"cvv": "123", "card_number": "4111111111111111", "expiration_year": "2025",
+        "expiration_month": "09", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_BXaKlPBLZf1u3zHq\",\"type\":\"card\",\"creation_date\":1589341169000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"190.237.22.191\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "613"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 13 May 2020 03:39:30 GMT
+        Via:
+          - 1.1 f4501d5df124eb2fa5d33f712e78d418.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - xAHPYQS9ETuVFtzicVUuRMGMvRQro4zX7rsOpSfrLV3-SN7HXkCm9g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ebb6bf1-b86d32909ccc079c14b4971c;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - Mc3NyFgxIAMF8gg=
+        x-amzn-Remapped-Content-Length:
+          - "613"
+        x-amzn-RequestId:
+          - 057d09ea-1348-4205-af3c-0cec48c01f9a
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_BXaKlPBLZf1u3zHq
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_BXaKlPBLZf1u3zHq\",\"type\":\"card\",\"creation_date\":1589341169000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"190.237.22.191\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "613"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 13 May 2020 03:39:30 GMT
+        Set-Cookie:
+          - JSESSIONID=60653099CB71E3754389EC54AE9E8B9C; Path=/api/; HttpOnly
+        Via:
+          - 1.1 2509c279ef82edf811c5e24c01e81d3b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - LsNppomIVMOYklQyNOoDH4WK1qNsnJZfHQoyDDzYbtS5hbCHMfcKww==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "6892604"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - Mc3N8E3TIAMF5LA=
+        x-amzn-Remapped-Date:
+          - Wed, 13 May 2020 03:39:30 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - 4dfb4cb7-70d7-4399-9257-b3c42fea51b1
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
+        "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_t2KhtU1dh4pLRAEE\",\"type\":\"card\",\"creation_date\":1615072342000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:12:23 GMT
+        Via:
+          - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - ebndXhO2wkMmuYoycejv7q1N53apL9if4QYiaJq7Cu1CbscfNY5TDA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c55-1808f1912477e287515298c7;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybdcGgFIAMFqYw=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - 6bf050e5-4513-4e5d-8d4a-054cc9d949f4
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_t2KhtU1dh4pLRAEE
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_t2KhtU1dh4pLRAEE\",\"type\":\"card\",\"creation_date\":1615072342000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:12:24 GMT
+        Set-Cookie:
+          - JSESSIONID=6BCBC1888CC475EDC47E5D2F01493DD8; Path=/api/; HttpOnly
+        Via:
+          - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - DeiIWp3ReHDQtwwe1BfudntJQ35RyLAzgQkSQeJofVGZrDQ19368LQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10137769"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybd0HhCIAMF8Ww=
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:12:23 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - 6a165283-9cd4-4ad0-82f4-f93e4b25b1ab
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
+        "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_J7PJmv60W1m9KEW8\",\"type\":\"card\",\"creation_date\":1615072667000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:17:47 GMT
+        Via:
+          - 1.1 b37cc7ef8dedff2c0260690fd3934220.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 0wMfMTJbirad69t6ImkoAleak5edwK1ysufmLYPJxnJ5C_1_AVT1YQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440d9a-556e87a1628b28001d6b44bc;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycQOEt1IAMFUFg=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - 392e4199-c2f7-4a75-83f5-9521f0c2a919
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_J7PJmv60W1m9KEW8
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_J7PJmv60W1m9KEW8\",\"type\":\"card\",\"creation_date\":1615072667000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:17:49 GMT
+        Set-Cookie:
+          - JSESSIONID=2A7ED92BB8E1907C6ABC4295426BFF6D; Path=/api/; HttpOnly
+        Via:
+          - 1.1 5e8f5005b2ffddfbe47e54d30a874656.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - gdiDZWLlCOymMLjomrgMivR0EDjG9N8dI0i8VmCI2QVC_26Hc4nktA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138009"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycQhHvioAMF7nA=
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:17:49 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - 351a9500-b4ed-4c43-88c8-f8ef533f2d10
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
+        "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_vA413fDuHAFXScnn\",\"type\":\"card\",\"creation_date\":1615073030000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:23:51 GMT
+        Via:
+          - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - YrzJjKn22rAe4LrbuHHiwVBdb7VAdmrXBdB-G4TNPrmtq0FryMhLyQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440f06-4d434b242d4824f301d1eca6;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydJBHCzoAMF2XQ=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - 493307bd-7872-49f4-9f26-269317d4d8a6
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_vA413fDuHAFXScnn
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_vA413fDuHAFXScnn\",\"type\":\"card\",\"creation_date\":1615073030000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:23:51 GMT
+        Set-Cookie:
+          - JSESSIONID=F4029F422FB7E8C6286F3AA4BB432508; Path=/api/; HttpOnly
+        Via:
+          - 1.1 26f91e7f8d889236c7aca45d5961081e.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - GFrp6WswIA8RD67Rd5e6NInoAa052zY3d5J9UHBt8Npiw4jELHd9SA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138243"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydJMGLwoAMFmzw=
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:23:51 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - 048ba205-daaa-413c-9bd1-3f5042e4232e
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
+        "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_lKkmHXkoJCw48h7Q\",\"type\":\"card\",\"creation_date\":1615073379000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:29:39 GMT
+        Via:
+          - 1.1 488bd882973f218b61aacda0ee63106f.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - GT764wayV8G_ChN8TxnCsV4N-KGQQBD_mQWX77Oma_Y_OwCYB22k0Q==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60441062-1cd35ae5250731986a4ca035;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byd_cHspIAMF0wg=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - 2193f13a-99c1-40fa-8e1c-0dc6c5e7f91c
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_lKkmHXkoJCw48h7Q
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_lKkmHXkoJCw48h7Q\",\"type\":\"card\",\"creation_date\":1615073379000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:29:40 GMT
+        Set-Cookie:
+          - JSESSIONID=B5AFA97D2453071BA413285A079F5785; Path=/api/; HttpOnly
+        Via:
+          - 1.1 42f50de03fc388e1ae7e52e9547df903.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Lac0I1-ZYGx7x4UtftLWSqsPXaCASsuajX6t_bWsvc0Bd19O-kn92w==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138460"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byd_sETboAMFpGg=
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:29:40 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - d21c2d77-9610-4d5b-b4b9-0d77f8d8b127
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
+        "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_d9UIDb25kXfoD3Se\",\"type\":\"card\",\"creation_date\":1615121778000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:56:18 GMT
+        Via:
+          - 1.1 72f61d7588953b12c687a6cea57ac5c5.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - N0OStIEofXaON0RBH_nsdNQ5WArgb3bXMtO5JfF7DSa0Fx6JdxdVJA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cd71-06fb990b67e3105a014109db;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0UJzFIHoAMFo2g=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - 26fee101-702d-4b9a-83fc-b437dceb505e
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_d9UIDb25kXfoD3Se
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_d9UIDb25kXfoD3Se\",\"type\":\"card\",\"creation_date\":1615121778000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:56:19 GMT
+        Set-Cookie:
+          - JSESSIONID=94D985CB0C72BAB28DA6FCBE8A5ACE7B; Path=/api/; HttpOnly
+        Via:
+          - 1.1 a6694d5ca059a1b8b902a7765e513e5c.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - zvx-auNOG9jx6B46zowIpSmCufgkUTHOULNfBpF1Hm18vGKo6Feo4A==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10141110"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0UKEHnLoAMFRJQ=
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 12:56:19 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - f2119ab9-3910-49d4-b6ae-34aa70760732
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
+        "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_APUlZ2x4K17fq1GO\",\"type\":\"card\",\"creation_date\":1615123764000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:29:24 GMT
+        Via:
+          - 1.1 fd261d7f0b1b36c094af45d7484bb70d.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - RMXV_mtVxLdQaZZwJVU5VVhLdP6nVz-9WimsDTTakAtBKzCFqr8fBQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d533-33af1e0434a65259715175aa;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0ZAGFhdIAMFwxA=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - e809dbf2-c6ce-435a-af04-617b490a79d9
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_APUlZ2x4K17fq1GO
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_APUlZ2x4K17fq1GO\",\"type\":\"card\",\"creation_date\":1615123764000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:29:25 GMT
+        Set-Cookie:
+          - JSESSIONID=ECBEBEF5AFA974E37166C30FCA9949A2; Path=/api/; HttpOnly
+        Via:
+          - 1.1 42f50de03fc388e1ae7e52e9547df903.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - RMqJYEmRAB1ffRBtezkMSEtHmIqnBDQ5F4LsHXRibUgR_Pyrv9-kWQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10141411"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0ZAREvooAMF5Tg=
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 13:29:24 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - 550aad71-b960-4dd2-b29b-33321735c4ad
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
+        "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_HSrFsWSabZPfwetA\",\"type\":\"card\",\"creation_date\":1615129762000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:09:23 GMT
+        Via:
+          - 1.1 d083f48319163c88d60fbeb2218dbf65.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - myc7DmwtlEyR2dAdX1dijISgch8K4afBEs8vA_lpGTIwWu-97SglGA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044eca2-3df6cec432023e195342ee34;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0npZFkvIAMFd0Q=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - a374e12e-e781-4b71-a25f-0eb0f174cf43
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_HSrFsWSabZPfwetA
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_HSrFsWSabZPfwetA\",\"type\":\"card\",\"creation_date\":1615129762000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:09:24 GMT
+        Set-Cookie:
+          - JSESSIONID=B15AB3200C89770B6F1782EB714FEAD3; Path=/api/; HttpOnly
+        Via:
+          - 1.1 1c66d149957c72960a1113727d42d47c.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - IGqgIN-shlgvQ7B6onhid64_vuSiBJbQKKlL-oPur4eSOtd998TW2w==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10142056"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0npoFfPIAMFxCg=
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 15:09:23 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - 1544282d-9630-4603-8252-fb8b532e3579
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"card_number": "4111111111111111", "expiration_month": "09", "expiration_year":
+        "2025", "cvv": "123", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_SlPt0YtMQVeIJVFv\",\"type\":\"card\",\"creation_date\":1615131872000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:44:32 GMT
+        Via:
+          - 1.1 92ba29cedd0d1df680527e0b728cdc51.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - -W2pLC6ISTvBkDx05gNwR_XClxrmN8wx3t9cdN_CJYkwFjvRQcGJGA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f4df-01ee6d2c151b040c4b1f318d;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0sy-GHqoAMFXUw=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - 7da51c01-5555-43aa-a172-23f869b53d55
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: GET
+      uri: https://api.culqi.com/v2/tokens/tkn_test_SlPt0YtMQVeIJVFv
+    response:
+      body:
+        string: "{\"object\":\"token\",\"id\":\"tkn_test_SlPt0YtMQVeIJVFv\",\"type\":\"card\",\"creation_date\":1615131872000,\"email\":\"richard@piedpiper.com\",\"card_number\":\"411111******1111\",\"last_four\":\"1111\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"411111\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"BBVA\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[2,4,6,8,10,12,3,5,7,9,24,48]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:44:33 GMT
+        Set-Cookie:
+          - JSESSIONID=7EB0D5C1265C26E50184D1B87C12D058; Path=/api/; HttpOnly
+        Via:
+          - 1.1 92ba29cedd0d1df680527e0b728cdc51.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - o8NRhX1lWts5BwHHY8-BxZGM2BARZMVFPPVG3q_UYXt6Fwx1bWVKKw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10142414"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0szPGm_IAMF1NA=
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 15:44:33 GMT
+        x-amzn-Remapped-Server:
+          - Apache-Coyote/1.1
+        x-amzn-RequestId:
+          - 3879e8fa-8818-4a87-8bb1-825e5070647f
+      status:
+        code: 200
+        message: OK
 version: 1

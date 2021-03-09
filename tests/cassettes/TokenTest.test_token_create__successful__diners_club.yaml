@@ -1,488 +1,506 @@
 interactions:
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_jtyegqCgVHmhyADp","type":"card","creation_date":1589955043000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"Germany","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '594'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 06:10:43 GMT
-      Via:
-      - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - eH8ASS6rMg0Tbt-ASUUOCr5xB61m4-5gUYJMlz9L4_RjH15aiYrQ_g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c9e2-acd6e77b348e1fc828bf547d;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - M0R7dFnPIAMFYPA=
-      x-amzn-Remapped-Content-Length:
-      - '594'
-      x-amzn-RequestId:
-      - 47107ffd-5e7e-41ee-b7b1-42f3cab46b79
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_ZsQ26nrDjnLBkIF6","type":"card","creation_date":1615072326000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '590'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:12:06 GMT
-      Via:
-      - 1.1 42f50de03fc388e1ae7e52e9547df903.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - hp_U_iOk0qME8InmxZyKQbvKs07rKGcfwslrmBygSSvdYq_ToHG3iw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c45-4919874f66f616d3605011c2;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byba7H2NoAMFz6Q=
-      x-amzn-Remapped-Content-Length:
-      - '590'
-      x-amzn-RequestId:
-      - cc309e3e-d129-43a4-a862-80b78e44c27e
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_MS46z6nRI8DR4pyr","type":"card","creation_date":1615072657000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '590'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:17:37 GMT
-      Via:
-      - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - XaEnjASC7iDHp3g9ItM28NcGY7PwDkGaD7O738mHTze0L2VTy6tyoQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440d90-7544d7036a25588a1ec2f654;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycOqG60IAMFUVA=
-      x-amzn-Remapped-Content-Length:
-      - '590'
-      x-amzn-RequestId:
-      - 895f0861-cfb7-4399-a9bf-221694de40f0
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_oyk1Xr0TdEBxIjtZ","type":"card","creation_date":1615073020000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '590'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:23:41 GMT
-      Via:
-      - 1.1 b37cc7ef8dedff2c0260690fd3934220.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - gSP0TIq4RDDynQEZqjCbocyellAOxpybiuAR3c_Bl2FoR5DsUUcKhA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440efc-342b709b0a15a3bf51cc1211;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydHgFFKoAMFkpA=
-      x-amzn-Remapped-Content-Length:
-      - '590'
-      x-amzn-RequestId:
-      - 4aaacf31-c76b-4b7b-b5f3-c3be070d1d6d
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_R2xZuaJ4SSbJf2NE","type":"card","creation_date":1615073369000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '590'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:29:29 GMT
-      Via:
-      - 1.1 10c107d4632ead14a9348b11e8214211.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - qhdIbeGQTfHEwfCbbcGuFCcCOPl6B2dsvPUCVxVobDka6tTBihC4ig==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60441059-6c63518c2cc54fa108d29025;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byd98FvdIAMF_aA=
-      x-amzn-Remapped-Content-Length:
-      - '590'
-      x-amzn-RequestId:
-      - b17338de-0d62-4e3f-b2f5-a40ea0ba807f
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_7ZcdUDQWhx21G5p2","type":"card","creation_date":1615121768000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '590'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:56:09 GMT
-      Via:
-      - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - mdupLqxTcV8b7952AYDK7u8qkZMP3hhPE2Yazgro6-jA9zyr_7n6mA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cd68-09ad03723f4fcb186ddd89ad;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0UIVHU0IAMFUEA=
-      x-amzn-Remapped-Content-Length:
-      - '590'
-      x-amzn-RequestId:
-      - a58464d6-47ba-47fc-96fb-1b5d5f9ef31e
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_9gxzzzvZWvBncv44","type":"card","creation_date":1615123755000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '590'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:29:15 GMT
-      Via:
-      - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - -VwJeU62CfURupbGu4ZG_njJdsIYMED8uk0-1-TGjb2zN1RAxPMbXg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d52a-4cf285432df5a8d75b63011b;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0Y-sEY2IAMFUpw=
-      x-amzn-Remapped-Content-Length:
-      - '590'
-      x-amzn-RequestId:
-      - 59ea89b0-efe5-4ec4-b1dd-84790a892236
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_leFaOGESxMbebzWZ","type":"card","creation_date":1615129752000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '590'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:09:13 GMT
-      Via:
-      - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Htr6rI5JYDIo_ex2_1RLIgkT9odsM0xsvWpJs08gZKsXnhnxjaUNjg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044ec98-282e09bc153b34cc092d1b38;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0nn3EluIAMFS4w=
-      x-amzn-Remapped-Content-Length:
-      - '590'
-      x-amzn-RequestId:
-      - cba7f4f8-54cd-4f23-ab65-5c085f182f74
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
-      "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '134'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_UPaY0LMotEHjAz3V","type":"card","creation_date":1615131863000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
-        BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '590'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:44:23 GMT
-      Via:
-      - 1.1 27c74cc086f5d870a21e751da5daee88.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - sFghDd_DqPP99yvzWtI0TX78sqZ36x14j3Du3sqOlgUITeD6MrGzDQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f4d7-5f1992b840b0a6d234cc7d04;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0sxnGzzoAMFwFw=
-      x-amzn-Remapped-Content-Length:
-      - '590'
-      x-amzn-RequestId:
-      - b6b21b56-90fc-489c-af60-4d3f2e2fa216
-    status:
-      code: 201
-      message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_jtyegqCgVHmhyADp","type":"card","creation_date":1589955043000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"Germany","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "594"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 06:10:43 GMT
+        Via:
+          - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - eH8ASS6rMg0Tbt-ASUUOCr5xB61m4-5gUYJMlz9L4_RjH15aiYrQ_g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c9e2-acd6e77b348e1fc828bf547d;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - M0R7dFnPIAMFYPA=
+        x-amzn-Remapped-Content-Length:
+          - "594"
+        x-amzn-RequestId:
+          - 47107ffd-5e7e-41ee-b7b1-42f3cab46b79
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_ZsQ26nrDjnLBkIF6","type":"card","creation_date":1615072326000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "590"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:12:06 GMT
+        Via:
+          - 1.1 42f50de03fc388e1ae7e52e9547df903.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - hp_U_iOk0qME8InmxZyKQbvKs07rKGcfwslrmBygSSvdYq_ToHG3iw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c45-4919874f66f616d3605011c2;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byba7H2NoAMFz6Q=
+        x-amzn-Remapped-Content-Length:
+          - "590"
+        x-amzn-RequestId:
+          - cc309e3e-d129-43a4-a862-80b78e44c27e
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_MS46z6nRI8DR4pyr","type":"card","creation_date":1615072657000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "590"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:17:37 GMT
+        Via:
+          - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - XaEnjASC7iDHp3g9ItM28NcGY7PwDkGaD7O738mHTze0L2VTy6tyoQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440d90-7544d7036a25588a1ec2f654;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycOqG60IAMFUVA=
+        x-amzn-Remapped-Content-Length:
+          - "590"
+        x-amzn-RequestId:
+          - 895f0861-cfb7-4399-a9bf-221694de40f0
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_oyk1Xr0TdEBxIjtZ","type":"card","creation_date":1615073020000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "590"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:23:41 GMT
+        Via:
+          - 1.1 b37cc7ef8dedff2c0260690fd3934220.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - gSP0TIq4RDDynQEZqjCbocyellAOxpybiuAR3c_Bl2FoR5DsUUcKhA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440efc-342b709b0a15a3bf51cc1211;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydHgFFKoAMFkpA=
+        x-amzn-Remapped-Content-Length:
+          - "590"
+        x-amzn-RequestId:
+          - 4aaacf31-c76b-4b7b-b5f3-c3be070d1d6d
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_R2xZuaJ4SSbJf2NE","type":"card","creation_date":1615073369000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "590"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:29:29 GMT
+        Via:
+          - 1.1 10c107d4632ead14a9348b11e8214211.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - qhdIbeGQTfHEwfCbbcGuFCcCOPl6B2dsvPUCVxVobDka6tTBihC4ig==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60441059-6c63518c2cc54fa108d29025;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byd98FvdIAMF_aA=
+        x-amzn-Remapped-Content-Length:
+          - "590"
+        x-amzn-RequestId:
+          - b17338de-0d62-4e3f-b2f5-a40ea0ba807f
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_7ZcdUDQWhx21G5p2","type":"card","creation_date":1615121768000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "590"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:56:09 GMT
+        Via:
+          - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - mdupLqxTcV8b7952AYDK7u8qkZMP3hhPE2Yazgro6-jA9zyr_7n6mA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cd68-09ad03723f4fcb186ddd89ad;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0UIVHU0IAMFUEA=
+        x-amzn-Remapped-Content-Length:
+          - "590"
+        x-amzn-RequestId:
+          - a58464d6-47ba-47fc-96fb-1b5d5f9ef31e
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_9gxzzzvZWvBncv44","type":"card","creation_date":1615123755000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "590"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:29:15 GMT
+        Via:
+          - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - -VwJeU62CfURupbGu4ZG_njJdsIYMED8uk0-1-TGjb2zN1RAxPMbXg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d52a-4cf285432df5a8d75b63011b;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0Y-sEY2IAMFUpw=
+        x-amzn-Remapped-Content-Length:
+          - "590"
+        x-amzn-RequestId:
+          - 59ea89b0-efe5-4ec4-b1dd-84790a892236
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_leFaOGESxMbebzWZ","type":"card","creation_date":1615129752000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "590"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:09:13 GMT
+        Via:
+          - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Htr6rI5JYDIo_ex2_1RLIgkT9odsM0xsvWpJs08gZKsXnhnxjaUNjg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044ec98-282e09bc153b34cc092d1b38;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0nn3EluIAMFS4w=
+        x-amzn-Remapped-Content-Length:
+          - "590"
+        x-amzn-RequestId:
+          - cba7f4f8-54cd-4f23-ab65-5c085f182f74
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "36001212121210", "expiration_month": "04", "expiration_year":
+        "2025", "cvv": "964", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "134"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_UPaY0LMotEHjAz3V","type":"card","creation_date":1615131863000,"email":"richard@piedpiper.com","card_number":"360012****1210","last_four":"1210","active":true,"iin":{"object":"iin","bin":"360012","card_brand":"Diners","card_type":"debito","card_category":null,"issuer":{"name":"BERLINER
+          BANK AG","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "590"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:44:23 GMT
+        Via:
+          - 1.1 27c74cc086f5d870a21e751da5daee88.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - sFghDd_DqPP99yvzWtI0TX78sqZ36x14j3Du3sqOlgUITeD6MrGzDQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f4d7-5f1992b840b0a6d234cc7d04;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0sxnGzzoAMFwFw=
+        x-amzn-Remapped-Content-Length:
+          - "590"
+        x-amzn-RequestId:
+          - b6b21b56-90fc-489c-af60-4d3f2e2fa216
+      status:
+        code: 201
+        message: Created
 version: 1

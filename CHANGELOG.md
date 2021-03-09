@@ -1,3 +1,7 @@
+### 1.0.1
+
+- Fix supported python version specification
+
 ### 1.0.0 Again!
 
 Separation from Culqi official repository and add a bunch of fixes to be relased under a new package name but fully compatible with Culqi official repository.

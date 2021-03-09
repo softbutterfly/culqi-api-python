@@ -1,1655 +1,1700 @@
 interactions:
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richardcfc7@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_rx0i9eEBNwh7dDQ9\",\"type\":\"card\",\"creation_date\":1589954944000,\"email\":\"richardcfc7@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"UNITED STATES\",\"country_code\":\"US\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"190.237.22.191\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 06:09:04 GMT
-      Via:
-      - 1.1 b37cc7ef8dedff2c0260690fd3934220.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - yi5oPc7CxDC2hmeAcBY_DSse2LWCDLSohUjn0wZWtR2dfHQHjDNKJA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c97f-f398634683bdf974b5d1d72a;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - M0Rr-EjqIAMFdvg=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - b8aeaa45-f5a7-42ea-9659-f3f2c611c1a3
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richardcfc7@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_LTD5xJHUEg8A6r6q","creation_date":1589954945863,"email":"richardcfc7@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 06:09:05 GMT
-      Via:
-      - 1.1 92ba29cedd0d1df680527e0b728cdc51.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - QdLOWXnwY2kFRJgsNXxiZpZ6whOW9SMTR9ScsOWJlpSCZvDL_SFaXw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c981-e00ff23e1d9fe7f936004757;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      set-cookie:
-      - JSESSIONID=BFEC4C41F02FEF24FB162B10684C11DC; Path=/api; HttpOnly
-      x-amz-apigw-id:
-      - M0RsRGJ5oAMF8-Q=
-      x-amzn-RequestId:
-      - 0f9eaf59-027d-4844-bdb7-bbe2382e3d9e
-      x-culqi-environment:
-      - test
-      x-culqi-tracking-id:
-      - '7213432'
-      x-culqi-version:
-      - 2.0.0
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_rx0i9eEBNwh7dDQ9", "customer_id": "cus_test_LTD5xJHUEg8A6r6q"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_SdFyv9ljbIsoh5FZ\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 06:09:08 GMT
-      Via:
-      - 1.1 92ba29cedd0d1df680527e0b728cdc51.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - XH2j6Q0NZlsCzp_Xw91IDHDXEeAuZOmEs1HG8fhJ-72ZevJNJIiLdA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c982-74b0c33416be55355bc5f131;Sampled=0
-      X-Cache:
-      - Error from cloudfront
-      set-cookie:
-      - JSESSIONID=10524B7A228136DB8DF73CAD83C41050; Path=/api; HttpOnly
-      x-amz-apigw-id:
-      - M0RsaFjQoAMFc6w=
-      x-amzn-RequestId:
-      - 4b482a83-724b-42ef-83aa-ed3a005fb73c
-      x-culqi-environment:
-      - test
-      x-culqi-tracking-id:
-      - '7213433'
-      x-culqi-version:
-      - 2.0.0
-    status:
-      code: 400
-      message: Bad Request
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richard9182@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_iuBzJeK6iyVCPJK1\",\"type\":\"card\",\"creation_date\":1615072047000,\"email\":\"richard9182@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:07:28 GMT
-      Via:
-      - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - C-GNX8T9s9VFqEb2jDgrMl0VKZtihoztByRXLzgD5elozYFeKHVUQw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440b2f-69569e71078c0ffb260af107;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byavZFTMIAMFQsg=
-      x-amzn-Remapped-Content-Length:
-      - '602'
-      x-amzn-RequestId:
-      - 3b375dab-7cef-42b4-bb5c-0be8d0ecf149
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richard9182@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_qfR4lILrCqDhqF1h","creation_date":1615072049774,"email":"richard9182@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:07:29 GMT
-      Set-Cookie:
-      - JSESSIONID=78DA2673F99DCACF3D92B4F9A9B7D9C9; Path=/api; HttpOnly
-      Via:
-      - 1.1 2509c279ef82edf811c5e24c01e81d3b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - VXTDcX4a8zbm0MLEbBz9zr0WB5DkTkqnMk3QT2fFl1IUJEYnaTVcRg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440b31-256064b81b62a7aa28e5e3cf;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10137583'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byavwGvkIAMFh-Q=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:07:29 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - ebf6c6ef-6431-4f5f-b7e2-ffbfd2867632
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_iuBzJeK6iyVCPJK1", "customer_id": "cus_test_qfR4lILrCqDhqF1h"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_5sKgBlJ1qRgD8ueY\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:07:32 GMT
-      Set-Cookie:
-      - JSESSIONID=1A55BFF5112FCE639BB802DCB22328E7; Path=/api; HttpOnly
-      Via:
-      - 1.1 2509c279ef82edf811c5e24c01e81d3b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - kBWpM4CDwz8hBFiVORo4p01m22-4HgafOgnou5PTUtrzzCgkgsqVCQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440b32-31b25ee762d0de390afd45ca;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10137584'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - byav4FEAoAMFTEQ=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:07:32 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - f6b305b8-4851-41a4-9b24-33fd7d27e2be
-    status:
-      code: 400
-      message: Bad Request
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richard0127@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_s0Iw2IwBYcapr759\",\"type\":\"card\",\"creation_date\":1615072404000,\"email\":\"richard0127@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:13:25 GMT
-      Via:
-      - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - sfrdZWT44F5zVdBtRnbISGmCAN6mRdcpg52qSyLkCJSqtDMavfx1kA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c94-7ab744df37572ffa521266d4;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybnNEODoAMFzjA=
-      x-amzn-Remapped-Content-Length:
-      - '602'
-      x-amzn-RequestId:
-      - 26477783-ed2c-4a92-b7ae-cd47185a5690
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richard0127@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_tt9HcJcZDXOrP133","creation_date":1615072405773,"email":"richard0127@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:13:25 GMT
-      Set-Cookie:
-      - JSESSIONID=674390D1F5F58DDDA4855A4A043481B9; Path=/api; HttpOnly
-      Via:
-      - 1.1 9c07f09e84d67c7e2eff177190d321f6.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - KRCppkIkCXsGsoQuBnQQvYs2BP2NJzJZRzX_EdLuU9DP2zsxWD_8hQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c95-35a8780763f15e57257df263;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10137810'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybnYHLUoAMFkAg=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:13:25 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 37dd4010-95f9-4444-bd3e-3ab6f1a35b66
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_s0Iw2IwBYcapr759", "customer_id": "cus_test_tt9HcJcZDXOrP133"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_y9J8icGrJxG8oPH0\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:13:28 GMT
-      Set-Cookie:
-      - JSESSIONID=96BCE5B3B2456E1B142690AE0B7A46EF; Path=/api; HttpOnly
-      Via:
-      - 1.1 9c07f09e84d67c7e2eff177190d321f6.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - tDubYqlJj41-pI2GwZiiQukJ-ED3JqYpkNdnoD0Sl6wCIVrEqVBjXA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c96-4b09a0af1dd360e65a851ad2;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10137811'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - bybngH90IAMF7pw=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:13:28 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 0ef15008-1cc1-43b1-b150-189818f205d1
-    status:
-      code: 400
-      message: Bad Request
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richard0361@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_Z8lSF1i6Y3LTCwi7\",\"type\":\"card\",\"creation_date\":1615072721000,\"email\":\"richard0361@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:18:42 GMT
-      Via:
-      - 1.1 7e3976a866c063e64606fe6681dab899.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Qgd6O0NZsTJP5l0lwswiCaQC2hbYvS07VGo5wMix1v7CcsULu7bN3A==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440dd1-17f0cc0d1d30994815b6ba79;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycYvGiqoAMF0lQ=
-      x-amzn-Remapped-Content-Length:
-      - '602'
-      x-amzn-RequestId:
-      - 4b81a2e2-796e-4e14-a059-7c3229096e2c
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richard0361@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_QdYeCYxu2816qlaq","creation_date":1615072722779,"email":"richard0361@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:18:42 GMT
-      Set-Cookie:
-      - JSESSIONID=D416B92E4F64E6C3ED100DA6216F7CFC; Path=/api; HttpOnly
-      Via:
-      - 1.1 10c107d4632ead14a9348b11e8214211.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - yRds5QdXiWzgw93jjY4IAh5uvuYJmfjFdJFeb2X8w_WA4oEYL8ATng==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440dd2-6921b7250bb6bc4b38909eee;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138054'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycY6FoOIAMFm_A=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:18:42 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - b13b097c-619b-480d-9c07-08187dc18449
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_Z8lSF1i6Y3LTCwi7", "customer_id": "cus_test_QdYeCYxu2816qlaq"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_T4WRcJonuabf7RBr\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:18:45 GMT
-      Set-Cookie:
-      - JSESSIONID=D0F8687D0A6F402CBAF7FA1E5FEB3E1C; Path=/api; HttpOnly
-      Via:
-      - 1.1 10c107d4632ead14a9348b11e8214211.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - IFT0ik6jVWHlqP-QqQTO1B3yxZhmPNf69BWUX2A_hbpvUzLpMHHYOA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440dd3-04af250c1fc83c3a2343698b;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138055'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - bycZCHcIIAMFuLQ=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:18:45 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 84a3cc1a-3d42-4c3a-b8c6-84070f96ebde
-    status:
-      code: 400
-      message: Bad Request
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richard7e37@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_RSBSH7pDZ4zshJSB\",\"type\":\"card\",\"creation_date\":1615073087000,\"email\":\"richard7e37@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:24:47 GMT
-      Via:
-      - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - X29umEQWQDuvqwFmWrUPBKxDL6nhPENkJ-kuawirx6XPDIqnszEW6g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440f3f-11ed1cea1bc29e611be94d23;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydR4H3kIAMFpmQ=
-      x-amzn-Remapped-Content-Length:
-      - '602'
-      x-amzn-RequestId:
-      - de5fca0b-09a2-4050-98f4-63ff4a2a766a
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richard7e37@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_lfcRyGBgBZVhTTMx","creation_date":1615073088780,"email":"richard7e37@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:24:48 GMT
-      Set-Cookie:
-      - JSESSIONID=C7530E4FF47CF9D6B0ED5F83F3389396; Path=/api; HttpOnly
-      Via:
-      - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - iYD7q1bnuhPUhS06N3RZUW7DqZwyy6hVg0rowX_h_LwRuWM-eAdofA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440f40-137070db1513038f72f406da;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138284'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydSGFTkIAMFSCQ=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:24:48 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 2184bcfe-b2c0-498b-a9f0-d9bede4ab321
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_RSBSH7pDZ4zshJSB", "customer_id": "cus_test_lfcRyGBgBZVhTTMx"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_Ku4djrcKXi7Ho1yK\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:24:51 GMT
-      Set-Cookie:
-      - JSESSIONID=DE8C9C0A027798BC0C41D08BD18E00DF; Path=/api; HttpOnly
-      Via:
-      - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - WhzdXa1af-tk6tZHcKcEesmyLox75dJJwjfanqHOelB6YSWB6SnopA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440f41-17f7740f790aa00877d3fc50;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138285'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - bydSOGproAMFnXQ=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:24:51 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 62f21f84-4479-4d2a-a64c-ae0317050771
-    status:
-      code: 400
-      message: Bad Request
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richard0d15@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_30syvdTkaRpkDCdC\",\"type\":\"card\",\"creation_date\":1615121506000,\"email\":\"richard0d15@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:51:46 GMT
-      Via:
-      - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Hd60ZDHw63QeaDO8fvuaLRpQ9ZAJGQjW1769-rRNNcprBfpUgIyQog==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cc61-7bab37af104d695d4ecfb87c;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0TfOEzloAMFanA=
-      x-amzn-Remapped-Content-Length:
-      - '602'
-      x-amzn-RequestId:
-      - f6b0328a-6658-49cf-826e-98648808ef89
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richard0d15@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_DARUH8q05e46Tw3x","creation_date":1615121507162,"email":"richard0d15@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:51:47 GMT
-      Set-Cookie:
-      - JSESSIONID=08FAC83CF1C89253016A685AF58077CC; Path=/api; HttpOnly
-      Via:
-      - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - aphAZLenpW_iO2ZsBL5refXwXursloICjPxjPjupNK1NARehmjZfMA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cc62-140406a837bde978795b7cb6;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10140920'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0TfeEJUIAMFtzA=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 12:51:47 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 8cdf1710-9571-4820-87e1-a3cf17f9fc1d
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_30syvdTkaRpkDCdC", "customer_id": "cus_test_DARUH8q05e46Tw3x"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_Ge8mzWCfyf9Di57E\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:51:50 GMT
-      Set-Cookie:
-      - JSESSIONID=4D67AE29702677283878FFCEE024DE38; Path=/api; HttpOnly
-      Via:
-      - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 6hoAydFuZhX-kSSB0euojET_rvQNoIqzIrS9lZe1Bfk6ulppkceZzg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cc63-7907e5fd404fd41c40af8d07;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10140921'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - b0TfmFhmIAMFoew=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 12:51:50 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 45fef5d2-69f0-4a4b-993a-61500704f7c1
-    status:
-      code: 400
-      message: Bad Request
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richard74ec@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_1LBCnQgrfbJCAZi6\",\"type\":\"card\",\"creation_date\":1615123474000,\"email\":\"richard74ec@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:24:35 GMT
-      Via:
-      - 1.1 a26c307f1caab99490ddcc62da38effc.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - u0lzIjkAM5RYBwo41Z7MssHhhSmOrE8ldnobs1OqbKf6KnIWrg7X9Q==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d412-538f7aab1bbffbdf70407f87;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0YS5GD1IAMFiOQ=
-      x-amzn-Remapped-Content-Length:
-      - '602'
-      x-amzn-RequestId:
-      - 3b08fde1-acf7-479f-a6b8-3d8ea8a778c5
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richard74ec@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_CbmQgS2M9XfFgOM8","creation_date":1615123476164,"email":"richard74ec@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:24:36 GMT
-      Set-Cookie:
-      - JSESSIONID=E6D529C08270913182656C9385661260; Path=/api; HttpOnly
-      Via:
-      - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 9-Z7Gd39xvPcFrAhZyRAPd4M9dO8m3OS1roN20A9K6kCWw9Q3YXV0g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d413-704b9f1a6a88d2533dd45611;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10141218'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0YTIEjtoAMFwng=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 13:24:36 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 52ac1b14-0877-47d0-914e-01c016ca5aac
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_1LBCnQgrfbJCAZi6", "customer_id": "cus_test_CbmQgS2M9XfFgOM8"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_spQaq7fSfIeZ53MG\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:24:38 GMT
-      Set-Cookie:
-      - JSESSIONID=6B2F02802BBFC7E089573DAAE8E40548; Path=/api; HttpOnly
-      Via:
-      - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - JbQx186ZIdu3Kxto4-4OUa2jdI83-aDaYXf91a1w8Z_aql6cd95RVQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d414-74de0982454a6cbe1bad20f0;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10141219'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - b0YTNHGwoAMFxDw=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 13:24:38 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 58061d01-a2eb-4d98-9ae0-739aaed89999
-    status:
-      code: 400
-      message: Bad Request
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richardd3c4@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_KZZm901YwpTqOkmB\",\"type\":\"card\",\"creation_date\":1615129481000,\"email\":\"richardd3c4@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:04:42 GMT
-      Via:
-      - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - jwp7ENzMyxj03AoRGLJGFZ18RpFm3FsrR1NF4Og6uhNyG6_v4Gj4Bg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044eb89-37900565056638e42c293e17;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0m9dGBNIAMFooA=
-      x-amzn-Remapped-Content-Length:
-      - '602'
-      x-amzn-RequestId:
-      - ff4cb250-9db5-4785-bea0-a3655acce90a
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richardd3c4@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_yaUHSegA0BugwHbT","creation_date":1615129484620,"email":"richardd3c4@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:04:44 GMT
-      Set-Cookie:
-      - JSESSIONID=EFF8BFC29FFE7B5382E45F88DE34DFF1; Path=/api; HttpOnly
-      Via:
-      - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - eFoBbuYRjOT9A3wEfWQaLPp5PxjfjOR-2qOSJJman4n1hJWEQVPPgA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044eb8c-650ba35d12248a121499ead3;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10141881'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0m98GuAoAMFVmA=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 15:04:44 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 339af5f8-2e90-429f-9085-1b305ef7c293
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_KZZm901YwpTqOkmB", "customer_id": "cus_test_yaUHSegA0BugwHbT"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_cFk3zS5KWEJdOffi\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:04:47 GMT
-      Set-Cookie:
-      - JSESSIONID=76F53B9C05AF7C3F60B99E74CEA983C4; Path=/api; HttpOnly
-      Via:
-      - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - fan5dyN6DOqjEo2T5Ed2DNzWDICZZCgyCj8amb3O2MFdz1GPc1JF4g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044eb8d-035b5e196befd26a53b46592;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10141882'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - b0m-FHjwoAMFtzA=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 15:04:47 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 0ccffd31-f0ee-4aef-8f6b-46c788ce106c
-    status:
-      code: 400
-      message: Bad Request
-- request:
-    body: '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
-      "2025", "cvv": "354", "email": "richardbfc3@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '140'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: "{\"object\":\"token\",\"id\":\"tkn_test_8SSSqy9swCHbfZ1F\",\"type\":\"card\",\"creation_date\":1615131588000,\"email\":\"richardbfc3@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
-        VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:39:49 GMT
-      Via:
-      - 1.1 5e8f5005b2ffddfbe47e54d30a874656.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - GC3NFYoqFgSSbTzEyjlhqKoBlC0ssGCNb-Offx6lLpbRzWot_T32ng==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f3c4-5b3e00201b97595b47eca396;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0sGsFaRoAMF4bQ=
-      x-amzn-Remapped-Content-Length:
-      - '602'
-      x-amzn-RequestId:
-      - f103d977-9d11-405b-ab8a-de6c7e86b088
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
-      "PE", "email": "richardbfc3@piedpiper.com", "first_name": "Richard", "last_name":
-      "Piedpiper", "phone_number": "+51998989789"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '201'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/customers
-  response:
-    body:
-      string: '{"object":"customer","id":"cus_test_bsDljysReHcy6NU6","creation_date":1615131589734,"email":"richardbfc3@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
-        Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '318'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:39:49 GMT
-      Set-Cookie:
-      - JSESSIONID=888392560781EB12254C8307D95B9534; Path=/api; HttpOnly
-      Via:
-      - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - yoeuTJ8yTIYgMGTN3BZ7AnQ0BqCSiaiIy7mc9HEAGjFnGSburF5KRw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f3c5-71971049408146eb5867539f;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10142173'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0sG3FZdIAMFkFA=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 15:39:49 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 1352dd39-c3d7-4014-a78f-394619b395dd
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"token_id": "tkn_test_8SSSqy9swCHbfZ1F", "customer_id": "cus_test_bsDljysReHcy6NU6"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '85'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/cards
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_XC0vjjYHs9PKwqKj\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
-        robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
-        robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
-        de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
-        nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '438'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:39:52 GMT
-      Set-Cookie:
-      - JSESSIONID=214D93E2BC5C1482D9184FFB80880345; Path=/api; HttpOnly
-      Via:
-      - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - z2WXwt2JAelsKBJx-Zh0P84CSgMMEhvN-sv4uzVYccAlcR-8iPFxRw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f3c6-3b5eb6eb2b7f35422c39b7bc;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10142175'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - b0sG_EY0oAMFe1Q=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 15:39:52 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 4c69e5e4-5b33-4b68-92fd-b739decdbdb0
-    status:
-      code: 400
-      message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richardcfc7@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_rx0i9eEBNwh7dDQ9\",\"type\":\"card\",\"creation_date\":1589954944000,\"email\":\"richardcfc7@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"UNITED STATES\",\"country_code\":\"US\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"190.237.22.191\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 06:09:04 GMT
+        Via:
+          - 1.1 b37cc7ef8dedff2c0260690fd3934220.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - yi5oPc7CxDC2hmeAcBY_DSse2LWCDLSohUjn0wZWtR2dfHQHjDNKJA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c97f-f398634683bdf974b5d1d72a;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - M0Rr-EjqIAMFdvg=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - b8aeaa45-f5a7-42ea-9659-f3f2c611c1a3
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richardcfc7@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_LTD5xJHUEg8A6r6q","creation_date":1589954945863,"email":"richardcfc7@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 06:09:05 GMT
+        Via:
+          - 1.1 92ba29cedd0d1df680527e0b728cdc51.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - QdLOWXnwY2kFRJgsNXxiZpZ6whOW9SMTR9ScsOWJlpSCZvDL_SFaXw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c981-e00ff23e1d9fe7f936004757;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        set-cookie:
+          - JSESSIONID=BFEC4C41F02FEF24FB162B10684C11DC; Path=/api; HttpOnly
+        x-amz-apigw-id:
+          - M0RsRGJ5oAMF8-Q=
+        x-amzn-RequestId:
+          - 0f9eaf59-027d-4844-bdb7-bbe2382e3d9e
+        x-culqi-environment:
+          - test
+        x-culqi-tracking-id:
+          - "7213432"
+        x-culqi-version:
+          - 2.0.0
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_rx0i9eEBNwh7dDQ9", "customer_id": "cus_test_LTD5xJHUEg8A6r6q"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_SdFyv9ljbIsoh5FZ\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 06:09:08 GMT
+        Via:
+          - 1.1 92ba29cedd0d1df680527e0b728cdc51.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - XH2j6Q0NZlsCzp_Xw91IDHDXEeAuZOmEs1HG8fhJ-72ZevJNJIiLdA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c982-74b0c33416be55355bc5f131;Sampled=0
+        X-Cache:
+          - Error from cloudfront
+        set-cookie:
+          - JSESSIONID=10524B7A228136DB8DF73CAD83C41050; Path=/api; HttpOnly
+        x-amz-apigw-id:
+          - M0RsaFjQoAMFc6w=
+        x-amzn-RequestId:
+          - 4b482a83-724b-42ef-83aa-ed3a005fb73c
+        x-culqi-environment:
+          - test
+        x-culqi-tracking-id:
+          - "7213433"
+        x-culqi-version:
+          - 2.0.0
+      status:
+        code: 400
+        message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richard9182@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_iuBzJeK6iyVCPJK1\",\"type\":\"card\",\"creation_date\":1615072047000,\"email\":\"richard9182@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:07:28 GMT
+        Via:
+          - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - C-GNX8T9s9VFqEb2jDgrMl0VKZtihoztByRXLzgD5elozYFeKHVUQw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440b2f-69569e71078c0ffb260af107;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byavZFTMIAMFQsg=
+        x-amzn-Remapped-Content-Length:
+          - "602"
+        x-amzn-RequestId:
+          - 3b375dab-7cef-42b4-bb5c-0be8d0ecf149
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richard9182@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_qfR4lILrCqDhqF1h","creation_date":1615072049774,"email":"richard9182@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:07:29 GMT
+        Set-Cookie:
+          - JSESSIONID=78DA2673F99DCACF3D92B4F9A9B7D9C9; Path=/api; HttpOnly
+        Via:
+          - 1.1 2509c279ef82edf811c5e24c01e81d3b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - VXTDcX4a8zbm0MLEbBz9zr0WB5DkTkqnMk3QT2fFl1IUJEYnaTVcRg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440b31-256064b81b62a7aa28e5e3cf;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10137583"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byavwGvkIAMFh-Q=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:07:29 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - ebf6c6ef-6431-4f5f-b7e2-ffbfd2867632
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_iuBzJeK6iyVCPJK1", "customer_id": "cus_test_qfR4lILrCqDhqF1h"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_5sKgBlJ1qRgD8ueY\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:07:32 GMT
+        Set-Cookie:
+          - JSESSIONID=1A55BFF5112FCE639BB802DCB22328E7; Path=/api; HttpOnly
+        Via:
+          - 1.1 2509c279ef82edf811c5e24c01e81d3b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - kBWpM4CDwz8hBFiVORo4p01m22-4HgafOgnou5PTUtrzzCgkgsqVCQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440b32-31b25ee762d0de390afd45ca;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10137584"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - byav4FEAoAMFTEQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:07:32 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - f6b305b8-4851-41a4-9b24-33fd7d27e2be
+      status:
+        code: 400
+        message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richard0127@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_s0Iw2IwBYcapr759\",\"type\":\"card\",\"creation_date\":1615072404000,\"email\":\"richard0127@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:13:25 GMT
+        Via:
+          - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - sfrdZWT44F5zVdBtRnbISGmCAN6mRdcpg52qSyLkCJSqtDMavfx1kA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c94-7ab744df37572ffa521266d4;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybnNEODoAMFzjA=
+        x-amzn-Remapped-Content-Length:
+          - "602"
+        x-amzn-RequestId:
+          - 26477783-ed2c-4a92-b7ae-cd47185a5690
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richard0127@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_tt9HcJcZDXOrP133","creation_date":1615072405773,"email":"richard0127@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:13:25 GMT
+        Set-Cookie:
+          - JSESSIONID=674390D1F5F58DDDA4855A4A043481B9; Path=/api; HttpOnly
+        Via:
+          - 1.1 9c07f09e84d67c7e2eff177190d321f6.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - KRCppkIkCXsGsoQuBnQQvYs2BP2NJzJZRzX_EdLuU9DP2zsxWD_8hQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c95-35a8780763f15e57257df263;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10137810"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybnYHLUoAMFkAg=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:13:25 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 37dd4010-95f9-4444-bd3e-3ab6f1a35b66
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_s0Iw2IwBYcapr759", "customer_id": "cus_test_tt9HcJcZDXOrP133"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_y9J8icGrJxG8oPH0\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:13:28 GMT
+        Set-Cookie:
+          - JSESSIONID=96BCE5B3B2456E1B142690AE0B7A46EF; Path=/api; HttpOnly
+        Via:
+          - 1.1 9c07f09e84d67c7e2eff177190d321f6.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - tDubYqlJj41-pI2GwZiiQukJ-ED3JqYpkNdnoD0Sl6wCIVrEqVBjXA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c96-4b09a0af1dd360e65a851ad2;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10137811"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - bybngH90IAMF7pw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:13:28 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 0ef15008-1cc1-43b1-b150-189818f205d1
+      status:
+        code: 400
+        message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richard0361@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_Z8lSF1i6Y3LTCwi7\",\"type\":\"card\",\"creation_date\":1615072721000,\"email\":\"richard0361@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:18:42 GMT
+        Via:
+          - 1.1 7e3976a866c063e64606fe6681dab899.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Qgd6O0NZsTJP5l0lwswiCaQC2hbYvS07VGo5wMix1v7CcsULu7bN3A==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440dd1-17f0cc0d1d30994815b6ba79;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycYvGiqoAMF0lQ=
+        x-amzn-Remapped-Content-Length:
+          - "602"
+        x-amzn-RequestId:
+          - 4b81a2e2-796e-4e14-a059-7c3229096e2c
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richard0361@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_QdYeCYxu2816qlaq","creation_date":1615072722779,"email":"richard0361@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:18:42 GMT
+        Set-Cookie:
+          - JSESSIONID=D416B92E4F64E6C3ED100DA6216F7CFC; Path=/api; HttpOnly
+        Via:
+          - 1.1 10c107d4632ead14a9348b11e8214211.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - yRds5QdXiWzgw93jjY4IAh5uvuYJmfjFdJFeb2X8w_WA4oEYL8ATng==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440dd2-6921b7250bb6bc4b38909eee;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138054"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycY6FoOIAMFm_A=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:18:42 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - b13b097c-619b-480d-9c07-08187dc18449
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_Z8lSF1i6Y3LTCwi7", "customer_id": "cus_test_QdYeCYxu2816qlaq"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_T4WRcJonuabf7RBr\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:18:45 GMT
+        Set-Cookie:
+          - JSESSIONID=D0F8687D0A6F402CBAF7FA1E5FEB3E1C; Path=/api; HttpOnly
+        Via:
+          - 1.1 10c107d4632ead14a9348b11e8214211.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - IFT0ik6jVWHlqP-QqQTO1B3yxZhmPNf69BWUX2A_hbpvUzLpMHHYOA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440dd3-04af250c1fc83c3a2343698b;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138055"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - bycZCHcIIAMFuLQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:18:45 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 84a3cc1a-3d42-4c3a-b8c6-84070f96ebde
+      status:
+        code: 400
+        message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richard7e37@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_RSBSH7pDZ4zshJSB\",\"type\":\"card\",\"creation_date\":1615073087000,\"email\":\"richard7e37@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:24:47 GMT
+        Via:
+          - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - X29umEQWQDuvqwFmWrUPBKxDL6nhPENkJ-kuawirx6XPDIqnszEW6g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440f3f-11ed1cea1bc29e611be94d23;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydR4H3kIAMFpmQ=
+        x-amzn-Remapped-Content-Length:
+          - "602"
+        x-amzn-RequestId:
+          - de5fca0b-09a2-4050-98f4-63ff4a2a766a
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richard7e37@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_lfcRyGBgBZVhTTMx","creation_date":1615073088780,"email":"richard7e37@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:24:48 GMT
+        Set-Cookie:
+          - JSESSIONID=C7530E4FF47CF9D6B0ED5F83F3389396; Path=/api; HttpOnly
+        Via:
+          - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - iYD7q1bnuhPUhS06N3RZUW7DqZwyy6hVg0rowX_h_LwRuWM-eAdofA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440f40-137070db1513038f72f406da;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138284"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydSGFTkIAMFSCQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:24:48 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 2184bcfe-b2c0-498b-a9f0-d9bede4ab321
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_RSBSH7pDZ4zshJSB", "customer_id": "cus_test_lfcRyGBgBZVhTTMx"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_Ku4djrcKXi7Ho1yK\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:24:51 GMT
+        Set-Cookie:
+          - JSESSIONID=DE8C9C0A027798BC0C41D08BD18E00DF; Path=/api; HttpOnly
+        Via:
+          - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - WhzdXa1af-tk6tZHcKcEesmyLox75dJJwjfanqHOelB6YSWB6SnopA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440f41-17f7740f790aa00877d3fc50;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138285"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - bydSOGproAMFnXQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:24:51 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 62f21f84-4479-4d2a-a64c-ae0317050771
+      status:
+        code: 400
+        message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richard0d15@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_30syvdTkaRpkDCdC\",\"type\":\"card\",\"creation_date\":1615121506000,\"email\":\"richard0d15@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:51:46 GMT
+        Via:
+          - 1.1 6807491555b9c49f0b843f3fd1c3ba66.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Hd60ZDHw63QeaDO8fvuaLRpQ9ZAJGQjW1769-rRNNcprBfpUgIyQog==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cc61-7bab37af104d695d4ecfb87c;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0TfOEzloAMFanA=
+        x-amzn-Remapped-Content-Length:
+          - "602"
+        x-amzn-RequestId:
+          - f6b0328a-6658-49cf-826e-98648808ef89
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richard0d15@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_DARUH8q05e46Tw3x","creation_date":1615121507162,"email":"richard0d15@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:51:47 GMT
+        Set-Cookie:
+          - JSESSIONID=08FAC83CF1C89253016A685AF58077CC; Path=/api; HttpOnly
+        Via:
+          - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - aphAZLenpW_iO2ZsBL5refXwXursloICjPxjPjupNK1NARehmjZfMA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cc62-140406a837bde978795b7cb6;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10140920"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0TfeEJUIAMFtzA=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 12:51:47 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 8cdf1710-9571-4820-87e1-a3cf17f9fc1d
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_30syvdTkaRpkDCdC", "customer_id": "cus_test_DARUH8q05e46Tw3x"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_Ge8mzWCfyf9Di57E\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:51:50 GMT
+        Set-Cookie:
+          - JSESSIONID=4D67AE29702677283878FFCEE024DE38; Path=/api; HttpOnly
+        Via:
+          - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 6hoAydFuZhX-kSSB0euojET_rvQNoIqzIrS9lZe1Bfk6ulppkceZzg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cc63-7907e5fd404fd41c40af8d07;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10140921"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - b0TfmFhmIAMFoew=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 12:51:50 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 45fef5d2-69f0-4a4b-993a-61500704f7c1
+      status:
+        code: 400
+        message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richard74ec@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_1LBCnQgrfbJCAZi6\",\"type\":\"card\",\"creation_date\":1615123474000,\"email\":\"richard74ec@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:24:35 GMT
+        Via:
+          - 1.1 a26c307f1caab99490ddcc62da38effc.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - u0lzIjkAM5RYBwo41Z7MssHhhSmOrE8ldnobs1OqbKf6KnIWrg7X9Q==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d412-538f7aab1bbffbdf70407f87;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0YS5GD1IAMFiOQ=
+        x-amzn-Remapped-Content-Length:
+          - "602"
+        x-amzn-RequestId:
+          - 3b08fde1-acf7-479f-a6b8-3d8ea8a778c5
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richard74ec@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_CbmQgS2M9XfFgOM8","creation_date":1615123476164,"email":"richard74ec@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:24:36 GMT
+        Set-Cookie:
+          - JSESSIONID=E6D529C08270913182656C9385661260; Path=/api; HttpOnly
+        Via:
+          - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 9-Z7Gd39xvPcFrAhZyRAPd4M9dO8m3OS1roN20A9K6kCWw9Q3YXV0g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d413-704b9f1a6a88d2533dd45611;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10141218"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0YTIEjtoAMFwng=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 13:24:36 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 52ac1b14-0877-47d0-914e-01c016ca5aac
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_1LBCnQgrfbJCAZi6", "customer_id": "cus_test_CbmQgS2M9XfFgOM8"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_spQaq7fSfIeZ53MG\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:24:38 GMT
+        Set-Cookie:
+          - JSESSIONID=6B2F02802BBFC7E089573DAAE8E40548; Path=/api; HttpOnly
+        Via:
+          - 1.1 840a2b350c8a57aa5bbbbd4bc2395e73.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - JbQx186ZIdu3Kxto4-4OUa2jdI83-aDaYXf91a1w8Z_aql6cd95RVQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d414-74de0982454a6cbe1bad20f0;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10141219"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - b0YTNHGwoAMFxDw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 13:24:38 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 58061d01-a2eb-4d98-9ae0-739aaed89999
+      status:
+        code: 400
+        message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richardd3c4@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_KZZm901YwpTqOkmB\",\"type\":\"card\",\"creation_date\":1615129481000,\"email\":\"richardd3c4@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:04:42 GMT
+        Via:
+          - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - jwp7ENzMyxj03AoRGLJGFZ18RpFm3FsrR1NF4Og6uhNyG6_v4Gj4Bg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044eb89-37900565056638e42c293e17;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0m9dGBNIAMFooA=
+        x-amzn-Remapped-Content-Length:
+          - "602"
+        x-amzn-RequestId:
+          - ff4cb250-9db5-4785-bea0-a3655acce90a
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richardd3c4@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_yaUHSegA0BugwHbT","creation_date":1615129484620,"email":"richardd3c4@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:04:44 GMT
+        Set-Cookie:
+          - JSESSIONID=EFF8BFC29FFE7B5382E45F88DE34DFF1; Path=/api; HttpOnly
+        Via:
+          - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - eFoBbuYRjOT9A3wEfWQaLPp5PxjfjOR-2qOSJJman4n1hJWEQVPPgA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044eb8c-650ba35d12248a121499ead3;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10141881"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0m98GuAoAMFVmA=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 15:04:44 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 339af5f8-2e90-429f-9085-1b305ef7c293
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_KZZm901YwpTqOkmB", "customer_id": "cus_test_yaUHSegA0BugwHbT"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_cFk3zS5KWEJdOffi\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:04:47 GMT
+        Set-Cookie:
+          - JSESSIONID=76F53B9C05AF7C3F60B99E74CEA983C4; Path=/api; HttpOnly
+        Via:
+          - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - fan5dyN6DOqjEo2T5Ed2DNzWDICZZCgyCj8amb3O2MFdz1GPc1JF4g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044eb8d-035b5e196befd26a53b46592;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10141882"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - b0m-FHjwoAMFtzA=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 15:04:47 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 0ccffd31-f0ee-4aef-8f6b-46c788ce106c
+      status:
+        code: 400
+        message: Bad Request
+  - request:
+      body:
+        '{"card_number": "4000020000000000", "expiration_month": "10", "expiration_year":
+        "2025", "cvv": "354", "email": "richardbfc3@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "140"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          "{\"object\":\"token\",\"id\":\"tkn_test_8SSSqy9swCHbfZ1F\",\"type\":\"card\",\"creation_date\":1615131588000,\"email\":\"richardbfc3@piedpiper.com\",\"card_number\":\"400002******0000\",\"last_four\":\"0000\",\"active\":true,\"iin\":{\"object\":\"iin\",\"bin\":\"400002\",\"card_brand\":\"Visa\",\"card_type\":\"credito\",\"card_category\":\"Cl\xE1sica\",\"issuer\":{\"name\":\"RIVER
+          VALLEY C.U.\",\"country\":\"PERU\",\"country_code\":\"PE\",\"website\":null,\"phone_number\":null},\"installments_allowed\":[]},\"client\":{\"ip\":\"191.98.182.73\",\"ip_country\":\"Peru\",\"ip_country_code\":\"PE\",\"browser\":\"UNKNOWN\",\"device_fingerprint\":null,\"device_type\":\"Escritorio\"},\"metadata\":{}}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:39:49 GMT
+        Via:
+          - 1.1 5e8f5005b2ffddfbe47e54d30a874656.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - GC3NFYoqFgSSbTzEyjlhqKoBlC0ssGCNb-Offx6lLpbRzWot_T32ng==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f3c4-5b3e00201b97595b47eca396;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0sGsFaRoAMF4bQ=
+        x-amzn-Remapped-Content-Length:
+          - "602"
+        x-amzn-RequestId:
+          - f103d977-9d11-405b-ab8a-de6c7e86b088
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"address": "Avenida Lima 123213", "address_city": "LIMA", "country_code":
+        "PE", "email": "richardbfc3@piedpiper.com", "first_name": "Richard", "last_name":
+        "Piedpiper", "phone_number": "+51998989789"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "201"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/customers
+    response:
+      body:
+        string:
+          '{"object":"customer","id":"cus_test_bsDljysReHcy6NU6","creation_date":1615131589734,"email":"richardbfc3@piedpiper.com","antifraud_details":{"first_name":"Richard","last_name":"Piedpiper","address":"Avenida
+          Lima 123213","address_city":"LIMA","country_code":"PE","phone":"+51998989789","object":"client"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "318"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:39:49 GMT
+        Set-Cookie:
+          - JSESSIONID=888392560781EB12254C8307D95B9534; Path=/api; HttpOnly
+        Via:
+          - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - yoeuTJ8yTIYgMGTN3BZ7AnQ0BqCSiaiIy7mc9HEAGjFnGSburF5KRw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f3c5-71971049408146eb5867539f;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10142173"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0sG3FZdIAMFkFA=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 15:39:49 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 1352dd39-c3d7-4014-a78f-394619b395dd
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: '{"token_id": "tkn_test_8SSSqy9swCHbfZ1F", "customer_id": "cus_test_bsDljysReHcy6NU6"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "85"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/cards
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_XC0vjjYHs9PKwqKj\",\"code\":\"card_declined\",\"decline_code\":\"stolen_card\",\"merchant_message\":\"Tarjeta
+          robada. La tarjeta fue bloqueada y reportada al banco emisor como una tarjeta
+          robada.\",\"user_message\":\"Su tarjeta est\xE1 vencida. Verifica la fecha
+          de vencimiento de tu tarjeta e ingr\xE9salos correctamente. Si es denegada
+          nuevamente, cont\xE1ctate con el banco emisor de tu tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "438"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:39:52 GMT
+        Set-Cookie:
+          - JSESSIONID=214D93E2BC5C1482D9184FFB80880345; Path=/api; HttpOnly
+        Via:
+          - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - z2WXwt2JAelsKBJx-Zh0P84CSgMMEhvN-sv4uzVYccAlcR-8iPFxRw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f3c6-3b5eb6eb2b7f35422c39b7bc;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10142175"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - b0sG_EY0oAMFe1Q=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 15:39:52 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 4c69e5e4-5b33-4b68-92fd-b739decdbdb0
+      status:
+        code: 400
+        message: Bad Request
 version: 1

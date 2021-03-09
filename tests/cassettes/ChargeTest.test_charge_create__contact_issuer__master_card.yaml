@@ -1,1103 +1,1139 @@
 interactions:
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_yqh4Y71nEzainj4J","type":"card","creation_date":1589954374000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"SAUDI ARABIA","country_code":"SA","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 05:59:34 GMT
-      Via:
-      - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - -Hx8a2VYlEPMkbM6fPPdYs7Wj5bI2F4xcuNgbv4nGR3aeCcDhiTdog==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c745-5717ab9a641dd1a56f6591ce;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - M0QS8GGBIAMFbzQ=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - f34f5fdb-1418-4e89-ae35-d1f5d7dd3f35
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_yqh4Y71nEzainj4J"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_1AAUn5wJOKu9zNgD\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 05:59:37 GMT
-      Via:
-      - 1.1 251d722e3d568afacb1911e219d34f4d.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - G7XZGZo9i4OGwA98Ib9NwJ8zBIcMLSAg8uogRu6gYO4mzWH6Akqe_g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c747-d8a3f94350b4ec1d83827760;Sampled=0
-      X-Cache:
-      - Error from cloudfront
-      set-cookie:
-      - JSESSIONID=BC1A50CA026B9DCF4C0BEFCEB57A38E4; Path=/api; HttpOnly
-      x-amz-apigw-id:
-      - M0QTMGpvoAMF9aw=
-      x-amzn-RequestId:
-      - f4c5bfee-2a8a-42b8-b8f6-91e9f4d60b0f
-      x-culqi-environment:
-      - test
-      x-culqi-tracking-id:
-      - '7213319'
-      x-culqi-version:
-      - 2.0.0
-    status:
-      code: 402
-      message: Payment Required
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_pqP2beoHoalPXDVO","type":"card","creation_date":1615072122000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:08:42 GMT
-      Via:
-      - 1.1 53a359a477247df8211e2ebca618600b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - LYlnTmQQQlCafj8yEk2fq4VunDzXZF6dZ7jdlaAyHlg_Z-njQSYo5Q==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440b79-086db77844936dbf266b3833;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bya7CH1VIAMFiVQ=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 927c25e3-7127-4ac7-a7d4-02b4fe5beecc
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_pqP2beoHoalPXDVO"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_eqXCshfrdEl8kuMC\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:08:44 GMT
-      Set-Cookie:
-      - JSESSIONID=F3B13BB571ADFA4785AF489A04042A5A; Path=/api; HttpOnly
-      Via:
-      - 1.1 1bb0ee3ed0fcbddb06aab00e2d472079.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - xpdRMxYJm938fZEzxb_L4_rNipVralT6ZdMGMz0TSU8Zg2dmtxainw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440b7a-5676aa1c783639b91d89d7aa;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10137633'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - bya7OH4aoAMFiVQ=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:08:44 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - adef274e-0c94-4dfe-ab22-f2aad1a88453
-    status:
-      code: 402
-      message: Payment Required
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_8XsN1202hS8kXlyK","type":"card","creation_date":1615072476000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:14:37 GMT
-      Via:
-      - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 5BIKTAy4On_LPV7MipGfRjaA--f4oQhQUWkQXvTXu1pfTCl6FgGTTQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440cdc-172941b92e9cf0a82c2c9e1f;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybygGQ-IAMFwrw=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 873ac663-63c5-44b8-a996-d60a2f7238a6
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_8XsN1202hS8kXlyK"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_9zT2hEjlZDURhGQK\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:14:40 GMT
-      Set-Cookie:
-      - JSESSIONID=1626314B259C12EFA141BF44F6D6609F; Path=/api; HttpOnly
-      Via:
-      - 1.1 5e8f5005b2ffddfbe47e54d30a874656.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - W05l7IUFMaq8XOChtPvDJ514WOMhD-XwVVDEzQ3VxljRSv36FnB94A==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440cde-4557ee0f0ec9251175afce72;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10137859'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - bybyuGw9IAMFjcA=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:14:40 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - d1c82f3e-5dea-429b-b7ea-90e17ee7b783
-    status:
-      code: 402
-      message: Payment Required
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_kUlPpMDulHEg8a0p","type":"card","creation_date":1615072799000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:19:59 GMT
-      Via:
-      - 1.1 295436c328732642848d67dafd07b971.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 3l27hGRcZsC2lXeB6MHOcq9kc_K2Tu_J5nvZcRvy0AkjvLThIX34Aw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440e1f-79f9253328c9135977d0c870;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byck3Gt1oAMFmHA=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 2b8daa7a-f373-433e-a66f-bfc6c629fea9
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_kUlPpMDulHEg8a0p"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_iPh1O4sbmwfaIsoM\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:20:03 GMT
-      Set-Cookie:
-      - JSESSIONID=043C42AE1D39C7B4D90CD35F2E747613; Path=/api; HttpOnly
-      Via:
-      - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Sxlvs7yl-OqV7xFDEugEA6Dwl3vBVu-ySHfkfGpOMAJ2cVYzMB6fUg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440e20-08dd18064279d1ec4b1b53e3;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138110'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - byclGFkpIAMF5Aw=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:20:03 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - b4b56dd4-dcbc-4abb-9448-9ad60377cbc2
-    status:
-      code: 402
-      message: Payment Required
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_wSThnJaaHiQTtDVh","type":"card","creation_date":1615073164000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:26:04 GMT
-      Via:
-      - 1.1 75e2ec75b84b884e854a2fc819f11264.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - RBMb8a8qMpArCcQYusSa8YPmraIv65cWxUX2p4P2hIBq5wzo-9MITA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440f8c-6e55134f73f6cc027dbfe4ca;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydd5HH6oAMFjVw=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - ec5b22a5-1893-4df1-92e0-9d217ea0f4f0
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_wSThnJaaHiQTtDVh"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_Lg2IJIDdSnvxYQvC\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:26:07 GMT
-      Set-Cookie:
-      - JSESSIONID=C5AF5FC2D02EE2F57E247E08F119A246; Path=/api; HttpOnly
-      Via:
-      - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 8GRmB4I8LMrXZnUKK6yh6OzYRRQznGWh6SAn2shuIfM_axvx_Seysg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440f8d-539dbfd6055dedb6465c873f;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10138335'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - bydeJGEtoAMF9TQ=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sat, 06 Mar 2021 23:26:07 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - c592c893-5204-4253-9d63-bf2cc0c12f27
-    status:
-      code: 402
-      message: Payment Required
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_Z1cxFhJOw04dIcgU","type":"card","creation_date":1615121577000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:52:57 GMT
-      Via:
-      - 1.1 fd7441fafdf8d6a01b5f14f818907820.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - _YeCfZAg9VxnRh4O6lQJmF1vLoEd_p0i9ctXe_-AObkakS3ff6P5HQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cca9-44d671ee6b6048c3200f245d;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0TqbFn_oAMFqLQ=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 2a4a9d00-90ad-419b-ae5e-6deac5062f32
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_Z1cxFhJOw04dIcgU"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_zubkbFtg8ac1vwkx\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:53:00 GMT
-      Set-Cookie:
-      - JSESSIONID=D180C98F95687B64BE7B72AB6FD4C4A1; Path=/api; HttpOnly
-      Via:
-      - 1.1 c92f00b9024bffb76e013e5e0c0b7c48.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 8QYk6n3vz89avr4FOgI1tOYmCz-Egog70XD7ZCXHtlHme878cozaQw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044ccaa-66eed5155a60e7863c3c14d1;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10140968'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - b0TqsHCQoAMFhIw=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 12:53:00 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - f532f163-ad06-40e4-9518-312713e51c64
-    status:
-      code: 402
-      message: Payment Required
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_CPogINS0krR1ayGz","type":"card","creation_date":1615123547000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:25:47 GMT
-      Via:
-      - 1.1 a63e706ec0cc4cfd2d2032bf4b7c2ce6.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - eOYts1768KkHqEYXFUNz8X8xiX6jFSxmqbMASwOiet7Yr7yv9O0sCw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d45b-7e35502939777e0b5a0c602d;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0YeRE-ooAMF1Hg=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 888bb808-fe11-49dc-8125-fda6980ddf01
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_CPogINS0krR1ayGz"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_HtsQFguKi38T2djG\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:25:50 GMT
-      Set-Cookie:
-      - JSESSIONID=C852BBAE58C68CB88B8C43C5CFC0224F; Path=/api; HttpOnly
-      Via:
-      - 1.1 a63e706ec0cc4cfd2d2032bf4b7c2ce6.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - piE2Xae_n0BHwh63h1QX_fcmiXcExLH3SaMVBq9MB4GTWYALvdx-UQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d45c-368944ca4793c7e91fc39bb7;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10141286'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - b0YecG_AoAMFtQg=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 13:25:50 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - 16a1e922-53e4-4baa-bf1d-eb792ca6cc79
-    status:
-      code: 402
-      message: Payment Required
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_ivogVmFN0uq1mRio","type":"card","creation_date":1615129557000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:05:57 GMT
-      Via:
-      - 1.1 9211c11ef620fe2dded5b3d26152b9ea.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - VrtPqhYkwG_HdZpn01qJoJxrayUtcScsNK1QJ7m_O9j9hHGWIbR2-Q==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044ebd5-1bfe6f9d3978399d720e75bc;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0nJUEoioAMFvxA=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 61087c68-0804-49b2-92de-964f3a0be5d7
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_ivogVmFN0uq1mRio"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_MVu8U1qyBTeX3PiK\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:06:00 GMT
-      Set-Cookie:
-      - JSESSIONID=A821D6ED90B15220CF10F2361C96A37D; Path=/api; HttpOnly
-      Via:
-      - 1.1 295436c328732642848d67dafd07b971.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - FWBJ_WTBFdktmKe_zw-r2zbNii3i75aWcb1syDoPglANC5MAePXAog==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044ebd6-1a0b0986399a211349972260;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10141930'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - b0nJfGf_IAMFZ2w=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 15:06:00 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - b6417b14-3ec6-4609-ad67-ed8f8a5b0f47
-    status:
-      code: 402
-      message: Payment Required
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_ioXLp8BdLQ1DbwWo","type":"card","creation_date":1615131663000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:41:04 GMT
-      Via:
-      - 1.1 1a362649b081f20cd62ffd514913be08.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - tfxjfPnqtIjqGuVzSDCCxhjM1xSOPpVvyTgyPsK7aow6s9L0F5rU5g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f40f-478f328419e42eb73964aaff;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0sSeEBQIAMFjKg=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 3da3be65-d7ea-4d98-a765-350f361b8797
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
-      "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
-      "tkn_test_ioXLp8BdLQ1DbwWo"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '187'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://api.culqi.com/v2/charges
-  response:
-    body:
-      string: "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_cxnaIV7vhR8cTvX7\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
-        emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
-        cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
-        operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
-        con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
-        con otra tarjeta.\"}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '497'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:41:07 GMT
-      Set-Cookie:
-      - JSESSIONID=8F649F9194A1E7536B072D0A87B69008; Path=/api; HttpOnly
-      Via:
-      - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 2-VPIn9wjUVcgeXvXhUSgKA23OELMHDMxT4Qszk6qfGYPFzVAYyE0Q==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f411-47081a131c971062480e390b;Sampled=0
-      X-CULQI-ENVIRONMENT:
-      - test
-      X-CULQI-TRACKING-ID:
-      - '10142285'
-      X-CULQI-VERSION:
-      - 2.0.0
-      X-Cache:
-      - Error from cloudfront
-      x-amz-apigw-id:
-      - b0sSsGyuoAMFWEQ=
-      x-amzn-Remapped-Connection:
-      - keep-alive
-      x-amzn-Remapped-Date:
-      - Sun, 07 Mar 2021 15:41:07 GMT
-      x-amzn-Remapped-Server:
-      - nginx
-      x-amzn-RequestId:
-      - b6b90e98-3173-48b6-991e-91c90dcf3745
-    status:
-      code: 402
-      message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_yqh4Y71nEzainj4J","type":"card","creation_date":1589954374000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"SAUDI ARABIA","country_code":"SA","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 05:59:34 GMT
+        Via:
+          - 1.1 d44e48096e5c1bf584e881ade4b3dd04.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - -Hx8a2VYlEPMkbM6fPPdYs7Wj5bI2F4xcuNgbv4nGR3aeCcDhiTdog==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c745-5717ab9a641dd1a56f6591ce;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - M0QS8GGBIAMFbzQ=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - f34f5fdb-1418-4e89-ae35-d1f5d7dd3f35
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_yqh4Y71nEzainj4J"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_1AAUn5wJOKu9zNgD\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 05:59:37 GMT
+        Via:
+          - 1.1 251d722e3d568afacb1911e219d34f4d.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - G7XZGZo9i4OGwA98Ib9NwJ8zBIcMLSAg8uogRu6gYO4mzWH6Akqe_g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c747-d8a3f94350b4ec1d83827760;Sampled=0
+        X-Cache:
+          - Error from cloudfront
+        set-cookie:
+          - JSESSIONID=BC1A50CA026B9DCF4C0BEFCEB57A38E4; Path=/api; HttpOnly
+        x-amz-apigw-id:
+          - M0QTMGpvoAMF9aw=
+        x-amzn-RequestId:
+          - f4c5bfee-2a8a-42b8-b8f6-91e9f4d60b0f
+        x-culqi-environment:
+          - test
+        x-culqi-tracking-id:
+          - "7213319"
+        x-culqi-version:
+          - 2.0.0
+      status:
+        code: 402
+        message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_pqP2beoHoalPXDVO","type":"card","creation_date":1615072122000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:08:42 GMT
+        Via:
+          - 1.1 53a359a477247df8211e2ebca618600b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - LYlnTmQQQlCafj8yEk2fq4VunDzXZF6dZ7jdlaAyHlg_Z-njQSYo5Q==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440b79-086db77844936dbf266b3833;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bya7CH1VIAMFiVQ=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 927c25e3-7127-4ac7-a7d4-02b4fe5beecc
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_pqP2beoHoalPXDVO"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_eqXCshfrdEl8kuMC\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:08:44 GMT
+        Set-Cookie:
+          - JSESSIONID=F3B13BB571ADFA4785AF489A04042A5A; Path=/api; HttpOnly
+        Via:
+          - 1.1 1bb0ee3ed0fcbddb06aab00e2d472079.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - xpdRMxYJm938fZEzxb_L4_rNipVralT6ZdMGMz0TSU8Zg2dmtxainw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440b7a-5676aa1c783639b91d89d7aa;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10137633"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - bya7OH4aoAMFiVQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:08:44 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - adef274e-0c94-4dfe-ab22-f2aad1a88453
+      status:
+        code: 402
+        message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_8XsN1202hS8kXlyK","type":"card","creation_date":1615072476000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:14:37 GMT
+        Via:
+          - 1.1 f34144fb5b49a9a388448959976b46e4.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 5BIKTAy4On_LPV7MipGfRjaA--f4oQhQUWkQXvTXu1pfTCl6FgGTTQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440cdc-172941b92e9cf0a82c2c9e1f;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybygGQ-IAMFwrw=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 873ac663-63c5-44b8-a996-d60a2f7238a6
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_8XsN1202hS8kXlyK"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_9zT2hEjlZDURhGQK\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:14:40 GMT
+        Set-Cookie:
+          - JSESSIONID=1626314B259C12EFA141BF44F6D6609F; Path=/api; HttpOnly
+        Via:
+          - 1.1 5e8f5005b2ffddfbe47e54d30a874656.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - W05l7IUFMaq8XOChtPvDJ514WOMhD-XwVVDEzQ3VxljRSv36FnB94A==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440cde-4557ee0f0ec9251175afce72;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10137859"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - bybyuGw9IAMFjcA=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:14:40 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - d1c82f3e-5dea-429b-b7ea-90e17ee7b783
+      status:
+        code: 402
+        message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_kUlPpMDulHEg8a0p","type":"card","creation_date":1615072799000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:19:59 GMT
+        Via:
+          - 1.1 295436c328732642848d67dafd07b971.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 3l27hGRcZsC2lXeB6MHOcq9kc_K2Tu_J5nvZcRvy0AkjvLThIX34Aw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440e1f-79f9253328c9135977d0c870;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byck3Gt1oAMFmHA=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 2b8daa7a-f373-433e-a66f-bfc6c629fea9
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_kUlPpMDulHEg8a0p"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_iPh1O4sbmwfaIsoM\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:20:03 GMT
+        Set-Cookie:
+          - JSESSIONID=043C42AE1D39C7B4D90CD35F2E747613; Path=/api; HttpOnly
+        Via:
+          - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Sxlvs7yl-OqV7xFDEugEA6Dwl3vBVu-ySHfkfGpOMAJ2cVYzMB6fUg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440e20-08dd18064279d1ec4b1b53e3;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138110"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - byclGFkpIAMF5Aw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:20:03 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - b4b56dd4-dcbc-4abb-9448-9ad60377cbc2
+      status:
+        code: 402
+        message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_wSThnJaaHiQTtDVh","type":"card","creation_date":1615073164000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:26:04 GMT
+        Via:
+          - 1.1 75e2ec75b84b884e854a2fc819f11264.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - RBMb8a8qMpArCcQYusSa8YPmraIv65cWxUX2p4P2hIBq5wzo-9MITA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440f8c-6e55134f73f6cc027dbfe4ca;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydd5HH6oAMFjVw=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - ec5b22a5-1893-4df1-92e0-9d217ea0f4f0
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_wSThnJaaHiQTtDVh"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_Lg2IJIDdSnvxYQvC\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:26:07 GMT
+        Set-Cookie:
+          - JSESSIONID=C5AF5FC2D02EE2F57E247E08F119A246; Path=/api; HttpOnly
+        Via:
+          - 1.1 d46b7521718ba1ecd6db2ceb1c50f1f8.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 8GRmB4I8LMrXZnUKK6yh6OzYRRQznGWh6SAn2shuIfM_axvx_Seysg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440f8d-539dbfd6055dedb6465c873f;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10138335"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - bydeJGEtoAMF9TQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sat, 06 Mar 2021 23:26:07 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - c592c893-5204-4253-9d63-bf2cc0c12f27
+      status:
+        code: 402
+        message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_Z1cxFhJOw04dIcgU","type":"card","creation_date":1615121577000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:52:57 GMT
+        Via:
+          - 1.1 fd7441fafdf8d6a01b5f14f818907820.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - _YeCfZAg9VxnRh4O6lQJmF1vLoEd_p0i9ctXe_-AObkakS3ff6P5HQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cca9-44d671ee6b6048c3200f245d;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0TqbFn_oAMFqLQ=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 2a4a9d00-90ad-419b-ae5e-6deac5062f32
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_Z1cxFhJOw04dIcgU"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_zubkbFtg8ac1vwkx\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:53:00 GMT
+        Set-Cookie:
+          - JSESSIONID=D180C98F95687B64BE7B72AB6FD4C4A1; Path=/api; HttpOnly
+        Via:
+          - 1.1 c92f00b9024bffb76e013e5e0c0b7c48.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 8QYk6n3vz89avr4FOgI1tOYmCz-Egog70XD7ZCXHtlHme878cozaQw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044ccaa-66eed5155a60e7863c3c14d1;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10140968"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - b0TqsHCQoAMFhIw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 12:53:00 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - f532f163-ad06-40e4-9518-312713e51c64
+      status:
+        code: 402
+        message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_CPogINS0krR1ayGz","type":"card","creation_date":1615123547000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:25:47 GMT
+        Via:
+          - 1.1 a63e706ec0cc4cfd2d2032bf4b7c2ce6.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - eOYts1768KkHqEYXFUNz8X8xiX6jFSxmqbMASwOiet7Yr7yv9O0sCw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d45b-7e35502939777e0b5a0c602d;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0YeRE-ooAMF1Hg=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 888bb808-fe11-49dc-8125-fda6980ddf01
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_CPogINS0krR1ayGz"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_HtsQFguKi38T2djG\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:25:50 GMT
+        Set-Cookie:
+          - JSESSIONID=C852BBAE58C68CB88B8C43C5CFC0224F; Path=/api; HttpOnly
+        Via:
+          - 1.1 a63e706ec0cc4cfd2d2032bf4b7c2ce6.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - piE2Xae_n0BHwh63h1QX_fcmiXcExLH3SaMVBq9MB4GTWYALvdx-UQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d45c-368944ca4793c7e91fc39bb7;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10141286"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - b0YecG_AoAMFtQg=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 13:25:50 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - 16a1e922-53e4-4baa-bf1d-eb792ca6cc79
+      status:
+        code: 402
+        message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_ivogVmFN0uq1mRio","type":"card","creation_date":1615129557000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:05:57 GMT
+        Via:
+          - 1.1 9211c11ef620fe2dded5b3d26152b9ea.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - VrtPqhYkwG_HdZpn01qJoJxrayUtcScsNK1QJ7m_O9j9hHGWIbR2-Q==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044ebd5-1bfe6f9d3978399d720e75bc;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0nJUEoioAMFvxA=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 61087c68-0804-49b2-92de-964f3a0be5d7
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_ivogVmFN0uq1mRio"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_MVu8U1qyBTeX3PiK\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:06:00 GMT
+        Set-Cookie:
+          - JSESSIONID=A821D6ED90B15220CF10F2361C96A37D; Path=/api; HttpOnly
+        Via:
+          - 1.1 295436c328732642848d67dafd07b971.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - FWBJ_WTBFdktmKe_zw-r2zbNii3i75aWcb1syDoPglANC5MAePXAog==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044ebd6-1a0b0986399a211349972260;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10141930"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - b0nJfGf_IAMFZ2w=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 15:06:00 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - b6417b14-3ec6-4609-ad67-ed8f8a5b0f47
+      status:
+        code: 402
+        message: Payment Required
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_ioXLp8BdLQ1DbwWo","type":"card","creation_date":1615131663000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:41:04 GMT
+        Via:
+          - 1.1 1a362649b081f20cd62ffd514913be08.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - tfxjfPnqtIjqGuVzSDCCxhjM1xSOPpVvyTgyPsK7aow6s9L0F5rU5g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f40f-478f328419e42eb73964aaff;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0sSeEBQIAMFjKg=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 3da3be65-d7ea-4d98-a765-350f361b8797
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"amount": 1000, "capture": false, "currency_code": "PEN", "description":
+        "Venta de prueba", "email": "richard@piedpiper.com", "installments": 0, "source_id":
+        "tkn_test_ioXLp8BdLQ1DbwWo"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "187"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://api.culqi.com/v2/charges
+    response:
+      body:
+        string:
+          "{\"object\":\"error\",\"type\":\"card_error\",\"charge_id\":\"chr_test_cxnaIV7vhR8cTvX7\",\"code\":\"card_declined\",\"decline_code\":\"contact_issuer\",\"merchant_message\":\"Contactar
+          emisor. La operaci\xF3n fue denegada por el banco emisor de la tarjeta y el
+          cliente necesita contactarse con la entidad para conocer el motivo.\",\"user_message\":\"La
+          operaci\xF3n ha sido denegada por la entidad emisora de tu tarjeta. Cont\xE1ctate
+          con el banco para conocer el motivo de la denegaci\xF3n o intenta nuevamente
+          con otra tarjeta.\"}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "497"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:41:07 GMT
+        Set-Cookie:
+          - JSESSIONID=8F649F9194A1E7536B072D0A87B69008; Path=/api; HttpOnly
+        Via:
+          - 1.1 0e3695dd181942a4e786f01e5f9e8b30.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 2-VPIn9wjUVcgeXvXhUSgKA23OELMHDMxT4Qszk6qfGYPFzVAYyE0Q==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f411-47081a131c971062480e390b;Sampled=0
+        X-CULQI-ENVIRONMENT:
+          - test
+        X-CULQI-TRACKING-ID:
+          - "10142285"
+        X-CULQI-VERSION:
+          - 2.0.0
+        X-Cache:
+          - Error from cloudfront
+        x-amz-apigw-id:
+          - b0sSsGyuoAMFWEQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Sun, 07 Mar 2021 15:41:07 GMT
+        x-amzn-Remapped-Server:
+          - nginx
+        x-amzn-RequestId:
+          - b6b90e98-3173-48b6-991e-91c90dcf3745
+      status:
+        code: 402
+        message: Payment Required
 version: 1

@@ -1,488 +1,506 @@
 interactions:
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_qec8mVqWxbEA3Ero","type":"card","creation_date":1589955030000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"UNITED KINGDOM","country_code":"GB","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '609'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 06:10:31 GMT
-      Via:
-      - 1.1 bd11400f2be95e5b98d25238ed7da10f.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - U7ZJY2TQnVet8YWDEync2nmpfcmdGQ9UTPIHBRySiGJf01AIEtx18Q==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c9d6-7eb7d5e6b57d63c2ada8c464;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - M0R5iHrpIAMFYNg=
-      x-amzn-Remapped-Content-Length:
-      - '609'
-      x-amzn-RequestId:
-      - 14e2ea3a-b39c-4171-9e83-7ca7f4382109
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_Ai2yzi8gGabtYYU8","type":"card","creation_date":1615072311000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:11:51 GMT
-      Via:
-      - 1.1 1c66d149957c72960a1113727d42d47c.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - -Yq133IC9fSIYrGAyFKJljpDh06PVHyj7qN9MFTN-Q829w--A-j--g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c36-5523a37b6c9a79f63109f659;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybYlERTIAMFUBw=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - c3784731-1c6f-4612-b79b-605bd0baa654
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_EwF9v7EkqfDv3eej","type":"card","creation_date":1615072645000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:17:25 GMT
-      Via:
-      - 1.1 9211c11ef620fe2dded5b3d26152b9ea.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 6TGAR9lz0co6QvO5ALacf-SqYMv03w9CzmMyUJ3xckKf6xpturFtNQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440d84-77af58fc4b5561336925c36f;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycMxHNyoAMFXgw=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 370dcac6-4714-47bb-a16a-b7012540ae44
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_J3bktgUayqa2Xz2t","type":"card","creation_date":1615073007000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:23:27 GMT
-      Via:
-      - 1.1 c92f00b9024bffb76e013e5e0c0b7c48.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Pm_4WFnJBWdvQifKQYHioF_r36OCRSx1fwzLuMUL3imKcERkVaXRuQ==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440eee-685724a167f290146192cda3;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydFTEfGIAMFtKA=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 56aaa6c6-4dfa-47de-8e9e-c9b0766f03d7
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_UKzMhRFKCHVW5w66","type":"card","creation_date":1615073355000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:29:15 GMT
-      Via:
-      - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - iorMJihFlGYNkt-AxXxYg4-dRYAui_D3AGZAxxbII-Atru_Db_gIwg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044104b-16bd497d4b80230d2db2e253;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byd7wGR1IAMF99g=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 2b431ef8-0570-4318-8cc8-3aa30b8f7582
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_qCpH05nmzDrQPBsC","type":"card","creation_date":1615121755000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:55:56 GMT
-      Via:
-      - 1.1 a26c307f1caab99490ddcc62da38effc.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - zx2sMO2-1MtnofsEhV1kzYG-TXKZLDKxpA6gSYHy1DSZm2rofFhy6g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cd5b-3cc58fdf3cf1777930dd4a34;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0UGVFSnIAMF5Cw=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 51a44346-d489-4b5a-bd7d-aa9a76e5cb25
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_TCJOEXAVEUBOZrWR","type":"card","creation_date":1615123742000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:29:02 GMT
-      Via:
-      - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - L1l306isZg8u52JXW9ak_ph9DKltTXWTLK5Ky0wz9rj8f2R7LMd80w==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d51e-7e55b14805699fc2031fc9e3;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0Y8vE8SIAMFhxg=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 381ba04e-c78c-44d1-82c9-d873a67b7fed
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_Jl68OcwmAPTcxEjV","type":"card","creation_date":1615129733000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:08:54 GMT
-      Via:
-      - 1.1 1bb0ee3ed0fcbddb06aab00e2d472079.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - fQ36w9Uomx4kJ0K019CeVLhfHRBzCsfIxGY96LoSb-b_J72FR_0b_w==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044ec85-4d5b2f276e23e2321477abfc;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0nk4FvfIAMFQzQ=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - 32ec6d0b-e816-4914-b9b4-11625b0027ad
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
-      "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_3x7I65M12WjdGIyN","type":"card","creation_date":1615131849000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
-        BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '598'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:44:10 GMT
-      Via:
-      - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Pl1Lzz-b9VtNgMt-kaORkHlubsrYL63AbqZ7a0DNzpCeaJiJ7YeO5g==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f4c9-7a463616074f59fb2f4f7f30;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0svbFDGoAMF0HA=
-      x-amzn-Remapped-Content-Length:
-      - '598'
-      x-amzn-RequestId:
-      - c6af68a1-aab2-44ac-8470-ea2f5c667490
-    status:
-      code: 201
-      message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_qec8mVqWxbEA3Ero","type":"card","creation_date":1589955030000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"UNITED KINGDOM","country_code":"GB","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "609"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 06:10:31 GMT
+        Via:
+          - 1.1 bd11400f2be95e5b98d25238ed7da10f.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - U7ZJY2TQnVet8YWDEync2nmpfcmdGQ9UTPIHBRySiGJf01AIEtx18Q==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c9d6-7eb7d5e6b57d63c2ada8c464;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - M0R5iHrpIAMFYNg=
+        x-amzn-Remapped-Content-Length:
+          - "609"
+        x-amzn-RequestId:
+          - 14e2ea3a-b39c-4171-9e83-7ca7f4382109
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_Ai2yzi8gGabtYYU8","type":"card","creation_date":1615072311000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:11:51 GMT
+        Via:
+          - 1.1 1c66d149957c72960a1113727d42d47c.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - -Yq133IC9fSIYrGAyFKJljpDh06PVHyj7qN9MFTN-Q829w--A-j--g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c36-5523a37b6c9a79f63109f659;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybYlERTIAMFUBw=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - c3784731-1c6f-4612-b79b-605bd0baa654
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_EwF9v7EkqfDv3eej","type":"card","creation_date":1615072645000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:17:25 GMT
+        Via:
+          - 1.1 9211c11ef620fe2dded5b3d26152b9ea.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 6TGAR9lz0co6QvO5ALacf-SqYMv03w9CzmMyUJ3xckKf6xpturFtNQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440d84-77af58fc4b5561336925c36f;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycMxHNyoAMFXgw=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 370dcac6-4714-47bb-a16a-b7012540ae44
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_J3bktgUayqa2Xz2t","type":"card","creation_date":1615073007000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:23:27 GMT
+        Via:
+          - 1.1 c92f00b9024bffb76e013e5e0c0b7c48.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Pm_4WFnJBWdvQifKQYHioF_r36OCRSx1fwzLuMUL3imKcERkVaXRuQ==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440eee-685724a167f290146192cda3;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydFTEfGIAMFtKA=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 56aaa6c6-4dfa-47de-8e9e-c9b0766f03d7
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_UKzMhRFKCHVW5w66","type":"card","creation_date":1615073355000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:29:15 GMT
+        Via:
+          - 1.1 7ac9c8ac72e3482403dd503d970050b5.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - iorMJihFlGYNkt-AxXxYg4-dRYAui_D3AGZAxxbII-Atru_Db_gIwg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044104b-16bd497d4b80230d2db2e253;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byd7wGR1IAMF99g=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 2b431ef8-0570-4318-8cc8-3aa30b8f7582
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_qCpH05nmzDrQPBsC","type":"card","creation_date":1615121755000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:55:56 GMT
+        Via:
+          - 1.1 a26c307f1caab99490ddcc62da38effc.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - zx2sMO2-1MtnofsEhV1kzYG-TXKZLDKxpA6gSYHy1DSZm2rofFhy6g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cd5b-3cc58fdf3cf1777930dd4a34;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0UGVFSnIAMF5Cw=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 51a44346-d489-4b5a-bd7d-aa9a76e5cb25
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_TCJOEXAVEUBOZrWR","type":"card","creation_date":1615123742000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:29:02 GMT
+        Via:
+          - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - L1l306isZg8u52JXW9ak_ph9DKltTXWTLK5Ky0wz9rj8f2R7LMd80w==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d51e-7e55b14805699fc2031fc9e3;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0Y8vE8SIAMFhxg=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 381ba04e-c78c-44d1-82c9-d873a67b7fed
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_Jl68OcwmAPTcxEjV","type":"card","creation_date":1615129733000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:08:54 GMT
+        Via:
+          - 1.1 1bb0ee3ed0fcbddb06aab00e2d472079.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - fQ36w9Uomx4kJ0K019CeVLhfHRBzCsfIxGY96LoSb-b_J72FR_0b_w==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044ec85-4d5b2f276e23e2321477abfc;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0nk4FvfIAMFQzQ=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - 32ec6d0b-e816-4914-b9b4-11625b0027ad
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400020000000003", "expiration_month": "07", "expiration_year":
+        "2025", "cvv": "203", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_3x7I65M12WjdGIyN","type":"card","creation_date":1615131849000,"email":"richard@piedpiper.com","card_number":"540002******0003","last_four":"0003","active":true,"iin":{"object":"iin","bin":"540002","card_brand":"MasterCard","card_type":"credito","card_category":null,"issuer":{"name":"BARCLAYS
+          BANK PLC","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "598"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:44:10 GMT
+        Via:
+          - 1.1 aef569f4a423a4d8bcb2dc36bcbebcb3.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Pl1Lzz-b9VtNgMt-kaORkHlubsrYL63AbqZ7a0DNzpCeaJiJ7YeO5g==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f4c9-7a463616074f59fb2f4f7f30;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0svbFDGoAMF0HA=
+        x-amzn-Remapped-Content-Length:
+          - "598"
+        x-amzn-RequestId:
+          - c6af68a1-aab2-44ac-8470-ea2f5c667490
+      status:
+        code: 201
+        message: Created
 version: 1

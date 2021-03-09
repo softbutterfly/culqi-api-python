@@ -1,488 +1,506 @@
 interactions:
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.4
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_V15reDL7Xqk0b5Xw","type":"card","creation_date":1589955029000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"SAUDI ARABIA","country_code":"SA","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 20 May 2020 06:10:29 GMT
-      Via:
-      - 1.1 1156b00a32ef474e9b51a603424ddb97.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Cv15qD13MqfamHsgWdxXGaCVhTacLAK0xZK7sZsixioeouDFhTrJrg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-5ec4c9d4-3c739e0fd3e31b68ccc2b66d;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - M0R5SGmKIAMFQYg=
-      x-amzn-Remapped-Content-Length:
-      - '612'
-      x-amzn-RequestId:
-      - 76f1928c-1b72-4119-a754-66c038b5bd56
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_RjVlavfUPWkSCfux","type":"card","creation_date":1615072309000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:11:50 GMT
-      Via:
-      - 1.1 fd7441fafdf8d6a01b5f14f818907820.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - C63jS9x-Q6J99yR9WmTK4dOnCcoL1_eFP5VPcSa1WCp9-KOcFokXTA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440c35-6487d58e4a85cef074e4185b;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bybYZEF2oAMFvAQ=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 87cf100d-929a-461a-bf8d-dbbb6f6f4ed8
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_mmRsLGTtzaVGwI5b","type":"card","creation_date":1615072644000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:17:24 GMT
-      Via:
-      - 1.1 9211c11ef620fe2dded5b3d26152b9ea.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Zcaj8ZgJ4J8PDPI4XyPWBJ7nOK9vLwrduAA2a-wJkKV3PjjRek4oiA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440d83-2492af7f78a4319448d07ca9;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bycMmG0boAMFosw=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - caff540d-e950-46b4-a879-47d4945a4425
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_5A1xmWtjwCPbS9AN","type":"card","creation_date":1615073005000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:23:25 GMT
-      Via:
-      - 1.1 1bb0ee3ed0fcbddb06aab00e2d472079.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - KUR4G0o_sEGEw_J6WAFVjUDP0gbYANPv4_1AAUFCxIKv5Hr0TciXQg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60440eed-4f0854b06d524caf620056be;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - bydFFEl4IAMFqBA=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - c6ddcb80-98b9-40e3-af63-448e624e196c
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_XPV5vJTJZ1kqqbU9","type":"card","creation_date":1615073354000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sat, 06 Mar 2021 23:29:14 GMT
-      Via:
-      - 1.1 b85c6e327bcb075b65ff967ef1426dba.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 10v6--jQRaLETIKvkHmdemGl38DYAo5Qg3vZ9bikOaigb7Dk1HgKcw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-60441049-486bccd3576dfdc46f3766b0;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - byd7kGx2IAMFRog=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 1da1ec36-8cdd-464c-8435-87cf639d2f52
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_wHdIbZm7m4bVPpRH","type":"card","creation_date":1615121754000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 12:55:54 GMT
-      Via:
-      - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - fODocr_6YgF2ajhRkf5LmZwO1CXq1ryFR8Tgj8urucuk6i0XqmcgAw==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044cd5a-5dce74a9102c9c7c239097f2;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0UGHHsiIAMF8FA=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - e9f567f9-7f7e-4ee3-bcd3-09821ebbb200
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_C2hDE68iBZ1lKBgQ","type":"card","creation_date":1615123740000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 13:29:01 GMT
-      Via:
-      - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - VXwI8zwhkkyW77FjrnkbR96wMg2aLLOPwBnEeXyqBAeKiCGWB5sXZg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044d51c-193231805ab3866339a92eb0;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0Y8bHUgoAMFqLQ=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - a8f7c706-1612-4a1e-9a8a-06bb34bd363b
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_M9iZQ7P7Q0ToDiod","type":"card","creation_date":1615129732000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:08:52 GMT
-      Via:
-      - 1.1 2509c279ef82edf811c5e24c01e81d3b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - ksqtTP0j8QaRdbATz8uNY2SxfC5HV-aBJEQ0nkzaZYf9096bVs72eg==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044ec84-553d8b98344f2f140d9b5f58;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0nkpGvoIAMFXnQ=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - 9b8cdc18-b70f-4989-8da6-60c0b0d82239
-    status:
-      code: 201
-      message: Created
-- request:
-    body: '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
-      "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '136'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Culqi-API-Python/1.0.0
-    method: POST
-    uri: https://secure.culqi.com/v2/tokens
-  response:
-    body:
-      string: '{"object":"token","id":"tkn_test_SlFO5Xa4vCOqoUWk","type":"card","creation_date":1615131847000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
-        FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - UTF-8
-      Content-Length:
-      - '603'
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Sun, 07 Mar 2021 15:44:08 GMT
-      Via:
-      - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - EJn3CsFX4dPkGkpxSCOh5RxFWtZsxEPrYpDaqzi-pEiZiahMf55oIA==
-      X-Amz-Cf-Pop:
-      - SCL50-C1
-      X-Amzn-Trace-Id:
-      - Root=1-6044f4c7-38ca38db55143cba680e8344;Sampled=0
-      X-Cache:
-      - Miss from cloudfront
-      x-amz-apigw-id:
-      - b0svOGT3IAMFaJw=
-      x-amzn-Remapped-Content-Length:
-      - '603'
-      x-amzn-RequestId:
-      - f22da07a-0e38-4f4e-aede-ee9ef3ca66a0
-    status:
-      code: 201
-      message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.4
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_V15reDL7Xqk0b5Xw","type":"card","creation_date":1589955029000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"SAUDI ARABIA","country_code":"SA","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"190.237.22.191","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "612"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Wed, 20 May 2020 06:10:29 GMT
+        Via:
+          - 1.1 1156b00a32ef474e9b51a603424ddb97.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Cv15qD13MqfamHsgWdxXGaCVhTacLAK0xZK7sZsixioeouDFhTrJrg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-5ec4c9d4-3c739e0fd3e31b68ccc2b66d;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - M0R5SGmKIAMFQYg=
+        x-amzn-Remapped-Content-Length:
+          - "612"
+        x-amzn-RequestId:
+          - 76f1928c-1b72-4119-a754-66c038b5bd56
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_RjVlavfUPWkSCfux","type":"card","creation_date":1615072309000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:11:50 GMT
+        Via:
+          - 1.1 fd7441fafdf8d6a01b5f14f818907820.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - C63jS9x-Q6J99yR9WmTK4dOnCcoL1_eFP5VPcSa1WCp9-KOcFokXTA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440c35-6487d58e4a85cef074e4185b;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bybYZEF2oAMFvAQ=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 87cf100d-929a-461a-bf8d-dbbb6f6f4ed8
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_mmRsLGTtzaVGwI5b","type":"card","creation_date":1615072644000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:17:24 GMT
+        Via:
+          - 1.1 9211c11ef620fe2dded5b3d26152b9ea.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - Zcaj8ZgJ4J8PDPI4XyPWBJ7nOK9vLwrduAA2a-wJkKV3PjjRek4oiA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440d83-2492af7f78a4319448d07ca9;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bycMmG0boAMFosw=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - caff540d-e950-46b4-a879-47d4945a4425
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_5A1xmWtjwCPbS9AN","type":"card","creation_date":1615073005000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:23:25 GMT
+        Via:
+          - 1.1 1bb0ee3ed0fcbddb06aab00e2d472079.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - KUR4G0o_sEGEw_J6WAFVjUDP0gbYANPv4_1AAUFCxIKv5Hr0TciXQg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60440eed-4f0854b06d524caf620056be;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - bydFFEl4IAMFqBA=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - c6ddcb80-98b9-40e3-af63-448e624e196c
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_XPV5vJTJZ1kqqbU9","type":"card","creation_date":1615073354000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sat, 06 Mar 2021 23:29:14 GMT
+        Via:
+          - 1.1 b85c6e327bcb075b65ff967ef1426dba.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - 10v6--jQRaLETIKvkHmdemGl38DYAo5Qg3vZ9bikOaigb7Dk1HgKcw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-60441049-486bccd3576dfdc46f3766b0;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - byd7kGx2IAMFRog=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 1da1ec36-8cdd-464c-8435-87cf639d2f52
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_wHdIbZm7m4bVPpRH","type":"card","creation_date":1615121754000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 12:55:54 GMT
+        Via:
+          - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - fODocr_6YgF2ajhRkf5LmZwO1CXq1ryFR8Tgj8urucuk6i0XqmcgAw==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044cd5a-5dce74a9102c9c7c239097f2;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0UGHHsiIAMF8FA=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - e9f567f9-7f7e-4ee3-bcd3-09821ebbb200
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_C2hDE68iBZ1lKBgQ","type":"card","creation_date":1615123740000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 13:29:01 GMT
+        Via:
+          - 1.1 4f45939a8b92d3ca318b57496faa108b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - VXwI8zwhkkyW77FjrnkbR96wMg2aLLOPwBnEeXyqBAeKiCGWB5sXZg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044d51c-193231805ab3866339a92eb0;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0Y8bHUgoAMFqLQ=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - a8f7c706-1612-4a1e-9a8a-06bb34bd363b
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_M9iZQ7P7Q0ToDiod","type":"card","creation_date":1615129732000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:08:52 GMT
+        Via:
+          - 1.1 2509c279ef82edf811c5e24c01e81d3b.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - ksqtTP0j8QaRdbATz8uNY2SxfC5HV-aBJEQ0nkzaZYf9096bVs72eg==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044ec84-553d8b98344f2f140d9b5f58;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0nkpGvoIAMFXnQ=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - 9b8cdc18-b70f-4989-8da6-60c0b0d82239
+      status:
+        code: 201
+        message: Created
+  - request:
+      body:
+        '{"card_number": "5400000000000005", "expiration_month": "01", "expiration_year":
+        "2025", "cvv": "492", "email": "richard@piedpiper.com"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer culiq_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "136"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Culqi-API-Python/1.0.1
+      method: POST
+      uri: https://secure.culqi.com/v2/tokens
+    response:
+      body:
+        string:
+          '{"object":"token","id":"tkn_test_SlFO5Xa4vCOqoUWk","type":"card","creation_date":1615131847000,"email":"richard@piedpiper.com","card_number":"540000******0005","last_four":"0005","active":true,"iin":{"object":"iin","bin":"540000","card_brand":"MasterCard","card_type":"credito","card_category":"Oro","issuer":{"name":"SAMBA
+          FINANCIAL GROUP","country":"PERU","country_code":"PE","website":null,"phone_number":null},"installments_allowed":[]},"client":{"ip":"191.98.182.73","ip_country":"Peru","ip_country_code":"PE","browser":"UNKNOWN","device_fingerprint":null,"device_type":"Escritorio"},"metadata":{}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Encoding:
+          - UTF-8
+        Content-Length:
+          - "603"
+        Content-Type:
+          - application/json;charset=UTF-8
+        Date:
+          - Sun, 07 Mar 2021 15:44:08 GMT
+        Via:
+          - 1.1 fa3f07f937529cd473488970e2062033.cloudfront.net (CloudFront)
+        X-Amz-Cf-Id:
+          - EJn3CsFX4dPkGkpxSCOh5RxFWtZsxEPrYpDaqzi-pEiZiahMf55oIA==
+        X-Amz-Cf-Pop:
+          - SCL50-C1
+        X-Amzn-Trace-Id:
+          - Root=1-6044f4c7-38ca38db55143cba680e8344;Sampled=0
+        X-Cache:
+          - Miss from cloudfront
+        x-amz-apigw-id:
+          - b0svOGT3IAMFaJw=
+        x-amzn-Remapped-Content-Length:
+          - "603"
+        x-amzn-RequestId:
+          - f22da07a-0e38-4f4e-aede-ee9ef3ca66a0
+      status:
+        code: 201
+        message: Created
 version: 1
