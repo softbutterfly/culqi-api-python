@@ -40,6 +40,10 @@ cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [{new_version}] - 
 name = "Update version.py"
 cmd = "echo $(echo \"{new_version}\" | sed -r 's/([0-9]+)\\.([0-9]+)\\.([0-9]+)/VERSION = (\"\\1\", \"\\2\", \"\\3\")/g') > culqi/version.py"
 
+[[before_commit]]
+name = "Update version.py"
+cmd = "find ./tests/cassettes -type f -exec sed -i -e 's#Culqi-API-Python/{current_version}#Culqi-API-Python/{new_version}#g' {} \;"
+
 [[after_push]]
 name = "Build package"
 cmd = "poetry build"
