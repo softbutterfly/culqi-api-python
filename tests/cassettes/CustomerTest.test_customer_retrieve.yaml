@@ -137,7 +137,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/customers
     response:
@@ -199,7 +199,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/customers/cus_test_FzIgYpt4mJsbWwYq
     response:
@@ -262,7 +262,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/customers
     response:
@@ -324,7 +324,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/customers/cus_test_32jQDyvUwYCAiOyt
     response:
@@ -387,7 +387,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/customers
     response:
@@ -449,7 +449,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/customers/cus_test_o8nx0qePilTkCEEr
     response:
@@ -512,7 +512,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/customers
     response:
@@ -574,7 +574,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/customers/cus_test_cl6ZAk4e6pqd6Cxa
     response:
@@ -637,7 +637,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/customers
     response:
@@ -699,7 +699,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/customers/cus_test_ZeBkfmealj1BsVnO
     response:
@@ -762,7 +762,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/customers
     response:
@@ -824,7 +824,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/customers/cus_test_CzYyqzobTakF6CM2
     response:
@@ -887,7 +887,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/customers
     response:
@@ -949,7 +949,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/customers/cus_test_LJU5s3JWleLwaEjt
     response:
@@ -1012,7 +1012,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/customers
     response:
@@ -1074,7 +1074,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/customers/cus_test_RO9yromND5eNNwKG
     response:

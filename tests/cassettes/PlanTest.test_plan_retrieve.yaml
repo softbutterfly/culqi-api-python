@@ -131,7 +131,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/plans
     response:
@@ -191,7 +191,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/plans/pln_test_NvU5tAskXFmfUiZl
     response:
@@ -251,7 +251,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/plans
     response:
@@ -311,7 +311,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/plans/pln_test_84tmKv1UfYKWUyKk
     response:
@@ -371,7 +371,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/plans
     response:
@@ -431,7 +431,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/plans/pln_test_w1XYXx6CN9QJAM47
     response:
@@ -491,7 +491,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/plans
     response:
@@ -551,7 +551,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/plans/pln_test_bNJGH5xn3tlX3ASe
     response:
@@ -611,7 +611,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/plans
     response:
@@ -671,7 +671,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/plans/pln_test_BG1ossRFlXhbVjEd
     response:
@@ -731,7 +731,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/plans
     response:
@@ -791,7 +791,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/plans/pln_test_gxcZI1j5LL7FrGaw
     response:
@@ -851,7 +851,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/plans
     response:
@@ -911,7 +911,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/plans/pln_test_Mv3kAnowdkv8ETXH
     response:
@@ -971,7 +971,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: POST
       uri: https://api.culqi.com/v2/plans
     response:
@@ -1031,7 +1031,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Culqi-API-Python/1.0.1
+          - Culqi-API-Python/2.0.0
       method: GET
       uri: https://api.culqi.com/v2/plans/pln_test_7NEp6DLfwRi36Pr1
     response:

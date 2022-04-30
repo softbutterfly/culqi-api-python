@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "culqi-api-python"
-version = "1.0.1"
+version = "2.0.0"
 description = 'Biblioteca de Culqi en Python'
 authors = [
   "SoftButterfly Development Team <dev@softbutterfly.io>",
@@ -33,7 +33,7 @@ include = [
 ]
 
 [tool.poetry.urls]
-"Download" = "https://github.com/softbutterfly/culqi-api-python/archive/1.0.1.tar.gz"
+"Download" = "https://github.com/softbutterfly/culqi-api-python/archive/2.0.0.tar.gz"
 "Bug Tracker" = "https://github.com/softbutterfly/culqi-api-python/issues"
 
 [tool.poetry.dependencies]
