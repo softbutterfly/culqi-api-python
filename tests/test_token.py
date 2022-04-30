@@ -35,9 +35,7 @@ class TokenTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.token._get_url() == "https://api.culqi.com/v2/tokens"
-        assert self.token._get_url(id_) == "https://api.culqi.com/v2/tokens/{0}".format(
-            id_
-        )
+        assert self.token._get_url(id_) == f"https://api.culqi.com/v2/tokens/{id_}"
 
     @pytest.mark.vcr()
     def test_token_create(self):

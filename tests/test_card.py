@@ -29,7 +29,7 @@ class CardTest(unittest.TestCase):
         self.metadata = {"order_id": "0001"}
 
     def get_card_data(self, code, provider):
-        email = "richard{0}@piedpiper.com".format(uuid4().hex[:4])
+        email = f"richard{uuid4().hex[:4]}@piedpiper.com"
 
         token_data = deepcopy(Data.CARD[code][provider])
         token_data["email"] = email
@@ -49,9 +49,7 @@ class CardTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.card._get_url() == "https://api.culqi.com/v2/cards"
-        assert self.card._get_url(id_) == "https://api.culqi.com/v2/cards/{0}".format(
-            id_
-        )
+        assert self.card._get_url(id_) == f"https://api.culqi.com/v2/cards/{id_}"
 
     @pytest.mark.vcr()
     def test_card_create(self):

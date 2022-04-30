@@ -28,7 +28,7 @@ class SubscriptionTest(unittest.TestCase):
     @property
     def subscription_data(self):
         # pylint-x: disable=no-member
-        email = "richard{0}@piedpiper.com".format(uuid4().hex[:4])
+        email = f"richard{uuid4().hex[:4]}@piedpiper.com"
 
         token_data = deepcopy(Data.CARD["successful"]["visa"])
         token_data["email"] = email
@@ -45,7 +45,7 @@ class SubscriptionTest(unittest.TestCase):
         card = self.culqi.card.create(data=card_data)
 
         plan_data = deepcopy(Data.PLAN)
-        plan_data["name"] = "plan-{0}".format(uuid4().hex[:4])
+        plan_data["name"] = f"plan-{uuid4().hex[:4]}"
         plan = self.culqi.plan.create(data=plan_data)
 
         return {
@@ -58,9 +58,10 @@ class SubscriptionTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.subscription._get_url() == "https://api.culqi.com/v2/subscriptions"
-        assert self.subscription._get_url(
-            id_
-        ) == "https://api.culqi.com/v2/subscriptions/{0}".format(id_)
+        assert (
+            self.subscription._get_url(id_)
+            == f"https://api.culqi.com/v2/subscriptions/{id_}"
+        )
 
     @pytest.mark.vcr()
     def test_subscription_create(self):

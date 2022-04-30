@@ -1,3 +1,8 @@
+## Unreleased
+
+- Drop support for python 3.6
+- Change strings format to f-strings
+- Update dependencies
 ### 1.0.1
 
 - Fix supported python version specification

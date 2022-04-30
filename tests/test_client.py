@@ -28,8 +28,8 @@ class ClientTest(unittest.TestCase):
     def test_session_headers(self):
         session_headers = self.culqi.session.headers
         headers = {
-            "User-Agent": "Culqi-API-Python/{0}".format(self.version),
-            "Authorization": "Bearer {0}".format(self.private_key),
+            "User-Agent": f"Culqi-API-Python/{self.version}",
+            "Authorization": f"Bearer {self.private_key}",
             "Content-type": "application/json",
             "Accept": "application/json",
         }
@@ -41,9 +41,7 @@ class ClientTest(unittest.TestCase):
 
     def test_non_injected_property(self):
         attribute_name = "dummy_attribute"
-        message = (
-            "'Culqi' object has no attribute '%sdummy_attribute'" % RESOURCE_PREFIX
-        )
+        message = f"'Culqi' object has no attribute '{RESOURCE_PREFIX}dummy_attribute'"
 
         with pytest.raises(AttributeError) as excinfo:
             getattr(self.culqi, attribute_name)
