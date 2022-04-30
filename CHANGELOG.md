@@ -1,4 +1,4 @@
-## [Unreleased]
+## Unreleased
 
 - Drop support for python 3.6
 - Change strings format to f-strings
