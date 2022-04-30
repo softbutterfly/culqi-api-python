@@ -11,7 +11,7 @@ class URL:
     REFUND = "refunds"
     SUBSCRIPTION = "subscriptions"
     # Disable false positive for Bandit's rule B105
-    TOKEN = "tokens"  # noqa
+    TOKEN = "tokens"  # nosec
 
     TRANSFER = "transfers"
     IIN = "iins"

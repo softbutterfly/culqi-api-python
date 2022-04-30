@@ -25,9 +25,9 @@ class TransferTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.transfer._get_url() == "https://api.culqi.com/v2/transfers"
-        assert self.transfer._get_url(
-            id_
-        ) == "https://api.culqi.com/v2/transfers/{0}".format(id_)
+        assert (
+            self.transfer._get_url(id_) == f"https://api.culqi.com/v2/transfers/{id_}"
+        )
 
     @pytest.mark.vcr()
     def test_transfer_create(self):

@@ -60,8 +60,8 @@ class Culqi:
     def _set_client_headers(self):
         self.session.headers.update(
             {
-                "User-Agent": "Culqi-API-Python/{0}".format(self._get_version()),
-                "Authorization": "Bearer {0}".format(self.private_key),
+                "User-Agent": f"Culqi-API-Python/{self._get_version()}",
+                "Authorization": f"Bearer {self.private_key}",
                 "Content-type": "application/json",
                 "Accept": "application/json",
             }

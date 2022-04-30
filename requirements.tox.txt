@@ -1,17 +1,17 @@
-pyyaml<=5.4.1 --no-binary=pyyaml
-autopep8<=1.5.7
-black<=21.5b1
-codecov<=2.1.11
-coverage<=5.5
-flake8-black<=0.2.1
-flake8<=3.9.2
-jsonschema<=3.2.0
-mypy<=0.812
-pycodestyle<=2.7.0
+autopep8<=1.6.0
+black<=22.3.0
+codecov<=2.1.12
+coverage<=6.3.2
+flake8-black<=0.3.2
+flake8<=4.0.1
+jsonschema<=4.4.0
+mypy<=0.950
+pycodestyle<=2.8.0
 pydocstyle<=6.1.1
-pylint<=2.8.2
-pytest-cov<=2.12.0
+pylint<=2.13.7
+pytest-cov<=3.0.0
 pytest-vcr<=1.0.2
-pytest<=6.2.4
-python-dotenv<=0.17.1
-requests<=2.25.1
+pytest<=7.1.2
+python-dotenv<=0.20.0
+pyyaml<=6.0 --no-binary=pyyaml
+requests<=2.27.1

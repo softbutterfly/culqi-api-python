@@ -24,7 +24,7 @@ class CustomerTest(unittest.TestCase):
         self.customer = Customer(client=self.culqi)
 
         self.customer_data = deepcopy(Data.CUSTOMER)
-        self.customer_data["email"] = "richard{0}@piedpiper.com".format(uuid4().hex[:4])
+        self.customer_data["email"] = f"richard{uuid4().hex[:4]}@piedpiper.com"
         self.metadata = {"order_id": "0001"}
 
     def test_url(self):
@@ -32,9 +32,9 @@ class CustomerTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.customer._get_url() == "https://api.culqi.com/v2/customers"
-        assert self.customer._get_url(
-            id_
-        ) == "https://api.culqi.com/v2/customers/{0}".format(id_)
+        assert (
+            self.customer._get_url(id_) == f"https://api.culqi.com/v2/customers/{id_}"
+        )
 
     @pytest.mark.vcr()
     def test_customer_create(self):

@@ -25,9 +25,7 @@ class EventTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.event._get_url() == "https://api.culqi.com/v2/events"
-        assert self.event._get_url(id_) == "https://api.culqi.com/v2/events/{0}".format(
-            id_
-        )
+        assert self.event._get_url(id_) == f"https://api.culqi.com/v2/events/{id_}"
 
     # @pytest.mark.vcr()
     # def test_event_retrieve(self):

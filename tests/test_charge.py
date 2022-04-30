@@ -39,12 +39,11 @@ class ChargeTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.charge._get_url() == "https://api.culqi.com/v2/charges"
-        assert self.charge._get_url(
-            id_
-        ) == "https://api.culqi.com/v2/charges/{0}".format(id_)
-        assert self.charge._get_url(
-            id_, "capture"
-        ) == "https://api.culqi.com/v2/charges/{0}/capture".format(id_)
+        assert self.charge._get_url(id_) == f"https://api.culqi.com/v2/charges/{id_}"
+        assert (
+            self.charge._get_url(id_, "capture")
+            == f"https://api.culqi.com/v2/charges/{id_}/capture"
+        )
 
     @pytest.mark.vcr()
     def test_charge_create(self):

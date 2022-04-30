@@ -1169,7 +1169,7 @@ Consulta la documentación de Culqi en [`https://apidocs.culqi.com/#/clientes`](
 ```python
 def get_customer_data():
     customer_data = deepcopy(Data.CUSTOMER)
-    customer_data["email"] = "richard{0}@piedpiper.com".format(uuid4().hex[:4])
+    customer_data["email"] = f"richard{uuid4().hex[:4]}@piedpiper.com"
 
     return customer_data
 ```
@@ -1410,7 +1410,7 @@ Consulta la documentación de Culqi en [`https://apidocs.culqi.com/#/tarjetas`](
 
 ```python
 def get_card_data(code, provider):
-    email = "richard{0}@piedpiper.com".format(uuid4().hex[:4])
+    email = f"richard{uuid4().hex[:4]}@piedpiper.com"
 
     token_data = deepcopy(Data.CARD[code][provider])
     token_data["email"] = email
@@ -1763,7 +1763,7 @@ Consulta la documentación de Culqi en [`https://apidocs.culqi.com/#/planes`](ht
 ```python
 def get_plan_data():
     plan_data = deepcopy(Data.PLAN)
-    plan_data["name"] = "plan-{0}".format(uuid4().hex[:4])
+    plan_data["name"] = f"plan-{uuid4().hex[:4]}"
 
     return plan_data
 ```
@@ -1939,7 +1939,7 @@ Consulta la documentación de Culqi en [`https://apidocs.culqi.com/#/suscripcion
 
 ```python
 def get_subscription_data(code, provider):
-    email = "richard{0}@piedpiper.com".format(uuid4().hex[:4])
+    email = f"richard{uuid4().hex[:4]}@piedpiper.com"
 
     token_data = deepcopy(Data.CARD[code][provider])
     token_data["email"] = email
@@ -1956,7 +1956,7 @@ def get_subscription_data(code, provider):
     card = culqi.card.create(data=card_data)
 
     plan_data = deepcopy(Data.PLAN)
-    plan_data["name"] = "plan-{0}".format(uuid4().hex[:4])
+    plan_data["name"] = f"plan-{uuid4().hex[:4]}"
     plan = culqi.plan.create(data=plan_data)
 
     return {
@@ -2431,7 +2431,7 @@ Consulta la documentación de Culqi en [`https://apidocs.culqi.com/#/orders`](ht
 ```python
 def get_order_data():
     order_data = deepcopy(Data.ORDER)
-    order_data["order_number"] = "order-{0}".format(uuid4().hex[:4])
+    order_data["order_number"] = f"order-{uuid4().hex[:4]}"
 
     return order_data
 ```

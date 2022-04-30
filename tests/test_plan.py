@@ -28,7 +28,7 @@ class PlanTest(unittest.TestCase):
     @property
     def plan_data(self):
         plan_data = deepcopy(Data.PLAN)
-        plan_data["name"] = "plan-{0}".format(uuid4().hex[:4])
+        plan_data["name"] = f"plan-{uuid4().hex[:4]}"
 
         return plan_data
 
@@ -37,9 +37,7 @@ class PlanTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.plan._get_url() == "https://api.culqi.com/v2/plans"
-        assert self.plan._get_url(id_) == "https://api.culqi.com/v2/plans/{0}".format(
-            id_
-        )
+        assert self.plan._get_url(id_) == f"https://api.culqi.com/v2/plans/{id_}"
 
     @pytest.mark.vcr()
     def test_plan_create(self):

@@ -28,7 +28,7 @@ class OrderTest(unittest.TestCase):
     @property
     def order_data(self):
         order_data = deepcopy(Data.ORDER)
-        order_data["order_number"] = "order-{0}".format(uuid4().hex[:4])
+        order_data["order_number"] = f"order-{uuid4().hex[:4]}"
 
         return order_data
 
@@ -37,12 +37,11 @@ class OrderTest(unittest.TestCase):
         id_ = "sample_id"
 
         assert self.order._get_url() == "https://api.culqi.com/v2/orders"
-        assert self.order._get_url(id_) == "https://api.culqi.com/v2/orders/{0}".format(
-            id_
+        assert self.order._get_url(id_) == f"https://api.culqi.com/v2/orders/{id_}"
+        assert (
+            self.order._get_url(id_, "confirm")
+            == f"https://api.culqi.com/v2/orders/{id_}/confirm"
         )
-        assert self.order._get_url(
-            id_, "confirm"
-        ) == "https://api.culqi.com/v2/orders/{0}/confirm".format(id_)
 
     @pytest.mark.vcr()
     def test_order_create(self):
