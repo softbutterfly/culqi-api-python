@@ -42,7 +42,7 @@ cmd = "echo $(echo \"{new_version}\" | sed -r 's/([0-9]+)\\.([0-9]+)\\.([0-9]+)/
 
 [[before_commit]]
 name = "Update version.py"
-cmd = "find ./tests/cassettes -type f -exec sed -i -e 's#Culqi-API-Python/{current_version}#Culqi-API-Python/{new_version}#g' \{\} \\;"
+cmd = "find ./tests/cassettes -type f -exec sed -i -e 's#Culqi-API-Python/{current_version}#Culqi-API-Python/{new_version}#g' \\{\\} \\;"
 
 [[after_push]]
 name = "Build package"
